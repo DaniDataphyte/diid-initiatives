@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/countries.schema.json",
+  "title": "Countries",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "iso3",
+      "region",
+      "status",
+      "actor",
+      "summary",
+      "instruments",
+      "flags",
+      "evidence",
+      "opportunity",
+      "articleRefs"
+    ],
+    "properties": {
+      "name": { "type": "string" },
+      "iso3": {
+        "type": "string",
+        "pattern": "^[A-Z]{3}$"
+      },
+      "region": { "type": "string" },
+      "status": {
+        "type": "string",
+        "enum": ["binding", "draft", "strategy", "general", "none"]
+      },
+      "actor": { "type": "string" },
+      "x": { "type": "number" },
+      "y": { "type": "number" },
+      "summary": { "type": "string" },
+      "instruments": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "flags": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "evidence": { "type": "string" },
+      "opportunity": { "type": "string" },
+      "articleRefs": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}

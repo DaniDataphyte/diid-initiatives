@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/recommendations.schema.json",
+  "title": "Recommendations",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "label", "items"],
+    "properties": {
+      "id": { "type": "string" },
+      "label": { "type": "string" },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "rationale", "outcome"],
+          "properties": {
+            "title": { "type": "string" },
+            "rationale": { "type": "string" },
+            "outcome": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

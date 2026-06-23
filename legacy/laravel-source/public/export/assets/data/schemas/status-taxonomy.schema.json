@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/status-taxonomy.schema.json",
+  "title": "Status Taxonomy",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["key", "label", "color", "definition"],
+    "properties": {
+      "key": {
+        "type": "string",
+        "enum": ["binding", "draft", "strategy", "general", "none"]
+      },
+      "label": {
+        "type": "string"
+      },
+      "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+      },
+      "definition": {
+        "type": "string"
+      }
+    }
+  }
+}

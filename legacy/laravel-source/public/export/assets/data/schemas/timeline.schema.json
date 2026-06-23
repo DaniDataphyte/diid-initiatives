@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/timeline.schema.json",
+  "title": "Timeline",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["year", "title", "accent"],
+    "properties": {
+      "year": { "type": "string" },
+      "title": { "type": "string" },
+      "accent": {
+        "type": "string",
+        "enum": ["binding", "draft", "strategy", "general", "none"]
+      },
+      "detail": { "type": "string" }
+    }
+  }
+}

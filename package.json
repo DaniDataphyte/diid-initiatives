@@ -1,0 +1,26 @@
+{
+  "name": "diid-platform",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:all",
+    "build:all": "npm run build:child-online-safety",
+    "dev:child-online-safety": "npm run dev --workspace @diid/child-online-safety",
+    "build:child-online-safety": "npm run build --workspace @diid/child-online-safety",
+    "preview:child-online-safety": "npm run preview --workspace @diid/child-online-safety"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.2.11",
+    "@fontsource/manrope": "^5.2.8",
+    "alpinejs": "^3.15.12",
+    "aos": "^2.3.4",
+    "chart.js": "^4.5.1"
+  }
+}

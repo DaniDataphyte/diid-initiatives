@@ -1,0 +1,81 @@
+[
+  {
+    "id": "civil-society",
+    "label": "Civil Society",
+    "items": [
+      {
+        "title": "Prioritise domestication of the AU COP Policy",
+        "rationale": "The article treats the AU policy as the primary continental mandate that can be translated into national legal architecture.",
+        "outcome": "Country-specific legislative proposals anchored in existing national institutions."
+      },
+      {
+        "title": "Build a national COP coalition modelled on Nigeria’s approach",
+        "rationale": "The brief argues coalition pressure and technical partnership are key ingredients in moving bills and implementation agendas.",
+        "outcome": "Broader political support and stronger draft-stage influence."
+      },
+      {
+        "title": "Use DPAs as strategic entry points",
+        "rationale": "Mali and Senegal show that children’s data directives can move even before dedicated COP laws are enacted.",
+        "outcome": "Immediate rule-setting on data practices while primary law catches up."
+      },
+      {
+        "title": "Insist on rights-respecting design",
+        "rationale": "The brief uses Uganda and South Sudan as direct warnings against vague, overbroad, or abuse-prone legal language.",
+        "outcome": "More durable legislation with explicit safeguards for expression, access, and oversight."
+      }
+    ]
+  },
+  {
+    "id": "au-recs",
+    "label": "AU / RECs",
+    "items": [
+      {
+        "title": "Develop an AU COP Policy implementation scorecard",
+        "rationale": "The article argues that public scorekeeping would create competitive pressure and reveal laggards.",
+        "outcome": "A repeatable continental monitoring mechanism."
+      },
+      {
+        "title": "Leverage RECs for sub-regional harmonisation",
+        "rationale": "The brief specifically points to ECOWAS, the EAC, and SADC as institutional routes for reducing regulatory arbitrage.",
+        "outcome": "Stronger regional standards and less fragmented platform oversight."
+      }
+    ]
+  },
+  {
+    "id": "donors",
+    "label": "Donors",
+    "items": [
+      {
+        "title": "Fund implementation, not only legislation",
+        "rationale": "The brief is explicit that implementation capacity is where frameworks often fail.",
+        "outcome": "Digital forensics, training, prosecutorial capacity, and judicial readiness."
+      },
+      {
+        "title": "Commission Africa-specific evidence",
+        "rationale": "The article says the evidence base remains too narrow, especially beyond Eastern and Southern Africa.",
+        "outcome": "A broader and more current understanding of harms, including AI-generated risks and sextortion."
+      },
+      {
+        "title": "Support platform accountability mechanisms",
+        "rationale": "Regulators need technical capacity to evaluate algorithms, moderation, and age-verification systems.",
+        "outcome": "More credible oversight of platform conduct in African contexts."
+      }
+    ]
+  },
+  {
+    "id": "platforms",
+    "label": "Platforms",
+    "items": [
+      {
+        "title": "Apply global standards uniformly",
+        "rationale": "The brief argues African users should not wait for local regulatory mandates before receiving stronger child-safety features.",
+        "outcome": "Immediate uplift in baseline platform protections across African markets."
+      },
+      {
+        "title": "Invest in African-language content moderation",
+        "rationale": "The article treats linguistic under-capacity as a major weakness in current trust and safety operations.",
+        "outcome": "Better moderation quality and local relevance in harm detection and response."
+      }
+    ]
+  }
+]

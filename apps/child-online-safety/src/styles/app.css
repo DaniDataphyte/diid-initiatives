@@ -1,0 +1,12 @@
+@import '@fontsource/cormorant-garamond/500.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/cormorant-garamond/700.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/manrope/800.css';
+@import 'aos/dist/aos.css';
+@import '../../../../packages/brand/tokens/colors.css';
+@import '../../../../packages/brand/tokens/typography.css';
+@import './policy.css';

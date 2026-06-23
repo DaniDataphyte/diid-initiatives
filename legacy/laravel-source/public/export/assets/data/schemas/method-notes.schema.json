@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/method-notes.schema.json",
+  "title": "Method Notes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "body"],
+    "properties": {
+      "title": { "type": "string" },
+      "body": { "type": "string" }
+    }
+  }
+}

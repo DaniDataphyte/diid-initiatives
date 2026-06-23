@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policy Insight: Child Online Safety Legislation Across Africa</title>
+    <meta
+      name="description"
+      content="Static design template for a policy microsite on child online safety legislation across Africa."
+    />
+    <link rel="preload" as="style" href="./build/assets/app-D9-8kZnj.css" /><link rel="modulepreload" as="script" href="./build/assets/app-C8Ai5OVl.js" /><link rel="stylesheet" href="./build/assets/app-D9-8kZnj.css" /><script type="module" src="./build/assets/app-C8Ai5OVl.js"></script>  </head>
+  <body data-policy-page x-data="policyPage()" x-init="init()" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
+    <header class="topbar">
+      <button
+        class="topbar__sidebar-toggle"
+        type="button"
+        data-sidebar-toggle
+        @click="toggleSidebar()"
+        :aria-expanded="String(!sidebarCollapsed)"
+        aria-controls="policySidebar"
+        aria-label="Toggle sidebar"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a class="is-active" href="#overview">Analysis</a>
+        <a href="#state-of-play">Data Explorer</a>
+        <a href="#method">Method</a>
+      </nav>
+      <a class="topbar__cta" href="#method">Download Report</a>
+    </header>
+
+    <aside class="sidenav" id="policySidebar" aria-label="Section tracker">
+      <div class="sidenav__inner">
+        <div class="sidenav__header">
+          <p class="sidenav__eyebrow">Policy Explorer</p>
+          <span class="sidenav__version">Strategic Analysis v2.4</span>
+        </div>
+        <nav class="sidenav__nav" aria-label="Policy sections">
+          <a class="is-active" href="#overview">
+            <span class="sidenav__icon">◎</span>
+            <span class="sidenav__label">Overview</span>
+          </a>
+          <a href="#state-of-play">
+            <span class="sidenav__icon">◫</span>
+            <span class="sidenav__label">State of Play</span>
+          </a>
+          <a href="#numbers">
+            <span class="sidenav__icon">◧</span>
+            <span class="sidenav__label">Numbers</span>
+          </a>
+          <a href="#patterns">
+            <span class="sidenav__icon">⌘</span>
+            <span class="sidenav__label">Patterns</span>
+          </a>
+          <a href="#gaps">
+            <span class="sidenav__icon">✱</span>
+            <span class="sidenav__label">Gaps</span>
+          </a>
+          <a href="#drivers">
+            <span class="sidenav__icon">⇢</span>
+            <span class="sidenav__label">Drivers/Barriers</span>
+          </a>
+          <a href="#recommendations">
+            <span class="sidenav__icon">☑</span>
+            <span class="sidenav__label">Recommendations</span>
+          </a>
+          <a href="#priorities">
+            <span class="sidenav__icon">!</span>
+            <span class="sidenav__label">Priorities</span>
+          </a>
+          <a href="#method">
+            <span class="sidenav__icon">◍</span>
+            <span class="sidenav__label">Method</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="page">
+      <section class="hero" id="overview">
+        <div class="hero__grid">
+          <div class="hero__rule"></div>
+          <div class="hero__copy">
+            <p class="kicker">Policy Brief / May 2026 / DIID</p>
+            <h1>
+              Child Online Safety
+              <span>Legislation Across Africa</span>
+            </h1>
+            <p class="hero__summary">
+              A continent-wide policy interface on legislative progress,
+              institutional architecture, and the protection gaps shaping child
+              online safety across Africa.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--solid" href="#state-of-play"
+                >Explore the map</a
+              >
+              <a class="button button--outline" href="#priorities"
+                >See strategic priorities</a
+              >
+            </div>
+          </div>
+          <div class="hero__stats">
+            <div class="hero-stat hero-stat--blue">
+              <strong>55</strong>
+              <span>AU states reviewed</span>
+            </div>
+            <div class="hero-stat hero-stat--orange">
+              <strong>5</strong>
+              <span>Enacted frameworks</span>
+            </div>
+            <div class="hero-stat hero-stat--sand">
+              <strong>2023–25</strong>
+              <span>Acceleration period</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--map" id="state-of-play">
+        <div class="section__header section__header--split">
+          <div>
+            <h2>02 / State of Play</h2>
+            <p>Continental legislative heatmap</p>
+          </div>
+          <div class="control-row">
+            <label>
+              <span>Region</span>
+              <select disabled>
+                <option>All Regions</option>
+              </select>
+            </label>
+            <label>
+              <span>Year</span>
+              <select disabled>
+                <option>2026</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-sidebar">
+            <div class="panel panel--tint">
+              <h3>Legend</h3>
+              <ul class="legend-list">
+                <li><i class="swatch swatch--blue"></i> Enacted law</li>
+                <li><i class="swatch swatch--orange"></i> Advanced draft</li>
+                <li><i class="swatch swatch--amber"></i> Strategy / draft</li>
+                <li><i class="swatch swatch--sand"></i> General law</li>
+                <li><i class="swatch swatch--red"></i> No framework</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Selection Detail</h3>
+              <p>
+                Polygon fills are tied to article classifications where the
+                brief names a country directly. Other states remain visible as
+                neutral map context until a country-by-country source is added.
+              </p>
+            </div>
+            <div class="panel panel--drawer">
+              <p class="panel__eyebrow">Selected country</p>
+              <div class="country-drawer" id="countryDrawer">
+                <div class="country-drawer__head">
+                  <div>
+                    <h3 id="drawerCountry">Kenya</h3>
+                    <span id="drawerRegion">East Africa</span>
+                  </div>
+                  <b id="drawerStatus">Binding guideline layer</b>
+                </div>
+                <p class="country-drawer__body" id="drawerSummary">
+                  Kenya is rendered here as the default selected state for the
+                  static template, showing how a country-level drawer will hold
+                  legal instruments, protections, and advocacy cues.
+                </p>
+                <div class="country-drawer__group">
+                  <label>Instruments</label>
+                  <ul id="drawerInstruments">
+                    <li>Industry Guidelines for Child Online Protection and Safety</li>
+                    <li>ODPC enforcement actions on children’s data</li>
+                  </ul>
+                </div>
+                <div class="country-drawer__group">
+                  <label>Key provisions</label>
+                  <div class="country-drawer__tags" id="drawerFlags">
+                    <span>Age verification</span>
+                    <span>Provider obligations</span>
+                    <span>Data protection</span>
+                  </div>
+                </div>
+                <div class="country-drawer__group">
+                  <label>Advocacy opportunity</label>
+                  <p id="drawerOpportunity">
+                    Consolidate existing protections into primary child online
+                    protection legislation.
+                  </p>
+                </div>
+                <div class="country-drawer__group">
+                  <label>Article evidence</label>
+                  <p id="drawerEvidence">
+                    Kenya is rendered here as the default selected state while
+                    country-level article evidence remains static.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-stage">
+            <div class="map-stage__surface">
+              <div class="map-svg-shell">
+                <svg
+                  id="africaMap"
+                  class="africa-map"
+                  viewBox="0 0 820 680"
+                  role="img"
+                  aria-label="Africa child online protection legislative map"
+                ></svg>
+                <div class="map-region-label region-label--north">North Africa</div>
+                <div class="map-region-label region-label--west">West Africa</div>
+                <div class="map-region-label region-label--east">East Africa</div>
+                <div class="map-region-label region-label--central">Central Africa</div>
+                <div class="map-region-label region-label--south">Southern Africa</div>
+              </div>
+              <div class="map-note">
+                <strong>Boundary note</strong>
+                <p>
+                  The map now uses a full Africa boundary file. Exact legal
+                  status is only colored where the supplied brief names a
+                  jurisdiction directly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--metrics" id="numbers">
+        <div class="section__header">
+          <h2>03 / Key Metrics</h2>
+          <p>Quantifying the continental deficit</p>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-block">
+            <h3>Legal Coverage Across AU States</h3>
+            <div id="coverageChart">
+              <div class="stacked-bar">
+                <span class="segment segment--blue" style="width: 10%"></span>
+                <span class="segment segment--orange" style="width: 15%"></span>
+                <span class="segment segment--amber" style="width: 25%"></span>
+                <span class="segment segment--sand" style="width: 40%"></span>
+                <span class="segment segment--red" style="width: 10%"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="metric-block">
+            <h3>Regional Readiness Comparison</h3>
+            <div id="readinessChart">
+              <div class="progress-list">
+                <div class="progress-row">
+                  <div class="progress-row__label"><span>Awaiting scored methodology</span><span>0%</span></div>
+                  <div class="progress"><i style="width: 0%"></i></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="metric-block metric-block--timeline">
+            <h3>Legislative Timeline 2020–2026</h3>
+            <div class="timeline" id="timelineChart"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--patterns" id="patterns">
+        <div class="section__header">
+          <h2>04 / Emergent Patterns</h2>
+        </div>
+        <div class="pattern-grid" id="patternGrid">
+          <article class="pattern-card pattern-card--sand">
+            <p>Technological convergence</p>
+            <h3>Integration with general data privacy frameworks</h3>
+            <span>
+              The strongest models connect child safety obligations to broader
+              privacy, platform, and regulator mandates.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--blue">
+            <p>Regional harmonization</p>
+            <h3>REC-led standardization in southern and western Africa</h3>
+            <span>
+              Sub-regional instruments are positioned as a route to reducing
+              fragmentation and regulatory arbitrage.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--amber">
+            <p>Enforcement gaps</p>
+            <h3>Statutory existence versus operational efficacy</h3>
+            <span>
+              The template preserves the distinction between law on paper and
+              the capacity needed to enforce it.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--white">
+            <p>Stakeholder resistance</p>
+            <h3>Platform neutrality and liability disputes</h3>
+            <span>
+              Global platform incentives remain misaligned with local safety and
+              accountability expectations.
+            </span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--gaps" id="gaps">
+        <div class="gaps-layout">
+          <div class="gaps-intro">
+            <h2>05 / Structural Gaps</h2>
+            <p>
+              Identification of institutional and legal deficits that remain
+              unresolved across most reviewed jurisdictions.
+            </p>
+            <div class="callout" id="gapCallout">
+              <strong>Critical deficit</strong>
+              <span>
+                Budget allocation for child-specialized digital enforcement
+                remains a structural implementation constraint.
+              </span>
+            </div>
+          </div>
+          <div class="gaps-list" id="gapAccordion">
+            <article class="gap-item gap-item--open">
+              <div class="gap-item__top">
+                <h3>Definition of “Digital Harm”</h3>
+                <span>Expanded</span>
+              </div>
+              <p>
+                Lacking precise legal definitions for grooming, cyberbullying,
+                and non-consensual image sharing in much of the mapped
+                landscape.
+              </p>
+              <div class="severity">
+                <label>Prevalence</label>
+                <div class="severity__bars">
+                  <i class="is-hot"></i><i class="is-hot"></i><i class="is-hot"></i
+                  ><i class="is-hot"></i><i></i>
+                </div>
+                <strong>High</strong>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Platform Accountability Scales</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Cross-Border Judicial Cooperation</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Participation and Evidence</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Digital Literacy and Prevention</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--forces" id="drivers">
+        <div class="section__header section__header--center">
+          <h2>06 / Force Multipliers</h2>
+        </div>
+        <div class="force-grid">
+          <article class="force-column force-column--driver">
+            <div class="force-column__heading">
+              <span>↑</span>
+              <h3>Drivers of Progress</h3>
+            </div>
+            <ul id="driversList">
+              <li>
+                <strong>01</strong>
+                <div>
+                  <h4>Civil society pressure</h4>
+                  <p>
+                    Coalition pressure and local advocacy remain core accelerants
+                    for draft progression and reform visibility.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <strong>02</strong>
+                <div>
+                  <h4>International treaties</h4>
+                  <p>
+                    Regional and international instruments continue to act as
+                    catalysts for domestic policy alignment.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="force-column force-column--barrier">
+            <div class="force-column__heading">
+              <span>↓</span>
+              <h3>Structural Barriers</h3>
+            </div>
+            <ul id="barriersList">
+              <li>
+                <strong>01</strong>
+                <div>
+                  <h4>Technical knowledge gap</h4>
+                  <p>
+                    Drafting quality suffers when committees lack specialized
+                    understanding of platform, encryption, and algorithmic risk.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <strong>02</strong>
+                <div>
+                  <h4>Lobbying inertia</h4>
+                  <p>
+                    Soft-regulation preferences from major firms can slow the
+                    transition to enforceable statutory obligations.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--recommendations" id="recommendations">
+        <div class="section__header">
+          <h2>07 / Strategic Recommendations</h2>
+        </div>
+        <div class="tabs tabs--static" id="recommendationTabs">
+          <button class="is-active" type="button">African Union</button>
+          <button type="button">National Governments</button>
+          <button type="button">Civil Society</button>
+          <button type="button">Platforms</button>
+        </div>
+        <div class="recommendation-grid" id="recommendationPanel">
+          <article class="recommendation-card">
+            <span>REC-01 / Harmonization</span>
+            <h3>Regional model law diffusion</h3>
+            <p>
+              Develop a unified African Union model law for child online safety
+              to reduce legal fragmentation across borders.
+            </p>
+            <div>
+              <label>Implementation note</label>
+              <p>
+                Align with the African Charter on the Rights and Welfare of the
+                Child and the AU COP policy.
+              </p>
+            </div>
+          </article>
+          <article class="recommendation-card">
+            <span>REC-02 / Funding</span>
+            <h3>Mandatory safety levies</h3>
+            <p>
+              Establish sustainable financing routes for specialist online
+              safety regulation, investigation, and enforcement capacity.
+            </p>
+            <div>
+              <label>Implementation note</label>
+              <p>
+                Funding logic, reporting mechanisms, and independent audit
+                design remain pending.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="tab-state-grid" id="tabStateGrid">
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>National Governments</h3>
+            </div>
+            <ul>
+              <li>Adopt child-specific design obligations in primary law.</li>
+              <li>Assign regulator roles across telecom, DPA, and justice systems.</li>
+              <li>Fund specialist implementation capacity before enforcement starts.</li>
+            </ul>
+          </article>
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>Civil Society</h3>
+            </div>
+            <ul>
+              <li>Translate AU policy language into country domestication roadmaps.</li>
+              <li>Use coalition pressure to shape drafts before enactment.</li>
+              <li>Press for rights-respecting safeguards and child participation.</li>
+            </ul>
+          </article>
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>Platforms</h3>
+            </div>
+            <ul>
+              <li>Apply strongest child-safety standards consistently across markets.</li>
+              <li>Invest in African-language moderation and trust-and-safety capacity.</li>
+              <li>Expose accountability hooks for regulator review and audits.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--priorities" id="priorities">
+        <div class="section__header section__header--split">
+          <div>
+            <h2>08 / Priority Matrix</h2>
+            <p>
+              Mapping impact against feasibility for the article’s advocacy
+              focus points.
+            </p>
+          </div>
+        </div>
+        <div class="priority-layout">
+          <div class="matrix" id="priorityMatrix">
+            <span class="matrix__axis matrix__axis--y">Impact (Protective Capacity)</span>
+            <span class="matrix__axis matrix__axis--x">Feasibility (Resource Readiness)</span>
+            <div class="matrix__grid"></div>
+            <div class="matrix__quadrant quadrant--one">High impact / high feasibility</div>
+            <div class="matrix__quadrant quadrant--two">High impact / medium feasibility</div>
+            <div class="matrix__quadrant quadrant--three">Long-term / structural</div>
+            <div class="matrix__quadrant quadrant--four">Lower immediate leverage</div>
+            <div class="matrix__node node--blue" style="top: 18%; left: 82%">
+              <span>South Africa</span>
+            </div>
+            <div class="matrix__node node--orange" style="top: 34%; left: 46%">
+              <span>Kenya</span>
+            </div>
+            <div class="matrix__node node--blue" style="top: 21%; left: 66%">
+              <span>Nigeria</span>
+            </div>
+            <div class="matrix__node node--orange" style="top: 52%; left: 40%">
+              <span>Rwanda</span>
+            </div>
+            <div class="matrix__node node--red" style="top: 74%; left: 20%">
+              <span>Gap state</span>
+            </div>
+          </div>
+          <aside class="matrix-side">
+            <div class="matrix-legend">
+              <h3>Legend</h3>
+              <ul>
+                <li><i class="swatch swatch--blue"></i> High-opportunity consolidation target</li>
+                <li><i class="swatch swatch--orange"></i> Emerging legislative pathway</li>
+                <li><i class="swatch swatch--red"></i> High-risk or low-coverage jurisdiction</li>
+                <li><span class="size-dot"></span> Larger node = higher urgency</li>
+              </ul>
+            </div>
+            <div class="matrix-inspector">
+              <p class="panel__eyebrow">Inspector</p>
+              <h3 id="priorityTitle">Nigeria</h3>
+              <b id="priorityRingLabel">High impact / high feasibility</b>
+              <p id="priorityBody">
+                HB.244 already has legislative movement, coalition
+                infrastructure exists, and the policy window remains open for
+                enforceable law.
+              </p>
+              <div>
+                <label>Article-exact action cue</label>
+                <p id="priorityAction">Push Senate passage and early implementation design.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--method" id="method">
+        <div class="method-wrap">
+          <div class="section__header">
+            <h2>09 / Methodology &amp; Resources</h2>
+          </div>
+          <div class="method-grid">
+            <div class="method-list" id="methodAccordion">
+              <article><span>Data collection protocols</span><i>+</i></article>
+              <article><span>Institutional interviews (2023–2025)</span><i>+</i></article>
+              <article><span>Legislative review criteria</span><i>+</i></article>
+              <article><span>Template pending modules</span><i>+</i></article>
+            </div>
+            <aside class="contact-card">
+              <h3>Contact DIID</h3>
+              <p>
+                For access to the full dataset, country mapping, or regional
+                breakdowns, connect with the policy desk.
+              </p>
+              <a href="mailto:policy@diid.africa">policy@diid.africa</a>
+            </aside>
+          </div>
+          <div class="pending-grid">
+            <article class="pending-card">
+              <strong>Bundling note</strong>
+              <p>All frontend libraries should compile into local CSS and JS assets only.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Laravel export note</strong>
+              <p>Runtime Blade and Laravel routing must disappear in the final static export.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Static delivery note</strong>
+              <p>Use local fonts, local vendor assets, and a single exported entry page.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Data note</strong>
+              <p>Map GeoJSON, chart values, and article annotations can stay local JSON files.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div>
+          <h3>Digital Initiative for Innovation and Development</h3>
+          <p>
+            Policy research, digital rights, and legislative analysis on child
+            online safety across Africa.
+          </p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#overview">Overview</a>
+          <a href="#method">Methodology</a>
+          <a href="#numbers">Data signals</a>
+          <a href="#recommendations">Recommendations</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 DIID. Static template build.</span>
+        <span>Share / Print pending</span>
+      </div>
+    </footer>
+    <script id="policyData" type="application/json">{"statusTaxonomy":[{"key":"binding","label":"Enacted law or binding COP instrument","color":"#1d63d5","definition":"The brief identifies enacted dedicated laws, regulations, or binding child online protection instruments."},{"key":"draft","label":"Advanced draft pathway","color":"#fc6906","definition":"The brief identifies a draft bill, draft law, or primary legislative pathway in motion."},{"key":"strategy","label":"Strategy, guideline, or policy only","color":"#f0b26a","definition":"The brief identifies a dedicated strategy, guideline, or policy without primary legislative backing."},{"key":"general","label":"General legal coverage","color":"#d9c9aa","definition":"The brief identifies broader cybercrime, penal, telecom, data protection, or child protection frameworks with partial relevance."},{"key":"none","label":"No identifiable framework","color":"#f00614","definition":"The brief identifies no specific legislation, regulation, or policy framework on child online safety."}],"countries":[{"name":"Algeria","iso3":"DZA","region":"North Africa","status":"general","actor":"General legal coverage","summary":"Algeria is named among the significant digital economies that still rely on broader cybercrime, penal, or data protection law rather than a dedicated child online protection framework.","instruments":["General cybercrime, penal, or data protection coverage referenced in the brief"],"flags":["General framework","Named digital economy","No dedicated COP framework"],"evidence":"The article explicitly includes Algeria in the large general-law category rather than the dedicated COP categories.","opportunity":"Use domestication advocacy to move from tangential legal coverage toward a child-specific framework.","articleRefs":["4.1 The Numbers, paragraph 22"]},{"name":"Burundi","iso3":"BDI","region":"East Africa","status":"none","actor":"No identifiable framework","summary":"The brief identifies Burundi as having no identifiable legislation, regulation, or policy framework on child online safety.","instruments":["No identifiable framework named in the brief"],"flags":["No framework","Gap state","East Africa"],"evidence":"Burundi is one of the five no-framework jurisdictions named directly in the article.","opportunity":"Link agenda-setting to AU domestication pressure and sub-regional standards.","articleRefs":["4.1 The Numbers, paragraph 23"],"x":521,"y":434},{"name":"Cameroon","iso3":"CMR","region":"Central Africa","status":"binding","actor":"Parliament / ANTIC","summary":"Cameroon is treated as part of the top-tier binding group while the brief also notes that its framework is robust and multi-layered rather than a standalone COP statute.","instruments":["Charter on Child Online Protection in Cameroon - Law No. 2023/009 of July 25, 2023"],"flags":["Top-tier binding group","Francophone momentum","Institutional champion"],"evidence":"The brief names Cameroon both in the top-tier count and in the Francophone acceleration pattern.","opportunity":"Use Cameroon as a Francophone peer case for sub-regional harmonisation and institutional champion strategy.","articleRefs":["Executive Summary, paragraph 8","4.1 The Numbers, paragraph 19","4.2 The Patterns, paragraph 26","6.1 Drivers, paragraph 48"],"x":360,"y":366},{"name":"Cote d'Ivoire","iso3":"CIV","region":"West Africa","status":"general","actor":"General legal coverage","summary":"Cote d'Ivoire is named among significant digital economies that still rely on broader cybercrime, penal, or data protection law without a dedicated COP framework.","instruments":["General cybercrime, penal, or data protection coverage referenced in the brief"],"flags":["General framework","Named digital economy","No dedicated COP framework"],"evidence":"The brief explicitly includes Cote d'Ivoire in the general-law category rather than the dedicated COP categories.","opportunity":"Frame Cote d'Ivoire as a priority domestication target inside broader West African harmonisation work.","articleRefs":["4.1 The Numbers, paragraph 22"]},{"name":"Djibouti","iso3":"DJI","region":"East Africa","status":"general","actor":"Digital Code pathway","summary":"Djibouti is cited as having adopted a Digital Code in 2025, signalling legislative movement in Francophone Africa without a dedicated COP framework.","instruments":["Digital Code 2025"],"flags":["General framework","Francophone development","Digital code"],"evidence":"The article uses Djibouti to show that Francophone legal movement is broadening beyond the earlier leaders.","opportunity":"Press broad digital-code architecture toward child-specific obligations rather than generic digital governance.","articleRefs":["4.2 The Patterns, paragraph 26"],"x":539,"y":331},{"name":"Egypt","iso3":"EGY","region":"North Africa","status":"general","actor":"General legal coverage","summary":"Egypt is named among the significant digital economies that rely on general cybercrime, penal, or data protection laws with only tangential relevance to child online safety.","instruments":["General cybercrime, penal, or data protection coverage referenced in the brief"],"flags":["General framework","Named digital economy","No dedicated COP framework"],"evidence":"The article explicitly places Egypt in the general-law category rather than the dedicated COP categories.","opportunity":"Use Egypt as a high-visibility domestication target given its scale and regional influence.","articleRefs":["4.1 The Numbers, paragraph 22"]},{"name":"Eritrea","iso3":"ERI","region":"East Africa","status":"none","actor":"No identifiable framework","summary":"The article identifies Eritrea as having no identifiable legislation, regulation, or policy framework on child online safety.","instruments":["No identifiable framework named in the brief"],"flags":["No framework","Gap state","Priority watch"],"evidence":"Eritrea is one of five countries the brief places in the no-framework category.","opportunity":"Use AU pressure to establish a minimum policy foothold.","articleRefs":["4.1 The Numbers, paragraph 23"],"x":541,"y":299},{"name":"Eswatini","iso3":"SWZ","region":"Southern Africa","status":"strategy","actor":"Guidelines pathway","summary":"Eswatini is cited as having five-part COP Guidelines, indicating policy growth without the permanence or enforcement teeth of primary legislation.","instruments":["Five-part COP Guidelines"],"flags":["Guidelines only","Policy expansion","No primary legislation"],"evidence":"The article lists Eswatini among the jurisdictions expanding the guideline-and-strategy layer rather than the legislative layer.","opportunity":"Use the guideline base to press for legislative anchoring and implementation accountability.","articleRefs":["4.2 The Patterns, paragraph 27"]},{"name":"Ethiopia","iso3":"ETH","region":"East Africa","status":"general","actor":"General legal coverage","summary":"Ethiopia is named as a significant digital economy that still relies on broader legal frameworks rather than dedicated COP instruments.","instruments":["General cybercrime, penal, or data protection coverage referenced in the brief"],"flags":["General framework","Named digital economy","Priority target"],"evidence":"The brief places Ethiopia in the large general-law category and later uses it as a strategic advocacy focus.","opportunity":"Use high-level domestication pressure and CRC-linked advocacy to move toward dedicated child online protection coverage.","articleRefs":["4.1 The Numbers, paragraph 22"],"x":527,"y":360},{"name":"Gabon","iso3":"GAB","region":"Central Africa","status":"general","actor":"Age verification ordinance","summary":"Gabon’s 2026 Social Media Age Verification Ordinance is cited as a notable Francophone development on age assurance without full dedicated COP coverage.","instruments":["Social Media Age Verification Ordinance 2026"],"flags":["Age verification","Francophone development","General framework"],"evidence":"The brief uses Gabon both in the Francophone pattern and the age-verification gap discussion.","opportunity":"Push age-assurance debates toward rights-respecting standards, transparency, and child-specific design obligations.","articleRefs":["4.2 The Patterns, paragraph 26","5. Structural Gaps, paragraph 34"],"x":372,"y":425},{"name":"Gambia","iso3":"GMB","region":"West Africa","status":"none","actor":"No identifiable framework","summary":"The article identifies Gambia as having no identifiable child online safety legislation, regulation, or policy framework.","instruments":["No identifiable framework named in the brief"],"flags":["No framework","Gap state","West Africa"],"evidence":"Gambia is named directly in the no-framework group.","opportunity":"Build the case for a baseline child-protection and digital-rights entry point.","articleRefs":["4.1 The Numbers, paragraph 23"],"x":205,"y":328},{"name":"Ghana","iso3":"GHA","region":"West Africa","status":"binding","actor":"Cyber Security Authority","summary":"The brief cites Ghana as having a Cybersecurity Act with child-specific provisions and a National COP Framework issued in 2024.","instruments":["Cybersecurity Act 2020 with child-specific provisions","National Child Online Protection Framework 2024"],"flags":["Binding coverage","National framework","Institutional champion"],"evidence":"Ghana is one of the jurisdictions the brief treats as having binding child online safety coverage.","opportunity":"Use Ghana as a benchmark for institutional mandate, implementation design, and regional peer pressure.","articleRefs":["4.1 The Numbers, paragraph 19","6.1 Drivers, paragraph 48"],"x":286,"y":392},{"name":"Guinea-Bissau","iso3":"GNB","region":"West Africa","status":"none","actor":"No identifiable framework","summary":"Guinea-Bissau is listed as having no identifiable child online safety framework in the brief.","instruments":["No identifiable framework named in the brief"],"flags":["No framework","Gap state","West Africa"],"evidence":"Guinea-Bissau appears in the article’s no-framework category.","opportunity":"Use regional harmonisation arguments to build a first formal framework.","articleRefs":["4.1 The Numbers, paragraph 23"],"x":198,"y":346},{"name":"Kenya","iso3":"KEN","region":"East Africa","status":"binding","actor":"Communications Authority / ODPC","summary":"Kenya’s Industry Guidelines for Child Online Protection are treated as binding on licensed ICT providers, even though the brief also notes the absence of a standalone COP law.","instruments":["Industry Guidelines for Child Online Protection and Safety in Kenya","ODPC enforcement activity relating to children’s data"],"flags":["Binding guidelines","Age verification","DPA involvement"],"evidence":"The brief treats Kenya as one of the strongest multi-layered systems while still arguing for consolidation into primary legislation.","opportunity":"Support implementation and use Kenya to test what a future consolidated COP law should absorb.","articleRefs":["Executive Summary, paragraph 8","4.1 The Numbers, paragraph 19","4.2 The Patterns, paragraphs 25, 27, 28","5. Structural Gaps, paragraph 34","6.1 Drivers, paragraph 48"],"x":551,"y":396},{"name":"Lesotho","iso3":"LSO","region":"Southern Africa","status":"strategy","actor":"Guidelines pathway","summary":"Lesotho is named as having COP Guidelines from 2024, but not primary legislative backing.","instruments":["COP Guidelines 2024"],"flags":["Guidelines only","Transposed standards","No statute"],"evidence":"The article uses Lesotho to show that guideline growth does not equal legislative permanence.","opportunity":"Use the guideline base as a launch point for stronger legal consolidation.","articleRefs":["4.1 The Numbers, paragraph 21","4.2 The Patterns, paragraph 27"],"x":516,"y":596},{"name":"Libya","iso3":"LBY","region":"North Africa","status":"none","actor":"No identifiable framework","summary":"The brief identifies Libya as having no identifiable child online safety framework in any form.","instruments":["No identifiable framework named in the brief"],"flags":["No framework","Gap state","North Africa"],"evidence":"Libya is explicitly listed in the article’s no-framework category.","opportunity":"Establish baseline policy framing before debating design details.","articleRefs":["4.1 The Numbers, paragraph 23"],"x":430,"y":178},{"name":"Malawi","iso3":"MWI","region":"Southern Africa","status":"strategy","actor":"MACRA / draft strategy","summary":"Malawi is cited as having a draft strategy and a MACRA COP initiative, but no tangible legislative backing yet.","instruments":["Draft National COP Strategy","MACRA COP Initiative"],"flags":["Draft strategy","Regulatory initiative","Implementation gap"],"evidence":"The brief places Malawi alongside Zambia and Lesotho in the strategy-first category.","opportunity":"Advance from strategy language to enforceable obligations and implementation mechanisms.","articleRefs":["4.1 The Numbers, paragraph 21","4.2 The Patterns, paragraph 27"],"x":534,"y":539},{"name":"Mali","iso3":"MLI","region":"West Africa","status":"general","actor":"DPA directive","summary":"Mali’s 2024 children’s data directive is cited as an example of DPA-led movement in Francophone Africa before dedicated COP legislation exists.","instruments":["Children’s data directive 2024"],"flags":["DPA entry point","Francophone momentum","General framework"],"evidence":"The brief uses Mali both in the Francophone acceleration pattern and as a strategic DPA-entry-point precedent.","opportunity":"Push children’s data rules further into design obligations, transparency, and profiling limits.","articleRefs":["4.2 The Patterns, paragraphs 26, 28","7.1 Civil Society Organisations, paragraph 62"],"x":239,"y":315},{"name":"Mauritius","iso3":"MUS","region":"Southern Africa","status":"binding","actor":"ICT Authority","summary":"Mauritius is identified as having a telecommunications directive implementing binding child online protection measures in 2025.","instruments":["Telecommunication Directive 4 of 2025"],"flags":["Binding directive","Telecom regulation","Provider obligations"],"evidence":"The brief places Mauritius inside the enacted or binding-instrument category.","opportunity":"Surface Mauritius as a model for regulator-led implementation within licensed provider ecosystems.","articleRefs":["4.1 The Numbers, paragraph 19"],"x":667,"y":613},{"name":"Morocco","iso3":"MAR","region":"North Africa","status":"general","actor":"General legal coverage","summary":"Morocco is named among the significant digital economies that still rely on broader cybercrime, penal, or data protection law rather than dedicated COP legislation.","instruments":["General cybercrime, penal, or data protection coverage referenced in the brief"],"flags":["General framework","Named digital economy","No dedicated COP framework"],"evidence":"The article explicitly includes Morocco in the general-law category rather than the dedicated COP categories.","opportunity":"Use Morocco as a North African domestication target for dedicated child online protection obligations.","articleRefs":["4.1 The Numbers, paragraph 22"]},{"name":"Nigeria","iso3":"NGA","region":"West Africa","status":"draft","actor":"National Assembly / coalition pressure","summary":"The brief identifies Nigeria’s Child Online Access Protection Bill HB.244 as having passed the House in December 2025 and awaiting Senate action, while noting Nigeria still lacks standalone COP law.","instruments":["Child Online Access Protection Bill HB.244"],"flags":["Draft bill","Coalition model","High-feasibility priority"],"evidence":"Nigeria is the brief’s clearest high-impact and high-feasibility advocacy target.","opportunity":"Push the bill through the Senate and connect it to implementation architecture early.","articleRefs":["Executive Summary, paragraph 9","4.1 The Numbers, paragraph 20","4.2 The Patterns, paragraph 25","6.2 Barriers, paragraphs 53-54","7.1 Civil Society Organisations, paragraphs 59-60"],"x":315,"y":352},{"name":"Rwanda","iso3":"RWA","region":"East Africa","status":"draft","actor":"Ministerial and policy pathway","summary":"Rwanda is described as having a ministerial order, a five-year action plan, and primary COP legislation reportedly under consideration, with Budapest Convention accession in January 2025.","instruments":["Ministerial Order on Child Online Protection 2024","Five-Year Action Plan","Budapest Convention accession January 2025"],"flags":["Draft pathway","Parental consent","Action plan"],"evidence":"The brief treats Rwanda as part of the next legislative tier behind current binding leaders.","opportunity":"Support finalisation of primary legislation while protecting the rights-respecting design the article calls for.","articleRefs":["4.1 The Numbers, paragraph 20","5. Structural Gaps, paragraph 34"],"x":533,"y":417},{"name":"Senegal","iso3":"SEN","region":"West Africa","status":"general","actor":"DPA directive","summary":"Senegal is used as a key example of data protection authorities issuing children’s data directives in 2024.","instruments":["Children’s data directive 2024"],"flags":["DPA entry point","Francophone momentum","General framework"],"evidence":"The article highlights Senegal as proof that data protection authorities can become practical COP actors before dedicated laws exist.","opportunity":"Expand DPA-led rule-setting as a bridge toward stronger national frameworks.","articleRefs":["4.1 The Numbers, paragraph 22","4.2 The Patterns, paragraphs 26, 28","7.1 Civil Society Organisations, paragraph 62"],"x":213,"y":320},{"name":"South Africa","iso3":"ZAF","region":"Southern Africa","status":"general","actor":"Information Regulator / fragmented advanced framework","summary":"South Africa is described as having an advanced but fragmented framework and still lacking dedicated standalone COP legislation.","instruments":["POPIA","Children’s Act","Cybercrimes Act","Information Regulator participation in age-assurance initiatives"],"flags":["Advanced framework","DPA involvement","Age assurance debate"],"evidence":"The brief argues South Africa is strong in substance but still vulnerable because protections remain fragmented.","opportunity":"Advocate for a standalone law that consolidates existing protections into a child-specific framework.","articleRefs":["Executive Summary, paragraph 9","4.2 The Patterns, paragraph 28","5. Structural Gaps, paragraph 34","6.1 Drivers, paragraph 48"],"x":489,"y":612},{"name":"Tanzania","iso3":"TZA","region":"East Africa","status":"binding","actor":"Parliament / child protection law reform","summary":"The article highlights Tanzania’s 2024 Child Protection Laws Miscellaneous Amendments Act as a core acceleration point.","instruments":["Child Protection Laws Miscellaneous Amendments Act 2024"],"flags":["Legislative amendment","Child protection law","Binding coverage"],"evidence":"Tanzania is used in the brief as a leading example of dedicated legislative movement during 2023 to 2025.","opportunity":"Position Tanzania as evidence that targeted statutory amendments can move faster than entirely new frameworks.","articleRefs":["Executive Summary, paragraph 8","4.1 The Numbers, paragraph 19","4.2 The Patterns, paragraph 25"],"x":544,"y":434},{"name":"Uganda","iso3":"UGA","region":"East Africa","status":"general","actor":"General law / constitutional risk","summary":"Uganda is cited both as a significant digital economy in the general-law category and as a warning that poorly designed online safety law can trigger constitutional and rights concerns.","instruments":["Computer Misuse (Amendment) Act 2022"],"flags":["General framework","Rights risk","Judicial pushback"],"evidence":"The article references a Constitutional Court decision from March 2026 striking down several sections of the Computer Misuse (Amendment) Act 2022.","opportunity":"Use Uganda to insist on proportionality, scope limits, and explicit safeguards in future COP legislation.","articleRefs":["4.1 The Numbers, paragraph 22","6.2 Barriers, paragraphs 53-54","7.1 Civil Society Organisations, paragraph 64"],"x":513,"y":411},{"name":"Zambia","iso3":"ZMB","region":"Southern Africa","status":"strategy","actor":"ZICTA / strategy launch","summary":"Zambia launched a National Child Online Protection Strategy for 2025 to 2029 without corresponding primary legislation.","instruments":["National COP Strategy 2025 to 2029"],"flags":["Strategy only","Implementation stage","National regulator"],"evidence":"The brief treats Zambia as significant movement, but still below the threshold of durable legislative coverage.","opportunity":"Support implementation while advocating legislative anchoring.","articleRefs":["4.1 The Numbers, paragraph 21","4.2 The Patterns, paragraph 27","6.1 Drivers, paragraph 48"],"x":500,"y":533},{"name":"Zimbabwe","iso3":"ZWE","region":"Southern Africa","status":"draft","actor":"Policy development","summary":"Zimbabwe is identified as having a draft Child Online Protection Policy under development.","instruments":["Draft Child Online Protection Policy"],"flags":["Draft policy","Emerging pathway","Southern Africa"],"evidence":"The article places Zimbabwe in the draft-policy category rather than the enacted or strategy-only categories.","opportunity":"Push for a transition from policy drafting to legal and institutional backing.","articleRefs":["4.1 The Numbers, paragraph 20"],"x":548,"y":562}],"countryMentions":[{"name":"South Sudan","iso3":"SSD","mentionType":"rights-risk precedent","summary":"South Sudan is cited as a warning that poorly designed cybercrime or online-safety legislation can be weaponised against rights and civic space. The brief references criticism of the Cybercrimes Act 2026 for vague definitions of false information and undesirable content.","articleRefs":["5. Structural Gaps, paragraph 39","6.2 Barriers, paragraphs 53-54","7.1 Civil Society Organisations, paragraph 64"]}],"metrics":{"summary":{"statesReviewed":55,"topTierBindingCount":5,"accelerationPeriod":{"label":"2023-2025","startYear":2023,"endYear":2025}},"aggregateCoverage":[{"key":"binding","label":"Binding COP instruments","count":5,"detail":"The article identifies five countries with enacted dedicated laws, regulations, or binding COP instruments."},{"key":"draft","label":"Draft pathways","count":3,"detail":"Nigeria, Rwanda, and Zimbabwe are described as having draft bill or policy pathways in motion."},{"key":"strategy","label":"Strategy or guidelines only","count":3,"detail":"Zambia, Malawi, and Lesotho are identified as having dedicated strategies or guidelines without primary legislative backing."},{"key":"general","label":"General legal coverage","count":39,"detail":"The article states that over thirty countries rely on broader cybercrime, penal, or data protection frameworks with only partial relevance."},{"key":"none","label":"No identifiable framework","count":5,"detail":"Eritrea, Libya, Gambia, Guinea-Bissau, and Burundi are identified as having no identifiable framework in the brief."}],"regionalReadiness":{"available":true,"articleBacked":false,"derived":true,"methodology":"The article proposes an AU COP Policy implementation scorecard covering legislative adoption, institutional capacity, enforcement activities, and child participation metrics. It does not publish regional readiness scores. The values below are a transparent derived signal from the article's named country classifications only, using a simple scale of binding=100, draft=75, strategy=50, general=25, none=0.","dimensions":["Legislative adoption","Institutional capacity","Enforcement activities","Child participation metrics"],"values":[{"region":"Central Africa","score":62.5,"sampleSize":2},{"region":"Southern Africa","score":57.1,"sampleSize":7},{"region":"East Africa","score":43.8,"sampleSize":8},{"region":"West Africa","score":35.7,"sampleSize":7},{"region":"North Africa","score":18.8,"sampleSize":4}],"sourceNote":"These values are inferred from article-named states because the supplied brief text does not provide regional score outputs."}},"timeline":[{"year":"2020","title":"ITU COP guidelines","accent":"general","detail":"Continental and international baseline referenced in the brief."},{"year":"Feb 2024","title":"AU COP Policy adopted","accent":"binding","detail":"The brief identifies the African Union Child Online Safety and Empowerment Policy as the key continental policy trigger."},{"year":"2024","title":"Tanzania amendments and Ghana framework","accent":"binding","detail":"The brief groups Tanzania's amendments and Ghana's framework work inside the acceleration period."},{"year":"2024","title":"Mali and Senegal DPA directives","accent":"draft","detail":"The brief uses these directives to show data protection authorities acting before dedicated COP laws exist."},{"year":"2025","title":"Kenya guidelines and Zambia strategy","accent":"draft","detail":"The brief treats Kenya and Zambia as important 2025 implementation-stage examples."},{"year":"2026","title":"Gabon ordinance and rights-risk warnings","accent":"none","detail":"The brief uses Gabon and later rights-risk cases to show the next phase of the debate."}],"patterns":[{"eyebrow":"Pattern 01","title":"The 2023 to 2025 period produced more dedicated COP action than any prior period cited in the brief.","body":"The article ties this acceleration to the February 2024 AU policy and stronger UNICEF and ITU engagement. Tanzania, Kenya, and Nigeria are the clearest examples of this concentration effect."},{"eyebrow":"Pattern 02","title":"Francophone Africa is narrowing the policy lag through directives, ordinances, and law-level instruments.","body":"Cameroon, Senegal, Mali, Djibouti, and Gabon are used to show that movement is no longer concentrated only in Anglophone jurisdictions."},{"eyebrow":"Pattern 03","title":"Data protection authorities are becoming practical entry points where dedicated COP law is absent.","body":"The article specifically highlights directives from Mali and Senegal, action from Kenya’s ODPC, and South Africa’s regulator engagement on age assurance."},{"eyebrow":"Pattern 04","title":"Continental policy without national domestication remains the brief’s central implementation risk.","body":"The article uses the Malabo Convention as a cautionary precedent: adoption alone does not produce enforcement or durable domestic alignment."}],"gaps":[{"title":"Platform accountability deficit","severity":5,"body":"Across most of the continent, major platforms operate without binding child-safety obligations designed for local regulatory conditions.","where":"The brief points to social media, messaging, gaming, and AI-powered services as the highest-risk platform domains.","test":"A stronger framework needs proportionate platform duties, enforceable obligations, and clear oversight of trust and safety practices."},{"title":"Age verification and child-specific data protection","severity":4,"body":"The article argues that child protection online is structurally weak when age assurance, consent standards, and design obligations remain under-specified.","where":"Kenya, Gabon, South Africa, and Rwanda are cited as important but uneven reference points.","test":"A stronger framework needs technical standards, child-specific design limits, transparency requirements, and profiling restrictions."},{"title":"Enforcement and institutional capacity deficit","severity":5,"body":"The brief emphasizes that legal text is only as effective as the institutions tasked with investigation, prosecution, and cross-border coordination.","where":"Digital forensic capability, judicial competence, and rights-respecting enforcement remain unevenly distributed.","test":"A stronger framework needs trained investigators, prosecutors, judges, and durable cross-border cooperation mechanisms."},{"title":"Participation and evidence deficit","severity":4,"body":"Children remain largely absent from policy design, and the evidence base remains shallow outside a limited set of regional studies.","where":"The brief specifically cites the Disrupting Harm studies as the strongest evidence base, but limited in scope.","test":"A stronger framework needs structured child participation, community consultation, and repeated Africa-specific research cycles."},{"title":"Digital literacy and prevention","severity":3,"body":"The article argues that legal frameworks remain reactive unless prevention, education, and community capacity are built into the policy response.","where":"Several strategies mention literacy, but systematic curriculum integration remains largely absent.","test":"A stronger framework needs child-facing, parent-facing, and educator-facing digital safety programming with institutional backing."}],"driversBarriers":{"drivers":[{"title":"International organisations","body":"UNICEF, the Council of Europe, and the ITU are described as catalytic actors across countries with advanced frameworks."},{"title":"Institutional champions","body":"The article identifies regulators and agencies in Ghana, Kenya, Cameroon, Zambia, and South Africa as examples of mandate-backed champions."},{"title":"Coalition pressure","body":"Coalition-based advocacy and technical partnerships are described as more effective than generic appeals to government."}],"barriers":[{"title":"Competing legislative priorities","body":"The brief argues COP often loses political bandwidth unless it is framed as a child protection, public health, and productivity issue."},{"title":"Regulatory capture and platform lobbying","body":"Platform accountability provisions are identified as some of the most politically contested parts of digital legislation."},{"title":"Surveillance and rights concerns","body":"Uganda, Nigeria, and South Sudan are used as warnings that poorly designed online safety law can be weaponised against rights and civic space."}]},"recommendations":[{"id":"civil-society","label":"Civil Society","items":[{"title":"Prioritise domestication of the AU COP Policy","rationale":"The article treats the AU policy as the primary continental mandate that can be translated into national legal architecture.","outcome":"Country-specific legislative proposals anchored in existing national institutions."},{"title":"Build a national COP coalition modelled on Nigeria’s approach","rationale":"The brief argues coalition pressure and technical partnership are key ingredients in moving bills and implementation agendas.","outcome":"Broader political support and stronger draft-stage influence."},{"title":"Use DPAs as strategic entry points","rationale":"Mali and Senegal show that children’s data directives can move even before dedicated COP laws are enacted.","outcome":"Immediate rule-setting on data practices while primary law catches up."},{"title":"Insist on rights-respecting design","rationale":"The brief uses Uganda and South Sudan as direct warnings against vague, overbroad, or abuse-prone legal language.","outcome":"More durable legislation with explicit safeguards for expression, access, and oversight."}]},{"id":"au-recs","label":"AU / RECs","items":[{"title":"Develop an AU COP Policy implementation scorecard","rationale":"The article argues that public scorekeeping would create competitive pressure and reveal laggards.","outcome":"A repeatable continental monitoring mechanism."},{"title":"Leverage RECs for sub-regional harmonisation","rationale":"The brief specifically points to ECOWAS, the EAC, and SADC as institutional routes for reducing regulatory arbitrage.","outcome":"Stronger regional standards and less fragmented platform oversight."}]},{"id":"donors","label":"Donors","items":[{"title":"Fund implementation, not only legislation","rationale":"The brief is explicit that implementation capacity is where frameworks often fail.","outcome":"Digital forensics, training, prosecutorial capacity, and judicial readiness."},{"title":"Commission Africa-specific evidence","rationale":"The article says the evidence base remains too narrow, especially beyond Eastern and Southern Africa.","outcome":"A broader and more current understanding of harms, including AI-generated risks and sextortion."},{"title":"Support platform accountability mechanisms","rationale":"Regulators need technical capacity to evaluate algorithms, moderation, and age-verification systems.","outcome":"More credible oversight of platform conduct in African contexts."}]},{"id":"platforms","label":"Platforms","items":[{"title":"Apply global standards uniformly","rationale":"The brief argues African users should not wait for local regulatory mandates before receiving stronger child-safety features.","outcome":"Immediate uplift in baseline platform protections across African markets."},{"title":"Invest in African-language content moderation","rationale":"The article treats linguistic under-capacity as a major weakness in current trust and safety operations.","outcome":"Better moderation quality and local relevance in harm detection and response."}]}],"priorities":[{"title":"Nigeria","x":78,"y":22,"size":28,"ring":"orange","body":"The brief treats Nigeria as high impact and high feasibility because coalition infrastructure exists and the bill already has visible legislative momentum.","action":"Push Senate passage of HB.244 and define implementation architecture before enactment."},{"title":"Kenya","x":70,"y":33,"size":24,"ring":"blue","body":"Kenya is framed as a strong implementation case where binding guidelines exist but consolidation into primary legislation remains unfinished.","action":"Translate guideline strength into consolidated primary legislation with child-specific statutory duties."},{"title":"South Africa","x":62,"y":38,"size":24,"ring":"blue","body":"South Africa is positioned as a high-value target for consolidation because multiple protections already exist across fragmented laws.","action":"Consolidate POPIA, Cybercrimes Act, and child-protection provisions into a dedicated COP framework."},{"title":"DPA engagement","x":58,"y":28,"size":22,"ring":"blue","body":"The brief recommends using functioning data protection authorities as practical rule-setting entry points while broader law develops.","action":"Use active DPAs to issue child-data directives while broader legislative reform is still pending."},{"title":"Rwanda","x":48,"y":47,"size":20,"ring":"orange","body":"Rwanda sits in the high-impact and medium-feasibility tier because ministerial and planning infrastructure already exists.","action":"Move from ministerial order and action plan into primary legislation with rights-respecting design controls."},{"title":"Malawi","x":40,"y":55,"size":18,"ring":"orange","body":"The brief recommends supporting MACRA and moving from strategy work to associated regulations and stronger legal backing.","action":"Back MACRA’s strategy work with enforceable regulations and stronger legislative anchoring."},{"title":"Ethiopia","x":35,"y":42,"size":20,"ring":"red","body":"Ethiopia is framed as a strategic medium-feasibility target, with the February 2026 CRC recommendations providing leverage.","action":"Use the February 2026 CRC recommendations to open a dedicated child online safety reform pathway."},{"title":"ECOWAS","x":28,"y":50,"size":20,"ring":"blue","body":"The brief recommends an ECOWAS directive as a route to sub-regional harmonisation and reduced regulatory arbitrage.","action":"Develop an ECOWAS-level directive to reduce fragmentation and regulatory arbitrage."},{"title":"Zambia","x":52,"y":58,"size":18,"ring":"orange","body":"Zambia is identified as an implementation-stage jurisdiction where strategy backing should evolve into legislation.","action":"Convert implementation momentum from the 2025 strategy into legislative backing."},{"title":"AU scorecard","x":18,"y":78,"size":20,"ring":"blue","body":"A public AU implementation scorecard is treated as a long-term structural tool for pressure, benchmarking, and visibility.","action":"Publish a repeatable AU scorecard that benchmarks domestication and enforcement readiness."},{"title":"Evidence generation","x":34,"y":84,"size":22,"ring":"orange","body":"The brief calls for broader Francophone, Lusophone, and North African evidence generation to close the research gap.","action":"Commission new evidence cycles beyond Eastern and Southern Africa, especially in Francophone and North African states."},{"title":"Model legislation","x":54,"y":88,"size":20,"ring":"blue","body":"Continental model legislation is treated as a long-term structural asset for consistency and rights-respecting design.","action":"Draft model legislation that standardizes child-safety duties while preserving rights safeguards."},{"title":"Rights-impact reviews","x":74,"y":82,"size":18,"ring":"red","body":"The brief recommends rights-impact assessments of recent cyber laws to identify misuse and overbreadth risks early.","action":"Run rights-impact reviews on recent cyber laws before abusive provisions become entrenched."}],"methodNotes":[{"title":"Classification note","body":"This platform preserves the brief’s exact aggregate counts. The brief itself distinguishes between standalone law and robust multi-layered frameworks in a few countries, but also groups five jurisdictions into a top-tier binding or enacted category for summary purposes."},{"title":"Scope note","body":"The article refers to both 54 AU member states in the state-of-play section and 55 countries in the executive summary. The interface follows the headline figure of 55 AU states reviewed and flags the inconsistency here rather than smoothing it away."},{"title":"Map note","body":"The interactive map covers the countries explicitly named in the supplied brief text. The companion country-by-country mapping referenced by the brief was not present in the workspace, so unnamed jurisdictions are represented through the exact aggregate counts rather than individually classified on the map."},{"title":"Source note","body":"All content on this page is derived from the supplied DIID policy brief text and its cited examples. No additional country classifications were inferred beyond what the brief explicitly states."}]}</script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Classification note",
+    "body": "This platform preserves the brief’s exact aggregate counts. The brief itself distinguishes between standalone law and robust multi-layered frameworks in a few countries, but also groups five jurisdictions into a top-tier binding or enacted category for summary purposes."
+  },
+  {
+    "title": "Scope note",
+    "body": "The article refers to both 54 AU member states in the state-of-play section and 55 countries in the executive summary. The interface follows the headline figure of 55 AU states reviewed and flags the inconsistency here rather than smoothing it away."
+  },
+  {
+    "title": "Map note",
+    "body": "The interactive map covers the countries explicitly named in the supplied brief text. The companion country-by-country mapping referenced by the brief was not present in the workspace, so unnamed jurisdictions are represented through the exact aggregate counts rather than individually classified on the map."
+  },
+  {
+    "title": "Source note",
+    "body": "All content on this page is derived from the supplied DIID policy brief text and its cited examples. No additional country classifications were inferred beyond what the brief explicitly states."
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/country-mentions.schema.json",
+  "title": "Country Mentions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "iso3", "mentionType", "summary", "articleRefs"],
+    "properties": {
+      "name": { "type": "string" },
+      "iso3": {
+        "type": "string",
+        "pattern": "^[A-Z]{3}$"
+      },
+      "mentionType": { "type": "string" },
+      "summary": { "type": "string" },
+      "articleRefs": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}

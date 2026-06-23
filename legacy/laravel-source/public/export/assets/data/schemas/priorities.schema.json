@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/priorities.schema.json",
+  "title": "Priorities",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "x", "y", "size", "ring", "body", "action"],
+    "properties": {
+      "title": { "type": "string" },
+      "x": { "type": "number" },
+      "y": { "type": "number" },
+      "size": { "type": "number" },
+      "ring": {
+        "type": "string",
+        "enum": ["blue", "orange", "red"]
+      },
+      "body": { "type": "string" },
+      "action": { "type": "string" }
+    }
+  }
+}

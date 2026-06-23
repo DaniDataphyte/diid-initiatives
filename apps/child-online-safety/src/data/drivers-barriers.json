@@ -1,0 +1,30 @@
+{
+  "drivers": [
+    {
+      "title": "International organisations",
+      "body": "UNICEF, the Council of Europe, and the ITU are described as catalytic actors across countries with advanced frameworks."
+    },
+    {
+      "title": "Institutional champions",
+      "body": "The article identifies regulators and agencies in Ghana, Kenya, Cameroon, Zambia, and South Africa as examples of mandate-backed champions."
+    },
+    {
+      "title": "Coalition pressure",
+      "body": "Coalition-based advocacy and technical partnerships are described as more effective than generic appeals to government."
+    }
+  ],
+  "barriers": [
+    {
+      "title": "Competing legislative priorities",
+      "body": "The brief argues COP often loses political bandwidth unless it is framed as a child protection, public health, and productivity issue."
+    },
+    {
+      "title": "Regulatory capture and platform lobbying",
+      "body": "Platform accountability provisions are identified as some of the most politically contested parts of digital legislation."
+    },
+    {
+      "title": "Surveillance and rights concerns",
+      "body": "Uganda, Nigeria, and South Sudan are used as warnings that poorly designed online safety law can be weaponised against rights and civic space."
+    }
+  ]
+}

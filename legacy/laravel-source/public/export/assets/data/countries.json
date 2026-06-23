@@ -1,0 +1,672 @@
+[
+  {
+    "name": "Algeria",
+    "iso3": "DZA",
+    "region": "North Africa",
+    "status": "general",
+    "actor": "General legal coverage",
+    "summary": "Algeria is named among the significant digital economies that still rely on broader cybercrime, penal, or data protection law rather than a dedicated child online protection framework.",
+    "instruments": [
+      "General cybercrime, penal, or data protection coverage referenced in the brief"
+    ],
+    "flags": [
+      "General framework",
+      "Named digital economy",
+      "No dedicated COP framework"
+    ],
+    "evidence": "The article explicitly includes Algeria in the large general-law category rather than the dedicated COP categories.",
+    "opportunity": "Use domestication advocacy to move from tangential legal coverage toward a child-specific framework.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22"
+    ]
+  },
+  {
+    "name": "Burundi",
+    "iso3": "BDI",
+    "region": "East Africa",
+    "status": "none",
+    "actor": "No identifiable framework",
+    "summary": "The brief identifies Burundi as having no identifiable legislation, regulation, or policy framework on child online safety.",
+    "instruments": [
+      "No identifiable framework named in the brief"
+    ],
+    "flags": [
+      "No framework",
+      "Gap state",
+      "East Africa"
+    ],
+    "evidence": "Burundi is one of the five no-framework jurisdictions named directly in the article.",
+    "opportunity": "Link agenda-setting to AU domestication pressure and sub-regional standards.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 23"
+    ],
+    "x": 521,
+    "y": 434
+  },
+  {
+    "name": "Cameroon",
+    "iso3": "CMR",
+    "region": "Central Africa",
+    "status": "binding",
+    "actor": "Parliament / ANTIC",
+    "summary": "Cameroon is treated as part of the top-tier binding group while the brief also notes that its framework is robust and multi-layered rather than a standalone COP statute.",
+    "instruments": [
+      "Charter on Child Online Protection in Cameroon - Law No. 2023/009 of July 25, 2023"
+    ],
+    "flags": [
+      "Top-tier binding group",
+      "Francophone momentum",
+      "Institutional champion"
+    ],
+    "evidence": "The brief names Cameroon both in the top-tier count and in the Francophone acceleration pattern.",
+    "opportunity": "Use Cameroon as a Francophone peer case for sub-regional harmonisation and institutional champion strategy.",
+    "articleRefs": [
+      "Executive Summary, paragraph 8",
+      "4.1 The Numbers, paragraph 19",
+      "4.2 The Patterns, paragraph 26",
+      "6.1 Drivers, paragraph 48"
+    ],
+    "x": 360,
+    "y": 366
+  },
+  {
+    "name": "Cote d'Ivoire",
+    "iso3": "CIV",
+    "region": "West Africa",
+    "status": "general",
+    "actor": "General legal coverage",
+    "summary": "Cote d'Ivoire is named among significant digital economies that still rely on broader cybercrime, penal, or data protection law without a dedicated COP framework.",
+    "instruments": [
+      "General cybercrime, penal, or data protection coverage referenced in the brief"
+    ],
+    "flags": [
+      "General framework",
+      "Named digital economy",
+      "No dedicated COP framework"
+    ],
+    "evidence": "The brief explicitly includes Cote d'Ivoire in the general-law category rather than the dedicated COP categories.",
+    "opportunity": "Frame Cote d'Ivoire as a priority domestication target inside broader West African harmonisation work.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22"
+    ]
+  },
+  {
+    "name": "Djibouti",
+    "iso3": "DJI",
+    "region": "East Africa",
+    "status": "general",
+    "actor": "Digital Code pathway",
+    "summary": "Djibouti is cited as having adopted a Digital Code in 2025, signalling legislative movement in Francophone Africa without a dedicated COP framework.",
+    "instruments": [
+      "Digital Code 2025"
+    ],
+    "flags": [
+      "General framework",
+      "Francophone development",
+      "Digital code"
+    ],
+    "evidence": "The article uses Djibouti to show that Francophone legal movement is broadening beyond the earlier leaders.",
+    "opportunity": "Press broad digital-code architecture toward child-specific obligations rather than generic digital governance.",
+    "articleRefs": [
+      "4.2 The Patterns, paragraph 26"
+    ],
+    "x": 539,
+    "y": 331
+  },
+  {
+    "name": "Egypt",
+    "iso3": "EGY",
+    "region": "North Africa",
+    "status": "general",
+    "actor": "General legal coverage",
+    "summary": "Egypt is named among the significant digital economies that rely on general cybercrime, penal, or data protection laws with only tangential relevance to child online safety.",
+    "instruments": [
+      "General cybercrime, penal, or data protection coverage referenced in the brief"
+    ],
+    "flags": [
+      "General framework",
+      "Named digital economy",
+      "No dedicated COP framework"
+    ],
+    "evidence": "The article explicitly places Egypt in the general-law category rather than the dedicated COP categories.",
+    "opportunity": "Use Egypt as a high-visibility domestication target given its scale and regional influence.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22"
+    ]
+  },
+  {
+    "name": "Eritrea",
+    "iso3": "ERI",
+    "region": "East Africa",
+    "status": "none",
+    "actor": "No identifiable framework",
+    "summary": "The article identifies Eritrea as having no identifiable legislation, regulation, or policy framework on child online safety.",
+    "instruments": [
+      "No identifiable framework named in the brief"
+    ],
+    "flags": [
+      "No framework",
+      "Gap state",
+      "Priority watch"
+    ],
+    "evidence": "Eritrea is one of five countries the brief places in the no-framework category.",
+    "opportunity": "Use AU pressure to establish a minimum policy foothold.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 23"
+    ],
+    "x": 541,
+    "y": 299
+  },
+  {
+    "name": "Eswatini",
+    "iso3": "SWZ",
+    "region": "Southern Africa",
+    "status": "strategy",
+    "actor": "Guidelines pathway",
+    "summary": "Eswatini is cited as having five-part COP Guidelines, indicating policy growth without the permanence or enforcement teeth of primary legislation.",
+    "instruments": [
+      "Five-part COP Guidelines"
+    ],
+    "flags": [
+      "Guidelines only",
+      "Policy expansion",
+      "No primary legislation"
+    ],
+    "evidence": "The article lists Eswatini among the jurisdictions expanding the guideline-and-strategy layer rather than the legislative layer.",
+    "opportunity": "Use the guideline base to press for legislative anchoring and implementation accountability.",
+    "articleRefs": [
+      "4.2 The Patterns, paragraph 27"
+    ]
+  },
+  {
+    "name": "Ethiopia",
+    "iso3": "ETH",
+    "region": "East Africa",
+    "status": "general",
+    "actor": "General legal coverage",
+    "summary": "Ethiopia is named as a significant digital economy that still relies on broader legal frameworks rather than dedicated COP instruments.",
+    "instruments": [
+      "General cybercrime, penal, or data protection coverage referenced in the brief"
+    ],
+    "flags": [
+      "General framework",
+      "Named digital economy",
+      "Priority target"
+    ],
+    "evidence": "The brief places Ethiopia in the large general-law category and later uses it as a strategic advocacy focus.",
+    "opportunity": "Use high-level domestication pressure and CRC-linked advocacy to move toward dedicated child online protection coverage.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22"
+    ],
+    "x": 527,
+    "y": 360
+  },
+  {
+    "name": "Gabon",
+    "iso3": "GAB",
+    "region": "Central Africa",
+    "status": "general",
+    "actor": "Age verification ordinance",
+    "summary": "Gabon\u2019s 2026 Social Media Age Verification Ordinance is cited as a notable Francophone development on age assurance without full dedicated COP coverage.",
+    "instruments": [
+      "Social Media Age Verification Ordinance 2026"
+    ],
+    "flags": [
+      "Age verification",
+      "Francophone development",
+      "General framework"
+    ],
+    "evidence": "The brief uses Gabon both in the Francophone pattern and the age-verification gap discussion.",
+    "opportunity": "Push age-assurance debates toward rights-respecting standards, transparency, and child-specific design obligations.",
+    "articleRefs": [
+      "4.2 The Patterns, paragraph 26",
+      "5. Structural Gaps, paragraph 34"
+    ],
+    "x": 372,
+    "y": 425
+  },
+  {
+    "name": "Gambia",
+    "iso3": "GMB",
+    "region": "West Africa",
+    "status": "none",
+    "actor": "No identifiable framework",
+    "summary": "The article identifies Gambia as having no identifiable child online safety legislation, regulation, or policy framework.",
+    "instruments": [
+      "No identifiable framework named in the brief"
+    ],
+    "flags": [
+      "No framework",
+      "Gap state",
+      "West Africa"
+    ],
+    "evidence": "Gambia is named directly in the no-framework group.",
+    "opportunity": "Build the case for a baseline child-protection and digital-rights entry point.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 23"
+    ],
+    "x": 205,
+    "y": 328
+  },
+  {
+    "name": "Ghana",
+    "iso3": "GHA",
+    "region": "West Africa",
+    "status": "binding",
+    "actor": "Cyber Security Authority",
+    "summary": "The brief cites Ghana as having a Cybersecurity Act with child-specific provisions and a National COP Framework issued in 2024.",
+    "instruments": [
+      "Cybersecurity Act 2020 with child-specific provisions",
+      "National Child Online Protection Framework 2024"
+    ],
+    "flags": [
+      "Binding coverage",
+      "National framework",
+      "Institutional champion"
+    ],
+    "evidence": "Ghana is one of the jurisdictions the brief treats as having binding child online safety coverage.",
+    "opportunity": "Use Ghana as a benchmark for institutional mandate, implementation design, and regional peer pressure.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 19",
+      "6.1 Drivers, paragraph 48"
+    ],
+    "x": 286,
+    "y": 392
+  },
+  {
+    "name": "Guinea-Bissau",
+    "iso3": "GNB",
+    "region": "West Africa",
+    "status": "none",
+    "actor": "No identifiable framework",
+    "summary": "Guinea-Bissau is listed as having no identifiable child online safety framework in the brief.",
+    "instruments": [
+      "No identifiable framework named in the brief"
+    ],
+    "flags": [
+      "No framework",
+      "Gap state",
+      "West Africa"
+    ],
+    "evidence": "Guinea-Bissau appears in the article\u2019s no-framework category.",
+    "opportunity": "Use regional harmonisation arguments to build a first formal framework.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 23"
+    ],
+    "x": 198,
+    "y": 346
+  },
+  {
+    "name": "Kenya",
+    "iso3": "KEN",
+    "region": "East Africa",
+    "status": "binding",
+    "actor": "Communications Authority / ODPC",
+    "summary": "Kenya\u2019s Industry Guidelines for Child Online Protection are treated as binding on licensed ICT providers, even though the brief also notes the absence of a standalone COP law.",
+    "instruments": [
+      "Industry Guidelines for Child Online Protection and Safety in Kenya",
+      "ODPC enforcement activity relating to children\u2019s data"
+    ],
+    "flags": [
+      "Binding guidelines",
+      "Age verification",
+      "DPA involvement"
+    ],
+    "evidence": "The brief treats Kenya as one of the strongest multi-layered systems while still arguing for consolidation into primary legislation.",
+    "opportunity": "Support implementation and use Kenya to test what a future consolidated COP law should absorb.",
+    "articleRefs": [
+      "Executive Summary, paragraph 8",
+      "4.1 The Numbers, paragraph 19",
+      "4.2 The Patterns, paragraphs 25, 27, 28",
+      "5. Structural Gaps, paragraph 34",
+      "6.1 Drivers, paragraph 48"
+    ],
+    "x": 551,
+    "y": 396
+  },
+  {
+    "name": "Lesotho",
+    "iso3": "LSO",
+    "region": "Southern Africa",
+    "status": "strategy",
+    "actor": "Guidelines pathway",
+    "summary": "Lesotho is named as having COP Guidelines from 2024, but not primary legislative backing.",
+    "instruments": [
+      "COP Guidelines 2024"
+    ],
+    "flags": [
+      "Guidelines only",
+      "Transposed standards",
+      "No statute"
+    ],
+    "evidence": "The article uses Lesotho to show that guideline growth does not equal legislative permanence.",
+    "opportunity": "Use the guideline base as a launch point for stronger legal consolidation.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 21",
+      "4.2 The Patterns, paragraph 27"
+    ],
+    "x": 516,
+    "y": 596
+  },
+  {
+    "name": "Libya",
+    "iso3": "LBY",
+    "region": "North Africa",
+    "status": "none",
+    "actor": "No identifiable framework",
+    "summary": "The brief identifies Libya as having no identifiable child online safety framework in any form.",
+    "instruments": [
+      "No identifiable framework named in the brief"
+    ],
+    "flags": [
+      "No framework",
+      "Gap state",
+      "North Africa"
+    ],
+    "evidence": "Libya is explicitly listed in the article\u2019s no-framework category.",
+    "opportunity": "Establish baseline policy framing before debating design details.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 23"
+    ],
+    "x": 430,
+    "y": 178
+  },
+  {
+    "name": "Malawi",
+    "iso3": "MWI",
+    "region": "Southern Africa",
+    "status": "strategy",
+    "actor": "MACRA / draft strategy",
+    "summary": "Malawi is cited as having a draft strategy and a MACRA COP initiative, but no tangible legislative backing yet.",
+    "instruments": [
+      "Draft National COP Strategy",
+      "MACRA COP Initiative"
+    ],
+    "flags": [
+      "Draft strategy",
+      "Regulatory initiative",
+      "Implementation gap"
+    ],
+    "evidence": "The brief places Malawi alongside Zambia and Lesotho in the strategy-first category.",
+    "opportunity": "Advance from strategy language to enforceable obligations and implementation mechanisms.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 21",
+      "4.2 The Patterns, paragraph 27"
+    ],
+    "x": 534,
+    "y": 539
+  },
+  {
+    "name": "Mali",
+    "iso3": "MLI",
+    "region": "West Africa",
+    "status": "general",
+    "actor": "DPA directive",
+    "summary": "Mali\u2019s 2024 children\u2019s data directive is cited as an example of DPA-led movement in Francophone Africa before dedicated COP legislation exists.",
+    "instruments": [
+      "Children\u2019s data directive 2024"
+    ],
+    "flags": [
+      "DPA entry point",
+      "Francophone momentum",
+      "General framework"
+    ],
+    "evidence": "The brief uses Mali both in the Francophone acceleration pattern and as a strategic DPA-entry-point precedent.",
+    "opportunity": "Push children\u2019s data rules further into design obligations, transparency, and profiling limits.",
+    "articleRefs": [
+      "4.2 The Patterns, paragraphs 26, 28",
+      "7.1 Civil Society Organisations, paragraph 62"
+    ],
+    "x": 239,
+    "y": 315
+  },
+  {
+    "name": "Mauritius",
+    "iso3": "MUS",
+    "region": "Southern Africa",
+    "status": "binding",
+    "actor": "ICT Authority",
+    "summary": "Mauritius is identified as having a telecommunications directive implementing binding child online protection measures in 2025.",
+    "instruments": [
+      "Telecommunication Directive 4 of 2025"
+    ],
+    "flags": [
+      "Binding directive",
+      "Telecom regulation",
+      "Provider obligations"
+    ],
+    "evidence": "The brief places Mauritius inside the enacted or binding-instrument category.",
+    "opportunity": "Surface Mauritius as a model for regulator-led implementation within licensed provider ecosystems.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 19"
+    ],
+    "x": 667,
+    "y": 613
+  },
+  {
+    "name": "Morocco",
+    "iso3": "MAR",
+    "region": "North Africa",
+    "status": "general",
+    "actor": "General legal coverage",
+    "summary": "Morocco is named among the significant digital economies that still rely on broader cybercrime, penal, or data protection law rather than dedicated COP legislation.",
+    "instruments": [
+      "General cybercrime, penal, or data protection coverage referenced in the brief"
+    ],
+    "flags": [
+      "General framework",
+      "Named digital economy",
+      "No dedicated COP framework"
+    ],
+    "evidence": "The article explicitly includes Morocco in the general-law category rather than the dedicated COP categories.",
+    "opportunity": "Use Morocco as a North African domestication target for dedicated child online protection obligations.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22"
+    ]
+  },
+  {
+    "name": "Nigeria",
+    "iso3": "NGA",
+    "region": "West Africa",
+    "status": "draft",
+    "actor": "National Assembly / coalition pressure",
+    "summary": "The brief identifies Nigeria\u2019s Child Online Access Protection Bill HB.244 as having passed the House in December 2025 and awaiting Senate action, while noting Nigeria still lacks standalone COP law.",
+    "instruments": [
+      "Child Online Access Protection Bill HB.244"
+    ],
+    "flags": [
+      "Draft bill",
+      "Coalition model",
+      "High-feasibility priority"
+    ],
+    "evidence": "Nigeria is the brief\u2019s clearest high-impact and high-feasibility advocacy target.",
+    "opportunity": "Push the bill through the Senate and connect it to implementation architecture early.",
+    "articleRefs": [
+      "Executive Summary, paragraph 9",
+      "4.1 The Numbers, paragraph 20",
+      "4.2 The Patterns, paragraph 25",
+      "6.2 Barriers, paragraphs 53-54",
+      "7.1 Civil Society Organisations, paragraphs 59-60"
+    ],
+    "x": 315,
+    "y": 352
+  },
+  {
+    "name": "Rwanda",
+    "iso3": "RWA",
+    "region": "East Africa",
+    "status": "draft",
+    "actor": "Ministerial and policy pathway",
+    "summary": "Rwanda is described as having a ministerial order, a five-year action plan, and primary COP legislation reportedly under consideration, with Budapest Convention accession in January 2025.",
+    "instruments": [
+      "Ministerial Order on Child Online Protection 2024",
+      "Five-Year Action Plan",
+      "Budapest Convention accession January 2025"
+    ],
+    "flags": [
+      "Draft pathway",
+      "Parental consent",
+      "Action plan"
+    ],
+    "evidence": "The brief treats Rwanda as part of the next legislative tier behind current binding leaders.",
+    "opportunity": "Support finalisation of primary legislation while protecting the rights-respecting design the article calls for.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 20",
+      "5. Structural Gaps, paragraph 34"
+    ],
+    "x": 533,
+    "y": 417
+  },
+  {
+    "name": "Senegal",
+    "iso3": "SEN",
+    "region": "West Africa",
+    "status": "general",
+    "actor": "DPA directive",
+    "summary": "Senegal is used as a key example of data protection authorities issuing children\u2019s data directives in 2024.",
+    "instruments": [
+      "Children\u2019s data directive 2024"
+    ],
+    "flags": [
+      "DPA entry point",
+      "Francophone momentum",
+      "General framework"
+    ],
+    "evidence": "The article highlights Senegal as proof that data protection authorities can become practical COP actors before dedicated laws exist.",
+    "opportunity": "Expand DPA-led rule-setting as a bridge toward stronger national frameworks.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22",
+      "4.2 The Patterns, paragraphs 26, 28",
+      "7.1 Civil Society Organisations, paragraph 62"
+    ],
+    "x": 213,
+    "y": 320
+  },
+  {
+    "name": "South Africa",
+    "iso3": "ZAF",
+    "region": "Southern Africa",
+    "status": "general",
+    "actor": "Information Regulator / fragmented advanced framework",
+    "summary": "South Africa is described as having an advanced but fragmented framework and still lacking dedicated standalone COP legislation.",
+    "instruments": [
+      "POPIA",
+      "Children\u2019s Act",
+      "Cybercrimes Act",
+      "Information Regulator participation in age-assurance initiatives"
+    ],
+    "flags": [
+      "Advanced framework",
+      "DPA involvement",
+      "Age assurance debate"
+    ],
+    "evidence": "The brief argues South Africa is strong in substance but still vulnerable because protections remain fragmented.",
+    "opportunity": "Advocate for a standalone law that consolidates existing protections into a child-specific framework.",
+    "articleRefs": [
+      "Executive Summary, paragraph 9",
+      "4.2 The Patterns, paragraph 28",
+      "5. Structural Gaps, paragraph 34",
+      "6.1 Drivers, paragraph 48"
+    ],
+    "x": 489,
+    "y": 612
+  },
+  {
+    "name": "Tanzania",
+    "iso3": "TZA",
+    "region": "East Africa",
+    "status": "binding",
+    "actor": "Parliament / child protection law reform",
+    "summary": "The article highlights Tanzania\u2019s 2024 Child Protection Laws Miscellaneous Amendments Act as a core acceleration point.",
+    "instruments": [
+      "Child Protection Laws Miscellaneous Amendments Act 2024"
+    ],
+    "flags": [
+      "Legislative amendment",
+      "Child protection law",
+      "Binding coverage"
+    ],
+    "evidence": "Tanzania is used in the brief as a leading example of dedicated legislative movement during 2023 to 2025.",
+    "opportunity": "Position Tanzania as evidence that targeted statutory amendments can move faster than entirely new frameworks.",
+    "articleRefs": [
+      "Executive Summary, paragraph 8",
+      "4.1 The Numbers, paragraph 19",
+      "4.2 The Patterns, paragraph 25"
+    ],
+    "x": 544,
+    "y": 434
+  },
+  {
+    "name": "Uganda",
+    "iso3": "UGA",
+    "region": "East Africa",
+    "status": "general",
+    "actor": "General law / constitutional risk",
+    "summary": "Uganda is cited both as a significant digital economy in the general-law category and as a warning that poorly designed online safety law can trigger constitutional and rights concerns.",
+    "instruments": [
+      "Computer Misuse (Amendment) Act 2022"
+    ],
+    "flags": [
+      "General framework",
+      "Rights risk",
+      "Judicial pushback"
+    ],
+    "evidence": "The article references a Constitutional Court decision from March 2026 striking down several sections of the Computer Misuse (Amendment) Act 2022.",
+    "opportunity": "Use Uganda to insist on proportionality, scope limits, and explicit safeguards in future COP legislation.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 22",
+      "6.2 Barriers, paragraphs 53-54",
+      "7.1 Civil Society Organisations, paragraph 64"
+    ],
+    "x": 513,
+    "y": 411
+  },
+  {
+    "name": "Zambia",
+    "iso3": "ZMB",
+    "region": "Southern Africa",
+    "status": "strategy",
+    "actor": "ZICTA / strategy launch",
+    "summary": "Zambia launched a National Child Online Protection Strategy for 2025 to 2029 without corresponding primary legislation.",
+    "instruments": [
+      "National COP Strategy 2025 to 2029"
+    ],
+    "flags": [
+      "Strategy only",
+      "Implementation stage",
+      "National regulator"
+    ],
+    "evidence": "The brief treats Zambia as significant movement, but still below the threshold of durable legislative coverage.",
+    "opportunity": "Support implementation while advocating legislative anchoring.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 21",
+      "4.2 The Patterns, paragraph 27",
+      "6.1 Drivers, paragraph 48"
+    ],
+    "x": 500,
+    "y": 533
+  },
+  {
+    "name": "Zimbabwe",
+    "iso3": "ZWE",
+    "region": "Southern Africa",
+    "status": "draft",
+    "actor": "Policy development",
+    "summary": "Zimbabwe is identified as having a draft Child Online Protection Policy under development.",
+    "instruments": [
+      "Draft Child Online Protection Policy"
+    ],
+    "flags": [
+      "Draft policy",
+      "Emerging pathway",
+      "Southern Africa"
+    ],
+    "evidence": "The article places Zimbabwe in the draft-policy category rather than the enacted or strategy-only categories.",
+    "opportunity": "Push for a transition from policy drafting to legal and institutional backing.",
+    "articleRefs": [
+      "4.1 The Numbers, paragraph 20"
+    ],
+    "x": 548,
+    "y": 562
+  }
+]

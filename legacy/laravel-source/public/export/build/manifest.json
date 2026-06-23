@@ -1,0 +1,476 @@
+{
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-500-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-500-normal-DkJXBcIH.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-500-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-500-normal-CyAY5ZLS.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-600-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-600-normal-FNmA3REe.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-600-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-600-normal-C2atO-64.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-700-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-700-normal-D3uyJ5DH.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-700-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-700-normal-SLG_-a_c.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-500-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-500-normal-lsPpqi9g.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-500-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-500-normal-Yta7XZ9C.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-600-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-600-normal-CsIYWmWK.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-600-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-600-normal-BMhMHfrj.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-700-normal.woff": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-700-normal-BaW-xaxb.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-700-normal.woff2": {
+    "file": "assets/cormorant-garamond-cyrillic-ext-700-normal-Do0rx6yy.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-cyrillic-ext-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-500-normal-zIXX3Q-H.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-500-normal-BsRWmXhO.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-600-normal-2CBVLo0M.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-600-normal-Co1r35X9.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-700-normal-O25Qpphb.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-700-normal-DajfzrDU.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-500-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-ext-500-normal-DYeaGGzO.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-500-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-ext-500-normal-CH1kM7og.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-600-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-ext-600-normal-Dk3-quAP.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-600-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-ext-600-normal-DaBc-lu7.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-700-normal.woff": {
+    "file": "assets/cormorant-garamond-latin-ext-700-normal-qRbaVVD7.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-700-normal.woff2": {
+    "file": "assets/cormorant-garamond-latin-ext-700-normal-CNjt5vTB.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-500-normal.woff": {
+    "file": "assets/cormorant-garamond-vietnamese-500-normal-DqXqCC0q.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-500-normal.woff2": {
+    "file": "assets/cormorant-garamond-vietnamese-500-normal-BZGLGj12.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-600-normal.woff": {
+    "file": "assets/cormorant-garamond-vietnamese-600-normal-C4HEjEaf.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-600-normal.woff2": {
+    "file": "assets/cormorant-garamond-vietnamese-600-normal-BoXdMtcr.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-700-normal.woff": {
+    "file": "assets/cormorant-garamond-vietnamese-700-normal-GOTdnRS1.woff",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-700-normal.woff2": {
+    "file": "assets/cormorant-garamond-vietnamese-700-normal--OtHbi1I.woff2",
+    "src": "node_modules/.pnpm/@fontsource+cormorant-garamond@5.2.11/node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-vietnamese-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-400-normal.woff": {
+    "file": "assets/manrope-cyrillic-400-normal-Dvx59UGC.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-400-normal.woff2": {
+    "file": "assets/manrope-cyrillic-400-normal-BMzJvInZ.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-500-normal.woff": {
+    "file": "assets/manrope-cyrillic-500-normal-CNwnNrRC.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-500-normal.woff2": {
+    "file": "assets/manrope-cyrillic-500-normal-B1OEZity.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-600-normal.woff": {
+    "file": "assets/manrope-cyrillic-600-normal-It4mZcQk.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-600-normal.woff2": {
+    "file": "assets/manrope-cyrillic-600-normal-DvRl3Mj-.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-700-normal.woff": {
+    "file": "assets/manrope-cyrillic-700-normal-7JNVKxyl.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-700-normal.woff2": {
+    "file": "assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-800-normal.woff": {
+    "file": "assets/manrope-cyrillic-800-normal-BuEMjQU-.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-800-normal.woff2": {
+    "file": "assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-800-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-400-normal.woff": {
+    "file": "assets/manrope-cyrillic-ext-400-normal-Djnz4Wsr.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/manrope-cyrillic-ext-400-normal-CRdE35mU.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-500-normal.woff": {
+    "file": "assets/manrope-cyrillic-ext-500-normal-PaLk8PaH.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-500-normal.woff2": {
+    "file": "assets/manrope-cyrillic-ext-500-normal-Dz8SjJZ9.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-600-normal.woff": {
+    "file": "assets/manrope-cyrillic-ext-600-normal-DjQx9_jq.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-600-normal.woff2": {
+    "file": "assets/manrope-cyrillic-ext-600-normal-Dk-u7o-5.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-700-normal.woff": {
+    "file": "assets/manrope-cyrillic-ext-700-normal-ezu7N0xg.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-700-normal.woff2": {
+    "file": "assets/manrope-cyrillic-ext-700-normal-cq7F7ESW.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-800-normal.woff": {
+    "file": "assets/manrope-cyrillic-ext-800-normal-Dlsls8yD.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-800-normal.woff2": {
+    "file": "assets/manrope-cyrillic-ext-800-normal-By7E3MqD.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-cyrillic-ext-800-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-400-normal.woff": {
+    "file": "assets/manrope-greek-400-normal-DuX9RsAR.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-400-normal.woff2": {
+    "file": "assets/manrope-greek-400-normal-CM4qok81.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-500-normal.woff": {
+    "file": "assets/manrope-greek-500-normal-DyxYGEtJ.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-500-normal.woff2": {
+    "file": "assets/manrope-greek-500-normal-GeMIHyWm.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-600-normal.woff": {
+    "file": "assets/manrope-greek-600-normal-CF2i9ZRY.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-600-normal.woff2": {
+    "file": "assets/manrope-greek-600-normal-BoRV6lzK.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-700-normal.woff": {
+    "file": "assets/manrope-greek-700-normal-DyfsrCpP.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-700-normal.woff2": {
+    "file": "assets/manrope-greek-700-normal-CHUG9PD8.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-800-normal.woff": {
+    "file": "assets/manrope-greek-800-normal-Bw-67qu9.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-800-normal.woff2": {
+    "file": "assets/manrope-greek-800-normal-CDvU698_.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-greek-800-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff": {
+    "file": "assets/manrope-latin-400-normal-8tf8FM3T.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff2": {
+    "file": "assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff": {
+    "file": "assets/manrope-latin-500-normal-DMZssgOp.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff2": {
+    "file": "assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff": {
+    "file": "assets/manrope-latin-600-normal-BqgrALkZ.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff2": {
+    "file": "assets/manrope-latin-600-normal-4f0koTD-.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff": {
+    "file": "assets/manrope-latin-700-normal-DGRFkw-m.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff2": {
+    "file": "assets/manrope-latin-700-normal-BZp_XxE4.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-800-normal.woff": {
+    "file": "assets/manrope-latin-800-normal-uHUdIJgA.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-800-normal.woff2": {
+    "file": "assets/manrope-latin-800-normal-BfWYOv1c.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-800-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-400-normal.woff": {
+    "file": "assets/manrope-latin-ext-400-normal-C-X6QNXX.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-400-normal.woff2": {
+    "file": "assets/manrope-latin-ext-400-normal-CMDvPJRp.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-500-normal.woff": {
+    "file": "assets/manrope-latin-ext-500-normal-EtoS1VaI.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-500-normal.woff2": {
+    "file": "assets/manrope-latin-ext-500-normal-dm74KBQw.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-600-normal.woff": {
+    "file": "assets/manrope-latin-ext-600-normal-u5Pl7hTU.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-600-normal.woff2": {
+    "file": "assets/manrope-latin-ext-600-normal-_gBojHdJ.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-700-normal.woff": {
+    "file": "assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-700-normal.woff2": {
+    "file": "assets/manrope-latin-ext-700-normal-DYOwVNan.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-800-normal.woff": {
+    "file": "assets/manrope-latin-ext-800-normal-BQAQsuQc.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-800-normal.woff2": {
+    "file": "assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-latin-ext-800-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-400-normal.woff": {
+    "file": "assets/manrope-vietnamese-400-normal-D7E_mLGF.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-400-normal.woff2": {
+    "file": "assets/manrope-vietnamese-400-normal-DHb3EETF.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-500-normal.woff": {
+    "file": "assets/manrope-vietnamese-500-normal-DaZ8i3XM.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-500-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-500-normal.woff2": {
+    "file": "assets/manrope-vietnamese-500-normal-DCXiE_xi.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-500-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-600-normal.woff": {
+    "file": "assets/manrope-vietnamese-600-normal-lA7a_7Ok.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-600-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-600-normal.woff2": {
+    "file": "assets/manrope-vietnamese-600-normal-C1J5PCl_.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-600-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-700-normal.woff": {
+    "file": "assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-700-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-700-normal.woff2": {
+    "file": "assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-700-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-800-normal.woff": {
+    "file": "assets/manrope-vietnamese-800-normal-bvg7iBCV.woff",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-800-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-800-normal.woff2": {
+    "file": "assets/manrope-vietnamese-800-normal-ClPWri-A.woff2",
+    "src": "node_modules/.pnpm/@fontsource+manrope@5.2.8/node_modules/@fontsource/manrope/files/manrope-vietnamese-800-normal.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-D9-8kZnj.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "assets": [
+      "assets/cormorant-garamond-cyrillic-ext-500-normal-Yta7XZ9C.woff2",
+      "assets/cormorant-garamond-cyrillic-ext-500-normal-lsPpqi9g.woff",
+      "assets/cormorant-garamond-cyrillic-500-normal-CyAY5ZLS.woff2",
+      "assets/cormorant-garamond-cyrillic-500-normal-DkJXBcIH.woff",
+      "assets/cormorant-garamond-vietnamese-500-normal-BZGLGj12.woff2",
+      "assets/cormorant-garamond-vietnamese-500-normal-DqXqCC0q.woff",
+      "assets/cormorant-garamond-latin-ext-500-normal-CH1kM7og.woff2",
+      "assets/cormorant-garamond-latin-ext-500-normal-DYeaGGzO.woff",
+      "assets/cormorant-garamond-latin-500-normal-BsRWmXhO.woff2",
+      "assets/cormorant-garamond-latin-500-normal-zIXX3Q-H.woff",
+      "assets/cormorant-garamond-cyrillic-ext-600-normal-BMhMHfrj.woff2",
+      "assets/cormorant-garamond-cyrillic-ext-600-normal-CsIYWmWK.woff",
+      "assets/cormorant-garamond-cyrillic-600-normal-C2atO-64.woff2",
+      "assets/cormorant-garamond-cyrillic-600-normal-FNmA3REe.woff",
+      "assets/cormorant-garamond-vietnamese-600-normal-BoXdMtcr.woff2",
+      "assets/cormorant-garamond-vietnamese-600-normal-C4HEjEaf.woff",
+      "assets/cormorant-garamond-latin-ext-600-normal-DaBc-lu7.woff2",
+      "assets/cormorant-garamond-latin-ext-600-normal-Dk3-quAP.woff",
+      "assets/cormorant-garamond-latin-600-normal-Co1r35X9.woff2",
+      "assets/cormorant-garamond-latin-600-normal-2CBVLo0M.woff",
+      "assets/cormorant-garamond-cyrillic-ext-700-normal-Do0rx6yy.woff2",
+      "assets/cormorant-garamond-cyrillic-ext-700-normal-BaW-xaxb.woff",
+      "assets/cormorant-garamond-cyrillic-700-normal-SLG_-a_c.woff2",
+      "assets/cormorant-garamond-cyrillic-700-normal-D3uyJ5DH.woff",
+      "assets/cormorant-garamond-vietnamese-700-normal--OtHbi1I.woff2",
+      "assets/cormorant-garamond-vietnamese-700-normal-GOTdnRS1.woff",
+      "assets/cormorant-garamond-latin-ext-700-normal-CNjt5vTB.woff2",
+      "assets/cormorant-garamond-latin-ext-700-normal-qRbaVVD7.woff",
+      "assets/cormorant-garamond-latin-700-normal-DajfzrDU.woff2",
+      "assets/cormorant-garamond-latin-700-normal-O25Qpphb.woff",
+      "assets/manrope-cyrillic-ext-400-normal-CRdE35mU.woff2",
+      "assets/manrope-cyrillic-ext-400-normal-Djnz4Wsr.woff",
+      "assets/manrope-cyrillic-400-normal-BMzJvInZ.woff2",
+      "assets/manrope-cyrillic-400-normal-Dvx59UGC.woff",
+      "assets/manrope-greek-400-normal-CM4qok81.woff2",
+      "assets/manrope-greek-400-normal-DuX9RsAR.woff",
+      "assets/manrope-vietnamese-400-normal-DHb3EETF.woff2",
+      "assets/manrope-vietnamese-400-normal-D7E_mLGF.woff",
+      "assets/manrope-latin-ext-400-normal-CMDvPJRp.woff2",
+      "assets/manrope-latin-ext-400-normal-C-X6QNXX.woff",
+      "assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "assets/manrope-latin-400-normal-8tf8FM3T.woff",
+      "assets/manrope-cyrillic-ext-500-normal-Dz8SjJZ9.woff2",
+      "assets/manrope-cyrillic-ext-500-normal-PaLk8PaH.woff",
+      "assets/manrope-cyrillic-500-normal-B1OEZity.woff2",
+      "assets/manrope-cyrillic-500-normal-CNwnNrRC.woff",
+      "assets/manrope-greek-500-normal-GeMIHyWm.woff2",
+      "assets/manrope-greek-500-normal-DyxYGEtJ.woff",
+      "assets/manrope-vietnamese-500-normal-DCXiE_xi.woff2",
+      "assets/manrope-vietnamese-500-normal-DaZ8i3XM.woff",
+      "assets/manrope-latin-ext-500-normal-dm74KBQw.woff2",
+      "assets/manrope-latin-ext-500-normal-EtoS1VaI.woff",
+      "assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "assets/manrope-latin-500-normal-DMZssgOp.woff",
+      "assets/manrope-cyrillic-ext-600-normal-Dk-u7o-5.woff2",
+      "assets/manrope-cyrillic-ext-600-normal-DjQx9_jq.woff",
+      "assets/manrope-cyrillic-600-normal-DvRl3Mj-.woff2",
+      "assets/manrope-cyrillic-600-normal-It4mZcQk.woff",
+      "assets/manrope-greek-600-normal-BoRV6lzK.woff2",
+      "assets/manrope-greek-600-normal-CF2i9ZRY.woff",
+      "assets/manrope-vietnamese-600-normal-C1J5PCl_.woff2",
+      "assets/manrope-vietnamese-600-normal-lA7a_7Ok.woff",
+      "assets/manrope-latin-ext-600-normal-_gBojHdJ.woff2",
+      "assets/manrope-latin-ext-600-normal-u5Pl7hTU.woff",
+      "assets/manrope-latin-600-normal-4f0koTD-.woff2",
+      "assets/manrope-latin-600-normal-BqgrALkZ.woff",
+      "assets/manrope-cyrillic-ext-700-normal-cq7F7ESW.woff2",
+      "assets/manrope-cyrillic-ext-700-normal-ezu7N0xg.woff",
+      "assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2",
+      "assets/manrope-cyrillic-700-normal-7JNVKxyl.woff",
+      "assets/manrope-greek-700-normal-CHUG9PD8.woff2",
+      "assets/manrope-greek-700-normal-DyfsrCpP.woff",
+      "assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2",
+      "assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff",
+      "assets/manrope-latin-ext-700-normal-DYOwVNan.woff2",
+      "assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff",
+      "assets/manrope-latin-700-normal-BZp_XxE4.woff2",
+      "assets/manrope-latin-700-normal-DGRFkw-m.woff",
+      "assets/manrope-cyrillic-ext-800-normal-By7E3MqD.woff2",
+      "assets/manrope-cyrillic-ext-800-normal-Dlsls8yD.woff",
+      "assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2",
+      "assets/manrope-cyrillic-800-normal-BuEMjQU-.woff",
+      "assets/manrope-greek-800-normal-CDvU698_.woff2",
+      "assets/manrope-greek-800-normal-Bw-67qu9.woff",
+      "assets/manrope-vietnamese-800-normal-ClPWri-A.woff2",
+      "assets/manrope-vietnamese-800-normal-bvg7iBCV.woff",
+      "assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2",
+      "assets/manrope-latin-ext-800-normal-BQAQsuQc.woff",
+      "assets/manrope-latin-800-normal-BfWYOv1c.woff2",
+      "assets/manrope-latin-800-normal-uHUdIJgA.woff"
+    ]
+  },
+  "resources/data/africa-boundaries.geo.json": {
+    "file": "assets/africa-boundaries.geo-CsZCJQb3.json",
+    "src": "resources/data/africa-boundaries.geo.json"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C8Ai5OVl.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "assets": [
+      "assets/africa-boundaries.geo-CsZCJQb3.json"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/metrics.schema.json",
+  "title": "Metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summary", "aggregateCoverage", "regionalReadiness"],
+  "properties": {
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statesReviewed", "topTierBindingCount", "accelerationPeriod"],
+      "properties": {
+        "statesReviewed": { "type": "integer" },
+        "topTierBindingCount": { "type": "integer" },
+        "accelerationPeriod": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label", "startYear", "endYear"],
+          "properties": {
+            "label": { "type": "string" },
+            "startYear": { "type": "integer" },
+            "endYear": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "aggregateCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "label", "count", "detail"],
+        "properties": {
+          "key": {
+            "type": "string",
+            "enum": ["binding", "draft", "strategy", "general", "none"]
+          },
+          "label": { "type": "string" },
+          "count": { "type": "integer" },
+          "detail": { "type": "string" }
+        }
+      }
+    },
+    "regionalReadiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "articleBacked", "derived", "methodology", "dimensions", "values", "sourceNote"],
+      "properties": {
+        "available": { "type": "boolean" },
+        "articleBacked": { "type": "boolean" },
+        "derived": { "type": "boolean" },
+        "methodology": {
+          "type": ["string", "null"]
+        },
+        "dimensions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["region", "score", "sampleSize"],
+            "properties": {
+              "region": { "type": "string" },
+              "score": { "type": "number" },
+              "sampleSize": { "type": "integer" }
+            }
+          }
+        },
+        "sourceNote": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

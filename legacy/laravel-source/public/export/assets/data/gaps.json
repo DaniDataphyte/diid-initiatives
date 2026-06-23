@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Platform accountability deficit",
+    "severity": 5,
+    "body": "Across most of the continent, major platforms operate without binding child-safety obligations designed for local regulatory conditions.",
+    "where": "The brief points to social media, messaging, gaming, and AI-powered services as the highest-risk platform domains.",
+    "test": "A stronger framework needs proportionate platform duties, enforceable obligations, and clear oversight of trust and safety practices."
+  },
+  {
+    "title": "Age verification and child-specific data protection",
+    "severity": 4,
+    "body": "The article argues that child protection online is structurally weak when age assurance, consent standards, and design obligations remain under-specified.",
+    "where": "Kenya, Gabon, South Africa, and Rwanda are cited as important but uneven reference points.",
+    "test": "A stronger framework needs technical standards, child-specific design limits, transparency requirements, and profiling restrictions."
+  },
+  {
+    "title": "Enforcement and institutional capacity deficit",
+    "severity": 5,
+    "body": "The brief emphasizes that legal text is only as effective as the institutions tasked with investigation, prosecution, and cross-border coordination.",
+    "where": "Digital forensic capability, judicial competence, and rights-respecting enforcement remain unevenly distributed.",
+    "test": "A stronger framework needs trained investigators, prosecutors, judges, and durable cross-border cooperation mechanisms."
+  },
+  {
+    "title": "Participation and evidence deficit",
+    "severity": 4,
+    "body": "Children remain largely absent from policy design, and the evidence base remains shallow outside a limited set of regional studies.",
+    "where": "The brief specifically cites the Disrupting Harm studies as the strongest evidence base, but limited in scope.",
+    "test": "A stronger framework needs structured child participation, community consultation, and repeated Africa-specific research cycles."
+  },
+  {
+    "title": "Digital literacy and prevention",
+    "severity": 3,
+    "body": "The article argues that legal frameworks remain reactive unless prevention, education, and community capacity are built into the policy response.",
+    "where": "Several strategies mention literacy, but systematic curriculum integration remains largely absent.",
+    "test": "A stronger framework needs child-facing, parent-facing, and educator-facing digital safety programming with institutional backing."
+  }
+]

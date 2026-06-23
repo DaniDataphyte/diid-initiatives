@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policy Insight: Child Online Safety Legislation Across Africa</title>
+    <meta
+      name="description"
+      content="Static design template for a policy microsite on child online safety legislation across Africa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__brand">Policy Insight: Child Online Safety</div>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a class="is-active" href="#overview">Analysis</a>
+        <a href="#state-of-play">Data Explorer</a>
+        <a href="#method">Method</a>
+      </nav>
+      <a class="topbar__cta" href="#method">Download Report</a>
+    </header>
+
+    <aside class="sidenav" aria-label="Section tracker">
+      <a class="is-active" href="#overview"><span>01</span><i></i></a>
+      <a href="#state-of-play"><span>02</span><i></i></a>
+      <a href="#numbers"><span>03</span><i></i></a>
+      <a href="#patterns"><span>04</span><i></i></a>
+      <a href="#gaps"><span>05</span><i></i></a>
+      <a href="#drivers"><span>06</span><i></i></a>
+      <a href="#recommendations"><span>07</span><i></i></a>
+      <a href="#priorities"><span>08</span><i></i></a>
+      <a href="#method"><span>09</span><i></i></a>
+    </aside>
+
+    <main class="page">
+      <section class="hero" id="overview">
+        <div class="hero__grid">
+          <div class="hero__rule"></div>
+          <div class="hero__copy">
+            <p class="kicker">Policy Brief / May 2026 / DIID</p>
+            <h1>Child Online Safety Legislation Across Africa</h1>
+            <p class="hero__summary">
+              A continent-wide policy interface on legislative progress,
+              institutional architecture, and the protection gaps shaping child
+              online safety across Africa.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--solid" href="#state-of-play"
+                >Explore the map</a
+              >
+              <a class="button button--outline" href="#priorities"
+                >See strategic priorities</a
+              >
+            </div>
+          </div>
+          <div class="hero__stats">
+            <div class="hero-stat hero-stat--blue">
+              <strong>55</strong>
+              <span>AU states reviewed</span>
+            </div>
+            <div class="hero-stat hero-stat--orange">
+              <strong>5</strong>
+              <span>Enacted frameworks</span>
+            </div>
+            <div class="hero-stat hero-stat--sand">
+              <strong>2023–25</strong>
+              <span>Acceleration period</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--map" id="state-of-play">
+        <div class="section__header section__header--split">
+          <div>
+            <h2>02 / State of Play</h2>
+            <p>Continental legislative heatmap</p>
+          </div>
+          <div class="control-row">
+            <label>
+              <span>Region</span>
+              <select disabled>
+                <option>All Regions</option>
+              </select>
+            </label>
+            <label>
+              <span>Year</span>
+              <select disabled>
+                <option>2026</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-sidebar">
+            <div class="panel panel--tint">
+              <h3>Legend</h3>
+              <ul class="legend-list">
+                <li><i class="swatch swatch--blue"></i> Enacted law</li>
+                <li><i class="swatch swatch--orange"></i> Advanced draft</li>
+                <li><i class="swatch swatch--amber"></i> Strategy / draft</li>
+                <li><i class="swatch swatch--sand"></i> General law</li>
+                <li><i class="swatch swatch--red"></i> No framework</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Selection Detail</h3>
+              <p>
+                Static template state. Country drawer, filter logic, and full
+                jurisdiction mapping are intentionally not wired yet.
+              </p>
+            </div>
+            <div class="panel panel--drawer">
+              <p class="panel__eyebrow">Selected country</p>
+              <div class="country-drawer">
+                <div class="country-drawer__head">
+                  <div>
+                    <h3>Kenya</h3>
+                    <span>East Africa</span>
+                  </div>
+                  <b>Binding guideline layer</b>
+                </div>
+                <p class="country-drawer__body">
+                  Kenya is rendered here as the default selected state for the
+                  static template, showing how a country-level drawer will hold
+                  legal instruments, protections, and advocacy cues.
+                </p>
+                <div class="country-drawer__group">
+                  <label>Instruments</label>
+                  <ul>
+                    <li>Industry Guidelines for Child Online Protection and Safety</li>
+                    <li>ODPC enforcement actions on children’s data</li>
+                  </ul>
+                </div>
+                <div class="country-drawer__group">
+                  <label>Key provisions</label>
+                  <div class="country-drawer__tags">
+                    <span>Age verification</span>
+                    <span>Provider obligations</span>
+                    <span>Data protection</span>
+                  </div>
+                </div>
+                <div class="country-drawer__group">
+                  <label>Advocacy opportunity</label>
+                  <p>
+                    Consolidate existing protections into primary child online
+                    protection legislation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-stage">
+            <div class="map-stage__surface">
+              <div class="map-placeholder">
+                <div class="map-placeholder__continent"></div>
+                <div class="map-placeholder__marker marker--ghana"></div>
+                <div class="map-placeholder__marker marker--kenya"></div>
+                <div class="map-placeholder__marker marker--nigeria"></div>
+                <div class="map-placeholder__marker marker--southafrica"></div>
+                <div class="map-placeholder__marker marker--libya"></div>
+                <div class="map-placeholder__label label--ghana">Ghana</div>
+                <div class="map-placeholder__label label--kenya">Kenya</div>
+                <div class="map-placeholder__label label--nigeria">Nigeria</div>
+                <div class="map-placeholder__label label--southafrica">
+                  South Africa
+                </div>
+                <div class="map-placeholder__label label--libya">Libya</div>
+                <div class="map-placeholder__region region--north">North Africa</div>
+                <div class="map-placeholder__region region--west">West Africa</div>
+                <div class="map-placeholder__region region--east">East Africa</div>
+                <div class="map-placeholder__region region--central">Central Africa</div>
+                <div class="map-placeholder__region region--south">Southern Africa</div>
+              </div>
+              <div class="map-note">
+                <strong>Template note</strong>
+                <p>
+                  Final choropleth, country polygons, hover states, and drawer
+                  content are pending dataset integration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--metrics" id="numbers">
+        <div class="section__header">
+          <h2>03 / Key Metrics</h2>
+          <p>Quantifying the continental deficit</p>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-block">
+            <h3>Legal Coverage Across AU States</h3>
+            <div class="stacked-bar">
+              <span class="segment segment--blue" style="width: 10%"></span>
+              <span class="segment segment--orange" style="width: 15%"></span>
+              <span class="segment segment--amber" style="width: 25%"></span>
+              <span class="segment segment--sand" style="width: 40%"></span>
+              <span class="segment segment--red" style="width: 10%"></span>
+            </div>
+            <div class="metric-labels">
+              <span>Specific law</span>
+              <span>Drafted</span>
+              <span>Incomplete</span>
+              <span>No info</span>
+            </div>
+          </article>
+
+          <article class="metric-block">
+            <h3>Regional Readiness Comparison</h3>
+            <div class="progress-list">
+              <div class="progress-row">
+                <div class="progress-row__label"><span>Southern Africa</span><span>72%</span></div>
+                <div class="progress"><i style="width: 72%"></i></div>
+              </div>
+              <div class="progress-row">
+                <div class="progress-row__label"><span>East Africa</span><span>61%</span></div>
+                <div class="progress"><i style="width: 61%"></i></div>
+              </div>
+              <div class="progress-row">
+                <div class="progress-row__label"><span>West Africa</span><span>45%</span></div>
+                <div class="progress"><i style="width: 45%"></i></div>
+              </div>
+              <div class="progress-row">
+                <div class="progress-row__label"><span>Central Africa</span><span>38%</span></div>
+                <div class="progress"><i style="width: 38%"></i></div>
+              </div>
+              <div class="progress-row">
+                <div class="progress-row__label"><span>North Africa</span><span>29%</span></div>
+                <div class="progress"><i style="width: 29%"></i></div>
+              </div>
+            </div>
+            <p class="template-flag">
+              Placeholder methodology. Final scoring will combine legal
+              specificity, institutional mandate, enforcement signals, and
+              child-data protection safeguards.
+            </p>
+            <div class="method-chip-list">
+              <span>Legal specificity</span>
+              <span>Institutional mandate</span>
+              <span>Enforcement signals</span>
+              <span>Child-data protections</span>
+            </div>
+          </article>
+
+          <article class="metric-block metric-block--timeline">
+            <h3>Legislative Timeline 2020–2026</h3>
+            <div class="timeline">
+              <div class="timeline__line"></div>
+              <div class="timeline__point timeline__point--top"></div>
+              <div class="timeline__label timeline__label--top">
+                <strong>2020</strong>
+                <span>ITU COP Guidelines baseline</span>
+              </div>
+              <div class="timeline__event timeline__event--au">
+                <strong>February 2024</strong>
+                <p>AU Child Online Safety and Empowerment Policy adopted.</p>
+              </div>
+              <div class="timeline__card">
+                <strong>2023–2025</strong>
+                <p>
+                  Acceleration band with Tanzania amendments, Ghana framework,
+                  Kenya guidelines, Zambia strategy, and Mauritius directive.
+                </p>
+              </div>
+              <div class="timeline__event timeline__event--mid">
+                <strong>2024</strong>
+                <p>Mali and Senegal DPA directives on children’s data.</p>
+              </div>
+              <div class="timeline__event timeline__event--lower">
+                <strong>2025</strong>
+                <p>Binding and strategy-stage instruments expand across the field.</p>
+              </div>
+              <div class="timeline__label timeline__label--bottom">
+                <strong>2026</strong>
+                <span>Gabon ordinance and implementation risk warnings</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--patterns" id="patterns">
+        <div class="section__header">
+          <h2>04 / Emergent Patterns</h2>
+        </div>
+        <div class="pattern-grid">
+          <article class="pattern-card pattern-card--sand">
+            <p>Technological convergence</p>
+            <h3>Integration with general data privacy frameworks</h3>
+            <span>
+              The strongest models connect child safety obligations to broader
+              privacy, platform, and regulator mandates.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--blue">
+            <p>Regional harmonization</p>
+            <h3>REC-led standardization in southern and western Africa</h3>
+            <span>
+              Sub-regional instruments are positioned as a route to reducing
+              fragmentation and regulatory arbitrage.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--amber">
+            <p>Enforcement gaps</p>
+            <h3>Statutory existence versus operational efficacy</h3>
+            <span>
+              The template preserves the distinction between law on paper and
+              the capacity needed to enforce it.
+            </span>
+          </article>
+          <article class="pattern-card pattern-card--white">
+            <p>Stakeholder resistance</p>
+            <h3>Platform neutrality and liability disputes</h3>
+            <span>
+              Global platform incentives remain misaligned with local safety and
+              accountability expectations.
+            </span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--gaps" id="gaps">
+        <div class="gaps-layout">
+          <div class="gaps-intro">
+            <h2>05 / Structural Gaps</h2>
+            <p>
+              Identification of institutional and legal deficits that remain
+              unresolved across most reviewed jurisdictions.
+            </p>
+            <div class="callout">
+              <strong>Critical deficit</strong>
+              <span>
+                Budget allocation for child-specialized digital enforcement
+                remains a structural implementation constraint.
+              </span>
+            </div>
+          </div>
+          <div class="gaps-list">
+            <article class="gap-item gap-item--open">
+              <div class="gap-item__top">
+                <h3>Definition of “Digital Harm”</h3>
+                <span>Expanded</span>
+              </div>
+              <p>
+                Lacking precise legal definitions for grooming, cyberbullying,
+                and non-consensual image sharing in much of the mapped
+                landscape.
+              </p>
+              <div class="severity">
+                <label>Prevalence</label>
+                <div class="severity__bars">
+                  <i class="is-hot"></i><i class="is-hot"></i><i class="is-hot"></i
+                  ><i class="is-hot"></i><i></i>
+                </div>
+                <strong>High</strong>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Platform Accountability Scales</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Cross-Border Judicial Cooperation</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Participation and Evidence</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+            <article class="gap-item">
+              <div class="gap-item__top">
+                <h3>Digital Literacy and Prevention</h3>
+                <span>Collapsed</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--forces" id="drivers">
+        <div class="section__header section__header--center">
+          <h2>06 / Force Multipliers</h2>
+        </div>
+        <div class="force-grid">
+          <article class="force-column force-column--driver">
+            <div class="force-column__heading">
+              <span>↑</span>
+              <h3>Drivers of Progress</h3>
+            </div>
+            <ul>
+              <li>
+                <strong>01</strong>
+                <div>
+                  <h4>Civil society pressure</h4>
+                  <p>
+                    Coalition pressure and local advocacy remain core accelerants
+                    for draft progression and reform visibility.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <strong>02</strong>
+                <div>
+                  <h4>International treaties</h4>
+                  <p>
+                    Regional and international instruments continue to act as
+                    catalysts for domestic policy alignment.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="force-column force-column--barrier">
+            <div class="force-column__heading">
+              <span>↓</span>
+              <h3>Structural Barriers</h3>
+            </div>
+            <ul>
+              <li>
+                <strong>01</strong>
+                <div>
+                  <h4>Technical knowledge gap</h4>
+                  <p>
+                    Drafting quality suffers when committees lack specialized
+                    understanding of platform, encryption, and algorithmic risk.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <strong>02</strong>
+                <div>
+                  <h4>Lobbying inertia</h4>
+                  <p>
+                    Soft-regulation preferences from major firms can slow the
+                    transition to enforceable statutory obligations.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--recommendations" id="recommendations">
+        <div class="section__header">
+          <h2>07 / Strategic Recommendations</h2>
+        </div>
+        <div class="tabs tabs--static">
+          <button class="is-active" type="button">African Union</button>
+          <button type="button">National Governments</button>
+          <button type="button">Civil Society</button>
+          <button type="button">Platforms</button>
+        </div>
+        <div class="recommendation-grid">
+          <article class="recommendation-card">
+            <span>REC-01 / Harmonization</span>
+            <h3>Regional model law diffusion</h3>
+            <p>
+              Develop a unified African Union model law for child online safety
+              to reduce legal fragmentation across borders.
+            </p>
+            <div>
+              <label>Implementation note</label>
+              <p>
+                Align with the African Charter on the Rights and Welfare of the
+                Child and the AU COP policy.
+              </p>
+            </div>
+          </article>
+          <article class="recommendation-card">
+            <span>REC-02 / Funding</span>
+            <h3>Mandatory safety levies</h3>
+            <p>
+              Establish sustainable financing routes for specialist online
+              safety regulation, investigation, and enforcement capacity.
+            </p>
+            <div>
+              <label>Implementation note</label>
+              <p>
+                Funding logic, reporting mechanisms, and independent audit
+                design remain pending.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="tab-state-grid">
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>National Governments</h3>
+            </div>
+            <ul>
+              <li>Adopt child-specific design obligations in primary law.</li>
+              <li>Assign regulator roles across telecom, DPA, and justice systems.</li>
+              <li>Fund specialist implementation capacity before enforcement starts.</li>
+            </ul>
+          </article>
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>Civil Society</h3>
+            </div>
+            <ul>
+              <li>Translate AU policy language into country domestication roadmaps.</li>
+              <li>Use coalition pressure to shape drafts before enactment.</li>
+              <li>Press for rights-respecting safeguards and child participation.</li>
+            </ul>
+          </article>
+          <article class="tab-state">
+            <div class="tab-state__head">
+              <span>Static tab state</span>
+              <h3>Platforms</h3>
+            </div>
+            <ul>
+              <li>Apply strongest child-safety standards consistently across markets.</li>
+              <li>Invest in African-language moderation and trust-and-safety capacity.</li>
+              <li>Expose accountability hooks for regulator review and audits.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--priorities" id="priorities">
+        <div class="section__header section__header--split">
+          <div>
+            <h2>08 / Priority Matrix</h2>
+            <p>
+              Mapping impact against feasibility for the article’s advocacy
+              focus points.
+            </p>
+          </div>
+        </div>
+        <div class="priority-layout">
+          <div class="matrix">
+            <span class="matrix__axis matrix__axis--y">Impact (Protective Capacity)</span>
+            <span class="matrix__axis matrix__axis--x">Feasibility (Resource Readiness)</span>
+            <div class="matrix__grid"></div>
+            <div class="matrix__quadrant quadrant--one">High impact / high feasibility</div>
+            <div class="matrix__quadrant quadrant--two">High impact / medium feasibility</div>
+            <div class="matrix__quadrant quadrant--three">Long-term / structural</div>
+            <div class="matrix__quadrant quadrant--four">Lower immediate leverage</div>
+            <div class="matrix__node node--blue" style="top: 18%; left: 82%">
+              <span>South Africa</span>
+            </div>
+            <div class="matrix__node node--orange" style="top: 34%; left: 46%">
+              <span>Kenya</span>
+            </div>
+            <div class="matrix__node node--blue" style="top: 21%; left: 66%">
+              <span>Nigeria</span>
+            </div>
+            <div class="matrix__node node--orange" style="top: 52%; left: 40%">
+              <span>Rwanda</span>
+            </div>
+            <div class="matrix__node node--red" style="top: 74%; left: 20%">
+              <span>Gap state</span>
+            </div>
+          </div>
+          <aside class="matrix-side">
+            <div class="matrix-legend">
+              <h3>Legend</h3>
+              <ul>
+                <li><i class="swatch swatch--blue"></i> High-opportunity consolidation target</li>
+                <li><i class="swatch swatch--orange"></i> Emerging legislative pathway</li>
+                <li><i class="swatch swatch--red"></i> High-risk or low-coverage jurisdiction</li>
+                <li><span class="size-dot"></span> Larger node = higher urgency</li>
+              </ul>
+            </div>
+            <div class="matrix-inspector">
+              <p class="panel__eyebrow">Inspector</p>
+              <h3>Nigeria</h3>
+              <b>High impact / high feasibility</b>
+              <p>
+                HB.244 already has legislative movement, coalition
+                infrastructure exists, and the policy window remains open for
+                enforceable law.
+              </p>
+              <div>
+                <label>Article-exact action cue</label>
+                <p>Push Senate passage and early implementation design.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--method" id="method">
+        <div class="method-wrap">
+          <div class="section__header">
+            <h2>09 / Methodology &amp; Resources</h2>
+          </div>
+          <div class="method-grid">
+            <div class="method-list">
+              <article><span>Data collection protocols</span><i>+</i></article>
+              <article><span>Institutional interviews (2023–2025)</span><i>+</i></article>
+              <article><span>Legislative review criteria</span><i>+</i></article>
+              <article><span>Template pending modules</span><i>+</i></article>
+            </div>
+            <aside class="contact-card">
+              <h3>Contact DIID</h3>
+              <p>
+                For access to the full dataset, country mapping, or regional
+                breakdowns, connect with the policy desk.
+              </p>
+              <a href="mailto:policy@diid.africa">policy@diid.africa</a>
+            </aside>
+          </div>
+          <div class="pending-grid">
+            <article class="pending-card">
+              <strong>Bundling note</strong>
+              <p>All frontend libraries should compile into local CSS and JS assets only.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Laravel export note</strong>
+              <p>Runtime Blade and Laravel routing must disappear in the final static export.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Static delivery note</strong>
+              <p>Use local fonts, local vendor assets, and a single exported entry page.</p>
+            </article>
+            <article class="pending-card">
+              <strong>Data note</strong>
+              <p>Map GeoJSON, chart values, and article annotations can stay local JSON files.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div>
+          <h3>Digital Initiative for Innovation and Development</h3>
+          <p>
+            Policy research, digital rights, and legislative analysis on child
+            online safety across Africa.
+          </p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#overview">Overview</a>
+          <a href="#method">Methodology</a>
+          <a href="#numbers">Data signals</a>
+          <a href="#recommendations">Recommendations</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 DIID. Static template build.</span>
+        <span>Share / Print pending</span>
+      </div>
+    </footer>
+  </body>
+</html>

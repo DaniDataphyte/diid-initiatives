@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/gaps.schema.json",
+  "title": "Gaps",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "severity", "body", "where", "test"],
+    "properties": {
+      "title": { "type": "string" },
+      "severity": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "body": { "type": "string" },
+      "where": { "type": "string" },
+      "test": { "type": "string" }
+    }
+  }
+}

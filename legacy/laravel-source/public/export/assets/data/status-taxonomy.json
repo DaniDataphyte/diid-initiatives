@@ -1,0 +1,32 @@
+[
+  {
+    "key": "binding",
+    "label": "Enacted law or binding COP instrument",
+    "color": "#1d63d5",
+    "definition": "The brief identifies enacted dedicated laws, regulations, or binding child online protection instruments."
+  },
+  {
+    "key": "draft",
+    "label": "Advanced draft pathway",
+    "color": "#fc6906",
+    "definition": "The brief identifies a draft bill, draft law, or primary legislative pathway in motion."
+  },
+  {
+    "key": "strategy",
+    "label": "Strategy, guideline, or policy only",
+    "color": "#f0b26a",
+    "definition": "The brief identifies a dedicated strategy, guideline, or policy without primary legislative backing."
+  },
+  {
+    "key": "general",
+    "label": "General legal coverage",
+    "color": "#d9c9aa",
+    "definition": "The brief identifies broader cybercrime, penal, telecom, data protection, or child protection frameworks with partial relevance."
+  },
+  {
+    "key": "none",
+    "label": "No identifiable framework",
+    "color": "#f00614",
+    "definition": "The brief identifies no specific legislation, regulation, or policy framework on child online safety."
+  }
+]

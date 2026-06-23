@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diid.test/schemas/patterns.schema.json",
+  "title": "Patterns",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["eyebrow", "title", "body"],
+    "properties": {
+      "eyebrow": { "type": "string" },
+      "title": { "type": "string" },
+      "body": { "type": "string" }
+    }
+  }
+}

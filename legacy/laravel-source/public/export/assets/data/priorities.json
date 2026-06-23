@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Nigeria",
+    "x": 78,
+    "y": 22,
+    "size": 28,
+    "ring": "orange",
+    "body": "The brief treats Nigeria as high impact and high feasibility because coalition infrastructure exists and the bill already has visible legislative momentum.",
+    "action": "Push Senate passage of HB.244 and define implementation architecture before enactment."
+  },
+  {
+    "title": "Kenya",
+    "x": 70,
+    "y": 33,
+    "size": 24,
+    "ring": "blue",
+    "body": "Kenya is framed as a strong implementation case where binding guidelines exist but consolidation into primary legislation remains unfinished.",
+    "action": "Translate guideline strength into consolidated primary legislation with child-specific statutory duties."
+  },
+  {
+    "title": "South Africa",
+    "x": 62,
+    "y": 38,
+    "size": 24,
+    "ring": "blue",
+    "body": "South Africa is positioned as a high-value target for consolidation because multiple protections already exist across fragmented laws.",
+    "action": "Consolidate POPIA, Cybercrimes Act, and child-protection provisions into a dedicated COP framework."
+  },
+  {
+    "title": "DPA engagement",
+    "x": 58,
+    "y": 28,
+    "size": 22,
+    "ring": "blue",
+    "body": "The brief recommends using functioning data protection authorities as practical rule-setting entry points while broader law develops.",
+    "action": "Use active DPAs to issue child-data directives while broader legislative reform is still pending."
+  },
+  {
+    "title": "Rwanda",
+    "x": 48,
+    "y": 47,
+    "size": 20,
+    "ring": "orange",
+    "body": "Rwanda sits in the high-impact and medium-feasibility tier because ministerial and planning infrastructure already exists.",
+    "action": "Move from ministerial order and action plan into primary legislation with rights-respecting design controls."
+  },
+  {
+    "title": "Malawi",
+    "x": 40,
+    "y": 55,
+    "size": 18,
+    "ring": "orange",
+    "body": "The brief recommends supporting MACRA and moving from strategy work to associated regulations and stronger legal backing.",
+    "action": "Back MACRA’s strategy work with enforceable regulations and stronger legislative anchoring."
+  },
+  {
+    "title": "Ethiopia",
+    "x": 35,
+    "y": 42,
+    "size": 20,
+    "ring": "red",
+    "body": "Ethiopia is framed as a strategic medium-feasibility target, with the February 2026 CRC recommendations providing leverage.",
+    "action": "Use the February 2026 CRC recommendations to open a dedicated child online safety reform pathway."
+  },
+  {
+    "title": "ECOWAS",
+    "x": 28,
+    "y": 50,
+    "size": 20,
+    "ring": "blue",
+    "body": "The brief recommends an ECOWAS directive as a route to sub-regional harmonisation and reduced regulatory arbitrage.",
+    "action": "Develop an ECOWAS-level directive to reduce fragmentation and regulatory arbitrage."
+  },
+  {
+    "title": "Zambia",
+    "x": 52,
+    "y": 58,
+    "size": 18,
+    "ring": "orange",
+    "body": "Zambia is identified as an implementation-stage jurisdiction where strategy backing should evolve into legislation.",
+    "action": "Convert implementation momentum from the 2025 strategy into legislative backing."
+  },
+  {
+    "title": "AU scorecard",
+    "x": 18,
+    "y": 78,
+    "size": 20,
+    "ring": "blue",
+    "body": "A public AU implementation scorecard is treated as a long-term structural tool for pressure, benchmarking, and visibility.",
+    "action": "Publish a repeatable AU scorecard that benchmarks domestication and enforcement readiness."
+  },
+  {
+    "title": "Evidence generation",
+    "x": 34,
+    "y": 84,
+    "size": 22,
+    "ring": "orange",
+    "body": "The brief calls for broader Francophone, Lusophone, and North African evidence generation to close the research gap.",
+    "action": "Commission new evidence cycles beyond Eastern and Southern Africa, especially in Francophone and North African states."
+  },
+  {
+    "title": "Model legislation",
+    "x": 54,
+    "y": 88,
+    "size": 20,
+    "ring": "blue",
+    "body": "Continental model legislation is treated as a long-term structural asset for consistency and rights-respecting design.",
+    "action": "Draft model legislation that standardizes child-safety duties while preserving rights safeguards."
+  },
+  {
+    "title": "Rights-impact reviews",
+    "x": 74,
+    "y": 82,
+    "size": 18,
+    "ring": "red",
+    "body": "The brief recommends rights-impact assessments of recent cyber laws to identify misuse and overbreadth risks early.",
+    "action": "Run rights-impact reviews on recent cyber laws before abusive provisions become entrenched."
+  }
+]
