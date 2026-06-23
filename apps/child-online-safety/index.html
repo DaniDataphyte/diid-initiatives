@@ -149,19 +149,26 @@
             <h2>02 / State of Play</h2>
             <p>Continental legislative heatmap</p>
           </div>
-          <div class="control-row">
-            <label>
-              <span>Region</span>
-              <select disabled>
-                <option>All Regions</option>
-              </select>
-            </label>
-            <label>
-              <span>Year</span>
-              <select disabled>
-                <option>2026</option>
-              </select>
-            </label>
+          <div class="control-panel">
+            <div class="control-row">
+              <label>
+                <span>Region</span>
+                <select x-model="selectedRegion" @change="applyMapFilters()">
+                  <template x-for="region in regionOptions" :key="region">
+                    <option :value="region" x-text="region"></option>
+                  </template>
+                </select>
+              </label>
+              <label>
+                <span>Year</span>
+                <select x-model="selectedYear" @change="applyYearFilter()">
+                  <template x-for="year in yearOptions" :key="year">
+                    <option :value="year" x-text="year"></option>
+                  </template>
+                </select>
+              </label>
+            </div>
+            <p class="control-row__note" x-text="filterNote()"></p>
           </div>
         </div>
 
@@ -176,11 +183,11 @@
                   role="img"
                   aria-label="Africa child online protection legislative map"
                 ></svg>
-                <div class="map-region-label region-label--north">North Africa</div>
-                <div class="map-region-label region-label--west">West Africa</div>
-                <div class="map-region-label region-label--east">East Africa</div>
-                <div class="map-region-label region-label--central">Central Africa</div>
-                <div class="map-region-label region-label--south">Southern Africa</div>
+                <div class="map-region-label region-label--north" data-region-label="North Africa">North Africa</div>
+                <div class="map-region-label region-label--west" data-region-label="West Africa">West Africa</div>
+                <div class="map-region-label region-label--east" data-region-label="East Africa">East Africa</div>
+                <div class="map-region-label region-label--central" data-region-label="Central Africa">Central Africa</div>
+                <div class="map-region-label region-label--south" data-region-label="Southern Africa">Southern Africa</div>
               </div>
 
               <div class="map-overlay map-overlay--legend panel panel--tint">

@@ -36,6 +36,10 @@ const recommendations = recommendationsData || [];
 const priorities = prioritiesData || [];
 const methodNotes = methodNotesData || [];
 let africaBoundaries = { features: [] };
+const regionOptions = ['All Regions', ...new Set(namedCountries.map((item) => item.region))];
+const yearOptions = [...new Set(timeline.flatMap((item) => item.year.match(/\d{4}/g) || []))].sort(
+    (a, b) => Number(b) - Number(a),
+);
 
 const sectionAnchors = Array.from(document.querySelectorAll('.sidenav a, .topbar__nav a'));
 const trackedSections = Array.from(document.querySelectorAll('section[id]'));
@@ -87,6 +91,10 @@ Alpine.data('policyPage', () => ({
     drawerOpen: false,
     priorityInspectorOpen: false,
     selectedCountryIso: 'KEN',
+    selectedRegion: 'All Regions',
+    selectedYear: yearOptions[0] || '2026',
+    regionOptions,
+    yearOptions,
     mapFeatures: [],
     desktopQuery: null,
 
@@ -118,6 +126,8 @@ Alpine.data('policyPage', () => ({
         this.renderPriorityMatrix();
         this.renderMethodNotes();
         this.renderDrawer(this.selectedCountryIso);
+        this.applyMapFilters();
+        this.applyYearFilter();
         this.bindScrollSpy();
     },
 
@@ -150,6 +160,19 @@ Alpine.data('policyPage', () => ({
         document.querySelectorAll('#priorityMatrix [data-priority]').forEach((node) => {
             node.classList.remove('is-active');
         });
+    },
+
+    filterNote() {
+        const regionNote =
+            this.selectedRegion === 'All Regions'
+                ? 'Showing all article-named jurisdictions and continental context.'
+                : `Showing ${this.selectedRegion} jurisdictions named directly in the brief, while dimming other regions for context.`;
+        const yearNote =
+            this.selectedYear === '2026'
+                ? 'The map reflects the brief’s May 2026 snapshot.'
+                : `Timeline focus is set to ${this.selectedYear}. Country classifications remain the brief’s May 2026 snapshot rather than a back-cast historical map.`;
+
+        return `${regionNote} ${yearNote}`;
     },
 
     bindScrollSpy() {
@@ -207,6 +230,54 @@ Alpine.data('policyPage', () => ({
             path.addEventListener('click', () => {
                 this.renderDrawer(path.dataset.iso || '');
             });
+        });
+    },
+
+    featureRegion(feature) {
+        if (feature.kind === 'classified') {
+            return feature.data.region;
+        }
+
+        return null;
+    },
+
+    applyMapFilters() {
+        const selectedRegion = this.selectedRegion;
+        const activeCountry = this.selectedCountryIso ? countryByIso[this.selectedCountryIso] : null;
+
+        document.querySelectorAll('.africa-map__country').forEach((path) => {
+            const iso = path.getAttribute('data-iso') || '';
+            const feature = this.mapFeatures.find((item) => item.iso === iso);
+            const featureRegion = feature ? this.featureRegion(feature) : null;
+            const matchesRegion =
+                selectedRegion === 'All Regions'
+                    ? true
+                    : featureRegion === selectedRegion;
+
+            path.classList.toggle('is-filtered-out', !matchesRegion && selectedRegion !== 'All Regions');
+            path.classList.toggle('is-region-focus', matchesRegion && selectedRegion !== 'All Regions');
+        });
+
+        document.querySelectorAll('[data-region-label]').forEach((label) => {
+            const matchesRegion =
+                selectedRegion === 'All Regions' ||
+                label.getAttribute('data-region-label') === selectedRegion;
+
+            label.classList.toggle('is-muted', !matchesRegion);
+            label.classList.toggle('is-active', matchesRegion && selectedRegion !== 'All Regions');
+        });
+
+        if (selectedRegion !== 'All Regions' && activeCountry && activeCountry.region !== selectedRegion) {
+            this.closeDrawer();
+        }
+    },
+
+    applyYearFilter() {
+        document.querySelectorAll('.timeline__item').forEach((node) => {
+            const years = (node.getAttribute('data-years') || '').split(',').filter(Boolean);
+            const isMatch = years.includes(this.selectedYear);
+            node.classList.toggle('is-focus', isMatch);
+            node.classList.toggle('is-dimmed', !isMatch && this.selectedYear !== '2026');
         });
     },
 
@@ -379,29 +450,29 @@ Alpine.data('policyPage', () => ({
 
         root.innerHTML = `
             <div class="timeline__line"></div>
-            <article class="timeline__item">
+            <article class="timeline__item" data-years="${escapeHtml((start.year.match(/\d{4}/g) || []).join(','))}">
                 <strong class="timeline__eyebrow">${escapeHtml(start.year)}</strong>
                 <p class="timeline__title">${escapeHtml(start.title)}</p>
             </article>
-            <article class="timeline__item">
+            <article class="timeline__item" data-years="${escapeHtml((au.year.match(/\d{4}/g) || []).join(','))}">
                 <strong class="timeline__eyebrow">${escapeHtml(au.year)}</strong>
                 <p class="timeline__detail">${escapeHtml(au.detail || au.title)}</p>
             </article>
-            <article class="timeline__item timeline__item--accent">
+            <article class="timeline__item timeline__item--accent" data-years="2023,2024,2025">
                 <div class="timeline__card">
                     <strong>${escapeHtml(accelerationLabel)}</strong>
                     <p class="timeline__detail">${escapeHtml(acceleration.detail || acceleration.title)}</p>
                 </div>
             </article>
-            <article class="timeline__item">
+            <article class="timeline__item" data-years="${escapeHtml((dpa.year.match(/\d{4}/g) || []).join(','))}">
                 <strong class="timeline__eyebrow">${escapeHtml(dpa.year)}</strong>
                 <p class="timeline__detail">${escapeHtml(dpa.detail || dpa.title)}</p>
             </article>
-            <article class="timeline__item">
+            <article class="timeline__item" data-years="${escapeHtml((later.year.match(/\d{4}/g) || []).join(','))}">
                 <strong class="timeline__eyebrow">${escapeHtml(later.year)}</strong>
                 <p class="timeline__detail">${escapeHtml(later.detail || later.title)}</p>
             </article>
-            <article class="timeline__item">
+            <article class="timeline__item" data-years="${escapeHtml((end.year.match(/\d{4}/g) || []).join(','))}">
                 <strong class="timeline__eyebrow">${escapeHtml(end.year)}</strong>
                 <p class="timeline__detail">${escapeHtml(end.detail || end.title)}</p>
             </article>
