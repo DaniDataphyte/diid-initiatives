@@ -2016,6 +2016,37 @@ h1 span {
     padding-inline: 1rem;
   }
 
+  .section__header--split {
+    display: grid;
+    justify-content: stretch;
+    align-items: start;
+    gap: 1.25rem;
+  }
+
+  .control-panel {
+    width: 100%;
+  }
+
+  .control-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .control-row label {
+    width: 100%;
+  }
+
+  .control-row select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .control-row__note {
+    max-width: none;
+    font-size: 0.84rem;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 5rem;
