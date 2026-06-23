@@ -85,6 +85,7 @@ Alpine.data('policyPage', () => ({
     isDesktop: true,
     sidebarCollapsed: false,
     drawerOpen: false,
+    priorityInspectorOpen: false,
     selectedCountryIso: 'KEN',
     mapFeatures: [],
     desktopQuery: null,
@@ -140,6 +141,14 @@ Alpine.data('policyPage', () => ({
         document.querySelectorAll('.africa-map__country').forEach((path) => {
             path.classList.remove('is-selected');
             path.setAttribute('stroke', '#ffffff');
+        });
+    },
+
+    closePriorityInspector() {
+        this.priorityInspectorOpen = false;
+
+        document.querySelectorAll('#priorityMatrix [data-priority]').forEach((node) => {
+            node.classList.remove('is-active');
         });
     },
 
@@ -599,6 +608,7 @@ Alpine.data('policyPage', () => ({
         };
 
         const paintInspector = (item) => {
+            this.priorityInspectorOpen = true;
             title.textContent = item.title;
             ring.textContent = ringLabels[item.ring] || item.ring;
             ring.style.backgroundColor = item.ring === 'red' ? 'rgba(240, 6, 20, 0.12)' : item.ring === 'orange' ? 'rgba(252, 105, 6, 0.12)' : 'rgba(29, 99, 213, 0.12)';
@@ -630,8 +640,6 @@ Alpine.data('policyPage', () => ({
                 )
                 .join('')}
         `;
-
-        paintInspector(priorities[0]);
 
         root.querySelectorAll('[data-priority]').forEach((button) => {
             button.addEventListener('click', () => {

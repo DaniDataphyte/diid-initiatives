@@ -260,13 +260,6 @@
                 </div>
               </div>
 
-              <div class="map-overlay map-overlay--note map-note">
-                <strong>Coverage note</strong>
-                <p>
-                  Country colour is applied only where the brief itself names a
-                  jurisdiction or cites it as a direct example.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -276,7 +269,9 @@
           <p>
             The brief names some countries directly and groups the rest in
             aggregate categories. The map reflects those explicit country
-            references while preserving the brief’s continental totals.
+            references while preserving the brief’s continental totals. Country
+            colour is applied only where the brief itself names a jurisdiction
+            or cites it as a direct example.
           </p>
         </div>
       </section>
@@ -314,8 +309,11 @@
           </article>
 
           <article class="metric-block metric-block--timeline">
-            <h3>Legislative Timeline 2020–2026</h3>
-            <div class="timeline" id="timelineChart"></div>
+            <div class="timeline-feature__media" aria-hidden="true"></div>
+            <div class="timeline-feature__body">
+              <h3>Legislative Timeline 2020–2026</h3>
+              <div class="timeline" id="timelineChart"></div>
+            </div>
           </article>
         </div>
       </section>
@@ -604,31 +602,47 @@
               <span>Gap state</span>
             </div>
           </div>
-          <aside class="matrix-side">
-            <div class="matrix-legend">
-              <h3>Legend</h3>
-              <ul>
-                <li><i class="swatch swatch--blue"></i> High-opportunity consolidation target</li>
-                <li><i class="swatch swatch--orange"></i> Emerging legislative pathway</li>
-                <li><i class="swatch swatch--red"></i> High-risk or low-coverage jurisdiction</li>
-                <li><span class="size-dot"></span> Larger node = higher urgency</li>
-              </ul>
-            </div>
-            <div class="matrix-inspector">
+          <button
+            class="matrix-inspector-backdrop"
+            type="button"
+            aria-label="Close priority inspector"
+            x-show="priorityInspectorOpen"
+            x-transition.opacity
+            @click="closePriorityInspector()"
+          ></button>
+          <aside
+            class="matrix-inspector matrix-inspector--modal"
+            x-show="priorityInspectorOpen"
+            x-transition.opacity.scale
+            @keydown.escape.window="closePriorityInspector()"
+          >
+            <div class="matrix-inspector__toolbar">
               <p class="panel__eyebrow">Inspector</p>
-              <h3 id="priorityTitle">Nigeria</h3>
-              <b id="priorityRingLabel">High impact / high feasibility</b>
-              <p id="priorityBody">
-                HB.244 already has legislative movement, coalition
-                infrastructure exists, and the policy window remains open for
-                enforceable law.
-              </p>
-              <div>
-                <label>Article-exact action cue</label>
-                <p id="priorityAction">Push Senate passage and early implementation design.</p>
-              </div>
+              <button class="matrix-inspector__close" type="button" @click="closePriorityInspector()" aria-label="Close priority inspector">×</button>
+            </div>
+            <h3 id="priorityTitle">Nigeria</h3>
+            <b id="priorityRingLabel">High impact / high feasibility</b>
+            <p id="priorityBody">
+              HB.244 already has legislative movement, coalition
+              infrastructure exists, and the policy window remains open for
+              enforceable law.
+            </p>
+            <div>
+              <label>Article-exact action cue</label>
+              <p id="priorityAction">Push Senate passage and early implementation design.</p>
             </div>
           </aside>
+        </div>
+        <div class="matrix-footer">
+          <div class="matrix-legend">
+            <h3>Legend</h3>
+            <ul>
+              <li><i class="swatch swatch--blue"></i> High-opportunity consolidation target</li>
+              <li><i class="swatch swatch--orange"></i> Emerging legislative pathway</li>
+              <li><i class="swatch swatch--red"></i> High-risk or low-coverage jurisdiction</li>
+              <li><span class="size-dot"></span> Larger node = higher urgency</li>
+            </ul>
+          </div>
         </div>
       </section>
 
