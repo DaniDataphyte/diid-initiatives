@@ -15,7 +15,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: path.resolve(__dirname, '../../dist/child-online-safety'),
+    outDir: path.resolve(__dirname, './dist'),
     emptyOutDir: true
   }
 });

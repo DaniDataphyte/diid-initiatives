@@ -22,7 +22,7 @@ npm install
 npm run build:child-online-safety
 ```
 
-The build output is written to `dist/child-online-safety`.
+The build output is written to `apps/child-online-safety/dist`.
 
 ## Deployment
 

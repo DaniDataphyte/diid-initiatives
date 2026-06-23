@@ -12,7 +12,7 @@ npm run build:child-online-safety
 
 ## Output
 
-- `dist/child-online-safety`
+- `dist/`
 
 ## Contents
 
