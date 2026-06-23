@@ -492,16 +492,7 @@ h1 span {
 }
 
 .map-layout {
-  display: grid;
-  grid-template-columns: 18rem minmax(0, 1fr);
-  gap: 1.5rem;
-  min-height: 38rem;
-}
-
-.map-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: block;
 }
 
 .panel {
@@ -547,6 +538,24 @@ h1 span {
 .country-drawer {
   display: grid;
   gap: 1rem;
+}
+
+.country-drawer__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.country-drawer__close {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid rgba(20, 28, 37, 0.12);
+  background: rgba(29, 99, 213, 0.06);
+  color: var(--blue-deep);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .country-drawer__head {
@@ -688,19 +697,53 @@ h1 span {
 
 .map-stage__surface {
   position: relative;
-  min-height: 32rem;
+  min-height: 44rem;
   display: grid;
   place-items: center;
 }
 
 .map-svg-shell {
   position: relative;
-  width: min(100%, 52rem);
-  aspect-ratio: 41 / 34;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border: 1px solid rgba(20, 28, 37, 0.14);
   background:
     radial-gradient(circle at 26% 18%, rgba(29, 99, 213, 0.1), transparent 28%),
     linear-gradient(180deg, rgba(247, 251, 255, 0.98), rgba(231, 240, 255, 0.98));
+}
+
+.map-overlay {
+  position: absolute;
+  z-index: 4;
+}
+
+.map-overlay--legend {
+  right: 1rem;
+  bottom: 1rem;
+  width: 16rem;
+}
+
+.map-overlay--drawer {
+  top: 1rem;
+  left: 1rem;
+  width: min(26rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  overflow: auto;
+  z-index: 6;
+}
+
+.map-overlay--note {
+  right: 18.5rem;
+  bottom: 1rem;
+  max-width: 18rem;
+}
+
+.country-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  border: 0;
+  background: rgba(20, 28, 37, 0.18);
 }
 
 .africa-map {
@@ -767,13 +810,15 @@ h1 span {
 }
 
 .map-note {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
   max-width: 17rem;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--line);
+}
+
+.map-reading-note {
+  max-width: 1440px;
+  margin: 1rem auto 0;
 }
 
 .map-note strong,
@@ -1816,6 +1861,11 @@ h1 span {
     display: none;
   }
 
+  .map-overlay--note {
+    right: 1rem;
+    bottom: 12.5rem;
+  }
+
   .metric-block,
   .metric-block--timeline {
     grid-column: 1 / -1;
@@ -1873,6 +1923,32 @@ h1 span {
 
   .hero-stat--blue strong {
     font-size: 3rem;
+  }
+
+  .map-stage__surface {
+    min-height: 34rem;
+  }
+
+  .map-svg-shell {
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .map-overlay--legend {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+  }
+
+  .map-overlay--note {
+    display: none;
+  }
+
+  .map-overlay--drawer {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
   }
 
   .map-stage,

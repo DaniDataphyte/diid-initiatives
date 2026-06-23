@@ -166,75 +166,6 @@
         </div>
 
         <div class="map-layout">
-          <div class="map-sidebar">
-            <div class="panel panel--tint">
-              <h3>Legend</h3>
-              <ul class="legend-list">
-                <li><i class="swatch swatch--blue"></i> Enacted law</li>
-                <li><i class="swatch swatch--orange"></i> Advanced draft</li>
-                <li><i class="swatch swatch--amber"></i> Strategy / draft</li>
-                <li><i class="swatch swatch--sand"></i> General law</li>
-                <li><i class="swatch swatch--red"></i> No framework</li>
-              </ul>
-            </div>
-            <div class="panel">
-              <h3>Reading Note</h3>
-              <p>
-                The brief names some countries directly and groups the rest in
-                aggregate categories. The map reflects those explicit country
-                references while preserving the brief’s continental totals.
-              </p>
-            </div>
-            <div class="panel panel--drawer">
-              <p class="panel__eyebrow">Selected country</p>
-              <div class="country-drawer" id="countryDrawer">
-                <div class="country-drawer__head">
-                  <div>
-                    <h3 id="drawerCountry">Kenya</h3>
-                    <span id="drawerRegion">East Africa</span>
-                  </div>
-                  <b id="drawerStatus">Binding guideline layer</b>
-                </div>
-                <p class="country-drawer__body" id="drawerSummary">
-                  Kenya is identified in the brief as a jurisdiction with
-                  binding child online protection guidelines effective from
-                  October 2025, alongside wider data protection and regulatory
-                  activity.
-                </p>
-                <div class="country-drawer__group">
-                  <label>Instruments</label>
-                  <ul id="drawerInstruments">
-                    <li>Industry Guidelines for Child Online Protection and Safety</li>
-                    <li>ODPC enforcement actions on children’s data</li>
-                  </ul>
-                </div>
-                <div class="country-drawer__group">
-                  <label>Key provisions</label>
-                  <div class="country-drawer__tags" id="drawerFlags">
-                    <span>Age verification</span>
-                    <span>Provider obligations</span>
-                    <span>Data protection</span>
-                  </div>
-                </div>
-                <div class="country-drawer__group">
-                  <label>Advocacy opportunity</label>
-                  <p id="drawerOpportunity">
-                    Consolidate existing protections into primary child online
-                    protection legislation.
-                  </p>
-                </div>
-                <div class="country-drawer__group">
-                  <label>Article evidence</label>
-                  <p id="drawerEvidence">
-                    The brief places Kenya in the top-tier binding group while
-                    also noting that its framework remains a consolidation case
-                    rather than a standalone COP statute.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="map-stage">
             <div class="map-stage__surface">
               <div class="map-svg-shell">
@@ -251,7 +182,85 @@
                 <div class="map-region-label region-label--central">Central Africa</div>
                 <div class="map-region-label region-label--south">Southern Africa</div>
               </div>
-              <div class="map-note">
+
+              <div class="map-overlay map-overlay--legend panel panel--tint">
+                <h3>Legend</h3>
+                <ul class="legend-list">
+                  <li><i class="swatch swatch--blue"></i> Enacted law</li>
+                  <li><i class="swatch swatch--orange"></i> Advanced draft</li>
+                  <li><i class="swatch swatch--amber"></i> Strategy / draft</li>
+                  <li><i class="swatch swatch--sand"></i> General law</li>
+                  <li><i class="swatch swatch--red"></i> No framework</li>
+                </ul>
+              </div>
+
+              <button
+                class="country-drawer-backdrop"
+                type="button"
+                aria-label="Close selected country panel"
+                x-show="drawerOpen"
+                x-transition.opacity
+                @click="closeDrawer()"
+              ></button>
+
+              <div
+                class="map-overlay map-overlay--drawer panel panel--drawer"
+                x-show="drawerOpen"
+                x-transition.opacity.scale.origin.right
+                @keydown.escape.window="closeDrawer()"
+              >
+                <div class="country-drawer" id="countryDrawer">
+                  <div class="country-drawer__toolbar">
+                    <p class="panel__eyebrow">Selected country</p>
+                    <button class="country-drawer__close" type="button" @click="closeDrawer()" aria-label="Close selected country panel">×</button>
+                  </div>
+                  <div class="country-drawer__head">
+                    <div>
+                      <h3 id="drawerCountry">Kenya</h3>
+                      <span id="drawerRegion">East Africa</span>
+                    </div>
+                    <b id="drawerStatus">Binding guideline layer</b>
+                  </div>
+                  <p class="country-drawer__body" id="drawerSummary">
+                    Kenya is identified in the brief as a jurisdiction with
+                    binding child online protection guidelines effective from
+                    October 2025, alongside wider data protection and regulatory
+                    activity.
+                  </p>
+                  <div class="country-drawer__group">
+                    <label>Instruments</label>
+                    <ul id="drawerInstruments">
+                      <li>Industry Guidelines for Child Online Protection and Safety</li>
+                      <li>ODPC enforcement actions on children’s data</li>
+                    </ul>
+                  </div>
+                  <div class="country-drawer__group">
+                    <label>Key provisions</label>
+                    <div class="country-drawer__tags" id="drawerFlags">
+                      <span>Age verification</span>
+                      <span>Provider obligations</span>
+                      <span>Data protection</span>
+                    </div>
+                  </div>
+                  <div class="country-drawer__group">
+                    <label>Advocacy opportunity</label>
+                    <p id="drawerOpportunity">
+                      Consolidate existing protections into primary child online
+                      protection legislation.
+                    </p>
+                  </div>
+                  <div class="country-drawer__group">
+                    <label>Article evidence</label>
+                    <p id="drawerEvidence">
+                      The brief places Kenya in the top-tier binding group while
+                      also noting that its framework remains a consolidation case
+                      rather than a standalone COP statute.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map-overlay map-overlay--note map-note">
                 <strong>Coverage note</strong>
                 <p>
                   Country colour is applied only where the brief itself names a
@@ -260,6 +269,15 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="map-reading-note panel">
+          <h3>Reading Note</h3>
+          <p>
+            The brief names some countries directly and groups the rest in
+            aggregate categories. The map reflects those explicit country
+            references while preserving the brief’s continental totals.
+          </p>
         </div>
       </section>
 

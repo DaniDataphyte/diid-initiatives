@@ -84,6 +84,7 @@ function mapFeatureState(feature) {
 Alpine.data('policyPage', () => ({
     isDesktop: true,
     sidebarCollapsed: false,
+    drawerOpen: false,
     selectedCountryIso: 'KEN',
     mapFeatures: [],
     desktopQuery: null,
@@ -130,6 +131,16 @@ Alpine.data('policyPage', () => ({
 
     closeSidebar() {
         this.sidebarCollapsed = true;
+    },
+
+    closeDrawer() {
+        this.drawerOpen = false;
+        this.selectedCountryIso = '';
+
+        document.querySelectorAll('.africa-map__country').forEach((path) => {
+            path.classList.remove('is-selected');
+            path.setAttribute('stroke', '#ffffff');
+        });
     },
 
     bindScrollSpy() {
@@ -206,6 +217,7 @@ Alpine.data('policyPage', () => ({
 
         if (country) {
             this.selectedCountryIso = iso;
+            this.drawerOpen = true;
             const status = statusMap[country.status];
 
             drawerCountry.textContent = country.name;
@@ -224,6 +236,7 @@ Alpine.data('policyPage', () => ({
             drawerEvidence.textContent = `${country.evidence} Sources: ${country.articleRefs.join('; ')}.`;
         } else if (mention) {
             this.selectedCountryIso = iso;
+            this.drawerOpen = true;
 
             drawerCountry.textContent = mention.name;
             drawerRegion.textContent = 'Article mention';
@@ -237,6 +250,7 @@ Alpine.data('policyPage', () => ({
             drawerEvidence.textContent = `Article references: ${mention.articleRefs.join('; ')}.`;
         } else if (feature) {
             this.selectedCountryIso = iso;
+            this.drawerOpen = true;
 
             drawerCountry.textContent = feature.title;
             drawerRegion.textContent = 'Aggregate-only coverage';
