@@ -165,12 +165,12 @@ Alpine.data('policyPage', () => ({
     filterNote() {
         const regionNote =
             this.selectedRegion === 'All Regions'
-                ? 'Showing all article-named jurisdictions and continental context.'
-                : `Showing ${this.selectedRegion} jurisdictions named directly in the brief, while dimming other regions for context.`;
+                ? 'Showing the full continental picture as presented in the brief’s May 2026 snapshot.'
+                : `Showing the countries highlighted in ${this.selectedRegion}, with the rest of the continent kept in view for context.`;
         const yearNote =
             this.selectedYear === '2026'
                 ? 'The map reflects the brief’s May 2026 snapshot.'
-                : `Timeline focus is set to ${this.selectedYear}. Country classifications remain the brief’s May 2026 snapshot rather than a back-cast historical map.`;
+                : `The timeline focus is set to ${this.selectedYear}, while the map retains the brief’s May 2026 legislative picture.`;
 
         return `${regionNote} ${yearNote}`;
     },
@@ -319,32 +319,32 @@ Alpine.data('policyPage', () => ({
             this.drawerOpen = true;
 
             drawerCountry.textContent = mention.name;
-            drawerRegion.textContent = 'Article mention';
-            drawerStatus.textContent = 'Mention only';
+            drawerRegion.textContent = 'Referenced case';
+            drawerStatus.textContent = 'Referenced in analysis';
             drawerStatus.style.backgroundColor = 'rgba(79, 95, 121, 0.12)';
             drawerStatus.style.color = '#4f5f79';
             drawerSummary.textContent = mention.summary;
-            drawerInstruments.innerHTML = '<li>No state-of-play classification is assigned in the supplied brief text.</li>';
-            drawerFlags.innerHTML = '<span>Rights-risk precedent</span><span>Not counted in classification totals</span>';
-            drawerOpportunity.textContent = 'Use this mention as a cautionary annotation rather than a state-of-play classification.';
-            drawerEvidence.textContent = `Article references: ${mention.articleRefs.join('; ')}.`;
+            drawerInstruments.innerHTML = '<li>No separate state-of-play category is assigned to this case in the brief.</li>';
+            drawerFlags.innerHTML = '<span>Rights-risk precedent</span><span>Context note</span>';
+            drawerOpportunity.textContent = 'Use this case as a cautionary signal on rights risk and enforcement design.';
+            drawerEvidence.textContent = `Referenced in: ${mention.articleRefs.join('; ')}.`;
         } else if (feature) {
             this.selectedCountryIso = iso;
             this.drawerOpen = true;
 
             drawerCountry.textContent = feature.title;
-            drawerRegion.textContent = 'Aggregate-only coverage';
-            drawerStatus.textContent = 'Not individually classified';
+            drawerRegion.textContent = 'Continental total';
+            drawerStatus.textContent = 'No country-specific classification';
             drawerStatus.style.backgroundColor = 'rgba(191, 210, 239, 0.44)';
             drawerStatus.style.color = '#4f5f79';
             drawerSummary.textContent =
-                'This country appears in the continental map view, but the brief text available here does not name it individually in the state-of-play classification.';
-            drawerInstruments.innerHTML = '<li>No country-specific instrument is quoted in the supplied brief text.</li>';
-            drawerFlags.innerHTML = '<span>Aggregate category only</span><span>Falls inside continental totals</span>';
+                'This country sits within the continental landscape but is not discussed individually in the brief’s state-of-play analysis.';
+            drawerInstruments.innerHTML = '<li>No country-specific instrument is cited in the brief for this jurisdiction.</li>';
+            drawerFlags.innerHTML = '<span>Continental total</span><span>No individual case note</span>';
             drawerOpportunity.textContent =
-                'Use the companion country mapping referenced by the brief to add a country-specific classification.';
+                'Country-specific classification would require the companion mapping referenced in the wider research.';
             drawerEvidence.textContent =
-                'A companion country-by-country mapping is referenced, but that source text is not included in this workspace.';
+                'The brief keeps this jurisdiction within the wider continental count rather than discussing it as a standalone case.';
         }
 
         document.querySelectorAll('.africa-map__country').forEach((path) => {
@@ -403,8 +403,8 @@ Alpine.data('policyPage', () => ({
         if (!readiness.available) {
             root.innerHTML = `
                 <div class="metric-empty">
-                    <strong>Regional readiness values not published in article</strong>
-                    <p>The supplied brief text does not include regional score outputs.</p>
+                    <strong>Regional comparison loading</strong>
+                    <p>Regional comparison details are being prepared.</p>
                 </div>
             `;
 
@@ -517,7 +517,7 @@ Alpine.data('policyPage', () => ({
 
         if (callout && critical) {
             callout.innerHTML = `
-                <strong>Critical deficit</strong>
+                <strong>Most urgent gap</strong>
                 <span>${escapeHtml(critical.title)}: ${escapeHtml(critical.body)}</span>
             `;
         }
@@ -528,7 +528,7 @@ Alpine.data('policyPage', () => ({
                     <article class="gap-item ${index === 0 ? 'gap-item--open' : ''}">
                         <button class="gap-item__top" type="button" aria-expanded="${index === 0 ? 'true' : 'false'}">
                             <h3>${escapeHtml(item.title)}</h3>
-                            <span>${index === 0 ? 'Expanded' : 'Collapsed'}</span>
+                            <span>${index === 0 ? 'In focus' : 'Open detail'}</span>
                         </button>
                         <div class="gap-item__panel">
                             <p>${escapeHtml(item.body)}</p>
@@ -557,14 +557,14 @@ Alpine.data('policyPage', () => ({
                     other.querySelector('.gap-item__top')?.setAttribute('aria-expanded', 'false');
                     const label = other.querySelector('.gap-item__top span');
                     if (label) {
-                        label.textContent = 'Collapsed';
+                        label.textContent = 'Open detail';
                     }
                 });
 
                 item.classList.toggle('gap-item--open', !isOpen);
                 button.setAttribute('aria-expanded', String(!isOpen));
                 if (state) {
-                    state.textContent = isOpen ? 'Collapsed' : 'Expanded';
+                    state.textContent = isOpen ? 'Open detail' : 'In focus';
                 }
             });
         });
