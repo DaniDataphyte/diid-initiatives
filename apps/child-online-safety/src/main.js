@@ -344,7 +344,7 @@ Alpine.data('policyPage', () => ({
             drawerOpportunity.textContent =
                 'Use the companion country mapping referenced by the brief to add a country-specific classification.';
             drawerEvidence.textContent =
-                'The brief refers to a companion mapping document for full country-by-country coverage, but that source text is not included here.';
+                'A companion country-by-country mapping is referenced, but that source text is not included in this workspace.';
         }
 
         document.querySelectorAll('.africa-map__country').forEach((path) => {
@@ -422,7 +422,7 @@ Alpine.data('policyPage', () => ({
                                     <span>${item.score}%</span>
                                 </div>
                                 <div class="progress"><i style="width:${item.score}%"></i></div>
-                                <p class="progress-row__note">Article-named countries in this regional sample: ${item.sampleSize}</p>
+                                <p class="progress-row__note">Countries cited in this region: ${item.sampleSize}</p>
                             </div>
                         `,
                     )

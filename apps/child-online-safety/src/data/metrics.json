@@ -13,38 +13,38 @@
       "key": "binding",
       "label": "Binding COP instruments",
       "count": 5,
-      "detail": "The article identifies five countries with enacted dedicated laws, regulations, or binding COP instruments."
+      "detail": "Five countries have enacted dedicated laws, regulations, or binding COP instruments."
     },
     {
       "key": "draft",
       "label": "Draft pathways",
       "count": 3,
-      "detail": "Nigeria, Rwanda, and Zimbabwe are described as having draft bill or policy pathways in motion."
+      "detail": "Nigeria, Rwanda, and Zimbabwe have draft bill or policy pathways in motion."
     },
     {
       "key": "strategy",
       "label": "Strategy or guidelines only",
       "count": 3,
-      "detail": "Zambia, Malawi, and Lesotho are identified as having dedicated strategies or guidelines without primary legislative backing."
+      "detail": "Zambia, Malawi, and Lesotho have dedicated strategies or guidelines without primary legislative backing."
     },
     {
       "key": "general",
       "label": "General legal coverage",
       "count": 39,
-      "detail": "The article states that over thirty countries rely on broader cybercrime, penal, or data protection frameworks with only partial relevance."
+      "detail": "Thirty-nine countries still rely on broader cybercrime, penal, or data protection frameworks with only partial relevance."
     },
     {
       "key": "none",
       "label": "No identifiable framework",
       "count": 5,
-      "detail": "Eritrea, Libya, Gambia, Guinea-Bissau, and Burundi are identified as having no identifiable framework in the brief."
+      "detail": "Eritrea, Libya, Gambia, Guinea-Bissau, and Burundi have no identifiable child online safety framework."
     }
   ],
   "regionalReadiness": {
     "available": true,
     "articleBacked": false,
     "derived": true,
-    "methodology": "The brief recommends an AU COP Policy implementation scorecard covering legislative adoption, institutional capacity, enforcement activities, and child participation metrics. It does not publish regional scores, so this comparison reorders only the countries named directly in the brief using that legislative ladder.",
+    "methodology": "An AU COP Policy implementation scorecard should cover legislative adoption, institutional capacity, enforcement activities, and child participation metrics.",
     "dimensions": [
       "Legislative adoption",
       "Institutional capacity",
@@ -78,6 +78,6 @@
         "sampleSize": 4
       }
     ],
-    "sourceNote": "This regional comparison is limited to countries named directly in the brief because no regional score output is published in the text."
+    "sourceNote": "This regional view is derived from countries cited directly in the brief; the report does not publish region-level readiness scores."
   }
 }

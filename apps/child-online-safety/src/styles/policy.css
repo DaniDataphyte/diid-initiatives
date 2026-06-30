@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background:
     radial-gradient(circle at top right, rgba(29, 99, 213, 0.12), transparent 28%),
@@ -324,9 +324,9 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.025em;
 }
 
 h1 {
@@ -396,7 +396,7 @@ h1 span {
 
 .hero-stat strong {
   display: block;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-accent);
   line-height: 1;
 }
 
@@ -443,8 +443,8 @@ h1 span {
 
 .section__header h2 {
   font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.08;
-  letter-spacing: -0.01em;
+  line-height: 1.12;
+  letter-spacing: -0.005em;
   text-transform: uppercase;
 }
 
@@ -536,7 +536,7 @@ h1 span {
 .panel h3 {
   margin-bottom: 1rem;
   font-size: 1rem;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -890,7 +890,7 @@ h1 span {
 .metric-block h3 {
   margin-bottom: 1.5rem;
   font-size: 0.82rem;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -992,7 +992,7 @@ h1 span {
   display: block;
   margin-bottom: 0.55rem;
   font-size: 0.82rem;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1140,7 +1140,7 @@ h1 span {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
 }
 
 .timeline__title {
@@ -1170,7 +1170,7 @@ h1 span {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
 }
 
 .section--patterns {
@@ -1206,9 +1206,12 @@ h1 span {
 }
 
 .pattern-card h3 {
-  max-width: 15ch;
-  font-size: 2rem;
-  line-height: 1.2;
+  max-width: 16ch;
+  font-size: clamp(1.8rem, 2.2vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.006em;
+  text-wrap: balance;
 }
 
 .pattern-card span {
@@ -1304,6 +1307,9 @@ h1 span {
 
 .gap-item__top h3 {
   font-size: 1.55rem;
+  line-height: 1.12;
+  letter-spacing: -0.008em;
+  text-wrap: balance;
 }
 
 .gap-item__top span {
@@ -1422,14 +1428,14 @@ h1 span {
 }
 
 .force-column li strong {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-accent);
   font-size: 2.4rem;
   line-height: 1;
   opacity: 0.22;
 }
 
 .force-column h4 {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -1842,7 +1848,7 @@ h1 span {
 }
 
 .contact-card h3 {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-display);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
