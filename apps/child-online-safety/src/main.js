@@ -163,16 +163,19 @@ Alpine.data('policyPage', () => ({
     },
 
     filterNote() {
-        const regionNote =
-            this.selectedRegion === 'All Regions'
-                ? 'Showing the full continental picture as presented in the brief’s May 2026 snapshot.'
-                : `Showing the countries highlighted in ${this.selectedRegion}, with the rest of the continent kept in view for context.`;
-        const yearNote =
-            this.selectedYear === '2026'
-                ? 'The map reflects the brief’s May 2026 snapshot.'
-                : `The timeline focus is set to ${this.selectedYear}, while the map retains the brief’s May 2026 legislative picture.`;
+        if (this.selectedRegion === 'All Regions' && this.selectedYear === '2026') {
+            return 'Viewing the full continental picture for May 2026.';
+        }
 
-        return `${regionNote} ${yearNote}`;
+        if (this.selectedRegion === 'All Regions') {
+            return `Viewing the full continental picture, with the timeline focused on ${this.selectedYear}.`;
+        }
+
+        if (this.selectedYear === '2026') {
+            return `Viewing ${this.selectedRegion} within the continental picture.`;
+        }
+
+        return `Viewing ${this.selectedRegion}, with the timeline focused on ${this.selectedYear}.`;
     },
 
     bindScrollSpy() {
@@ -324,7 +327,7 @@ Alpine.data('policyPage', () => ({
             drawerStatus.style.backgroundColor = 'rgba(79, 95, 121, 0.12)';
             drawerStatus.style.color = '#4f5f79';
             drawerSummary.textContent = mention.summary;
-            drawerInstruments.innerHTML = '<li>No separate state-of-play category is assigned to this case in the brief.</li>';
+            drawerInstruments.innerHTML = '<li>No separate state-of-play category is assigned to this case.</li>';
             drawerFlags.innerHTML = '<span>Rights-risk precedent</span><span>Context note</span>';
             drawerOpportunity.textContent = 'Use this case as a cautionary signal on rights risk and enforcement design.';
             drawerEvidence.textContent = `Referenced in: ${mention.articleRefs.join('; ')}.`;
@@ -338,13 +341,13 @@ Alpine.data('policyPage', () => ({
             drawerStatus.style.backgroundColor = 'rgba(191, 210, 239, 0.44)';
             drawerStatus.style.color = '#4f5f79';
             drawerSummary.textContent =
-                'This country sits within the continental landscape but is not discussed individually in the brief’s state-of-play analysis.';
-            drawerInstruments.innerHTML = '<li>No country-specific instrument is cited in the brief for this jurisdiction.</li>';
+                'This country remains part of the continental picture but is not discussed as a standalone case here.';
+            drawerInstruments.innerHTML = '<li>No country-specific instrument is cited here.</li>';
             drawerFlags.innerHTML = '<span>Continental total</span><span>No individual case note</span>';
             drawerOpportunity.textContent =
                 'Country-specific classification would require the companion mapping referenced in the wider research.';
             drawerEvidence.textContent =
-                'The brief keeps this jurisdiction within the wider continental count rather than discussing it as a standalone case.';
+                'This jurisdiction remains within the wider continental count rather than a standalone case discussion.';
         }
 
         document.querySelectorAll('.africa-map__country').forEach((path) => {

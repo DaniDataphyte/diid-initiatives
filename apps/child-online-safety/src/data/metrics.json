@@ -44,7 +44,7 @@
     "available": true,
     "articleBacked": false,
     "derived": true,
-    "methodology": "An AU COP Policy implementation scorecard should cover legislative adoption, institutional capacity, enforcement activities, and child participation metrics.",
+    "methodology": "An AU COP Policy implementation scorecard should track legislative adoption, institutional capacity, enforcement activity, and child participation.",
     "dimensions": [
       "Legislative adoption",
       "Institutional capacity",
@@ -78,6 +78,6 @@
         "sampleSize": 4
       }
     ],
-    "sourceNote": "This regional view is derived from countries cited directly in the brief; the report does not publish region-level readiness scores."
+    "sourceNote": "This regional view draws from the countries discussed in the analysis. No region-level readiness score is published."
   }
 }
