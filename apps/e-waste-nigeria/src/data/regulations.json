@@ -1,0 +1,42 @@
+{
+  "instruments": [
+    {
+      "year": "2011",
+      "title": "NESREA e-waste regulations",
+      "body": "The main domestic framework prohibits open burning and landfill disposal while requiring manufacturers and importers to participate in Extended Producer Responsibility."
+    },
+    {
+      "year": "1991 / 2004",
+      "title": "Basel and Bamako commitments",
+      "body": "Nigeria is part of the main international legal architecture governing hazardous waste flows, including bans and prior informed consent obligations."
+    },
+    {
+      "year": "2025",
+      "title": "Basel e-waste amendments enter into force",
+      "body": "From January 1, 2025, all transboundary e-waste and scrap shipments fall under prior informed consent requirements."
+    },
+    {
+      "year": "2026",
+      "title": "NESREA cooperative-led model",
+      "body": "The new model aims to integrate informal workers through structured cooperatives tied to governance, financing, compliance, and social protection support."
+    }
+  ],
+  "gaps": [
+    {
+      "title": "Law exists, field conditions do not change at scale",
+      "body": "Unsafe dismantling and burning continue because collection channels, recycling infrastructure, and enforcement reach remain weak."
+    },
+    {
+      "title": "Formal operators lose feedstock to informal markets",
+      "body": "Informal recyclers and scavengers outcompete registered operators on price, leaving formal systems under-supplied."
+    },
+    {
+      "title": "Import controls remain hard to enforce",
+      "body": "Customs data does not cleanly distinguish new from used electronics, making it difficult to police dumping through second-hand trade."
+    },
+    {
+      "title": "Market power remains uneven",
+      "body": "At sites like Alaba, middlemen can profit substantially while informal collectors face unsafe work and weak bargaining power."
+    }
+  ]
+}

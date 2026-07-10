@@ -1,5 +1,37 @@
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Clash Grotesk", "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-accent: "Cormorant Garamond", ui-serif, Georgia, serif;
 }

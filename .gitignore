@@ -24,6 +24,9 @@ pnpm-debug.log*
 /auth.json
 /node_modules
 /dist
+/docs
+/apps/*/docs
+/apps/*/node_modules
 /apps/*/dist
 /coverage
 /tmp

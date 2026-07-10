@@ -1,0 +1,53 @@
+{
+  "heroStats": [
+    {
+      "value": "500,000 tonnes",
+      "label": "Domestic generation in 2022",
+      "tone": "orange"
+    },
+    {
+      "value": "148.2 million",
+      "label": "Internet subscribers in 2025",
+      "tone": "blue"
+    },
+    {
+      "value": "Up to 100,000",
+      "label": "Informal e-waste workers",
+      "tone": "sand"
+    }
+  ],
+  "burdenMetrics": [
+    {
+      "label": "Domestic generation benchmark",
+      "value": "500,000 tonnes",
+      "note": "UNITAR and ITU place Nigeria third in Africa for domestic e-waste generation."
+    },
+    {
+      "label": "RMRDC total burden claim",
+      "value": "1.1 million tonnes",
+      "note": "The higher estimate points to a much larger total burden once imports are counted."
+    },
+    {
+      "label": "Used electronics entering Lagos",
+      "value": "500 containers / month",
+      "note": "Large import flows keep Nigeria at the center of the second-hand electronics trade."
+    },
+    {
+      "label": "Used EEE through Lagos ports",
+      "value": "18,300 metric tonnes / year",
+      "note": "Port inflows add directly to the country's repair, reuse, and disposal pressure."
+    }
+  ],
+  "dependencyStats": [
+    {
+      "value": "168%",
+      "label": "Data usage growth",
+      "note": "Monthly internet data usage rose by 168% between January 2023 and December 2025, increasing device turnover and future waste volume."
+    },
+    {
+      "value": ">90%",
+      "label": "Informal processing share",
+      "note": "More than 90% of Nigeria's e-waste is absorbed by informal recovery because formal recycling infrastructure remains marginal."
+    }
+  ]
+}

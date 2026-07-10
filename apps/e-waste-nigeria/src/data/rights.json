@@ -1,0 +1,46 @@
+[
+  {
+    "key": "environmental-justice",
+    "label": "Environmental justice",
+    "headline": "The communities carrying the toxic burden are not the communities capturing the digital gains.",
+    "body": "The health and environmental costs of e-waste fall on low-income urban communities, informal workers, and families living near dumpsites rather than on the markets where devices were designed, sold, and consumed.",
+    "points": [
+      "Toxic externalities are displaced from Global North consumption markets to Nigerian disposal sites.",
+      "Within Nigeria, the burden lands hardest on low-income urban communities.",
+      "Groundwater contamination links the digital economy directly to environmental injustice."
+    ]
+  },
+  {
+    "key": "labour-rights",
+    "label": "Labour rights",
+    "headline": "Informal recovery keeps the system running, but workers remain largely unprotected.",
+    "body": "Up to 100,000 workers operate without meaningful labour protections, occupational health coverage, social security, or safety equipment even as they do the most dangerous recovery work.",
+    "points": [
+      "Manual dismantling, acid baths, and open burning take place without adequate protection.",
+      "Formalisation requires more than registration; it requires enforceable worker protections.",
+      "The cooperative-led EPR model will fail if labour rights remain an afterthought."
+    ]
+  },
+  {
+    "key": "child-rights",
+    "label": "Children's rights",
+    "headline": "The same digital transition meant to expand opportunity is also creating conditions that kill children.",
+    "body": "Mortality findings around major e-waste sites show that the burden is not abstract. It is reflected in neonatal and infant deaths, groundwater contamination, and continued concern over child labour in informal recycling.",
+    "points": [
+      "Children near major sites face measurable mortality risk increases.",
+      "Residential exposure compounds risks beyond the worksite itself.",
+      "Child labour remains insufficiently documented, not safely absent."
+    ]
+  },
+  {
+    "key": "digital-sovereignty",
+    "label": "Digital sovereignty",
+    "headline": "Nigeria pays the disposal cost of a hardware system it does not control.",
+    "body": "The country imports the devices, carries the end-of-life burden, and captures only a fraction of the embedded material value while product design and lifespan decisions are made elsewhere.",
+    "points": [
+      "Hardware dependence makes waste dependence a digital policy issue.",
+      "Global governance remains asymmetric when EPR fees stay in exporting markets.",
+      "A sustainable digital economy requires control over the material lifecycle, not only the software layer."
+    ]
+  }
+]

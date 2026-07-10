@@ -1,0 +1,22 @@
+[
+  {
+    "country": "Egypt",
+    "tonnes": 690000
+  },
+  {
+    "country": "South Africa",
+    "tonnes": 530000
+  },
+  {
+    "country": "Nigeria",
+    "tonnes": 500000
+  },
+  {
+    "country": "Algeria",
+    "tonnes": 330000
+  },
+  {
+    "country": "Morocco",
+    "tonnes": 180000
+  }
+]

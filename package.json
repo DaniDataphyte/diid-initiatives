@@ -8,10 +8,13 @@
   ],
   "scripts": {
     "build": "npm run build:all",
-    "build:all": "npm run build:child-online-safety",
+    "build:all": "npm run build:child-online-safety && npm run build:e-waste-nigeria",
     "dev:child-online-safety": "npm run dev --workspace @diid/child-online-safety",
+    "dev:e-waste-nigeria": "npm run dev --workspace @diid/e-waste-nigeria",
     "build:child-online-safety": "npm run build --workspace @diid/child-online-safety",
-    "preview:child-online-safety": "npm run preview --workspace @diid/child-online-safety"
+    "build:e-waste-nigeria": "npm run build --workspace @diid/e-waste-nigeria",
+    "preview:child-online-safety": "npm run preview --workspace @diid/child-online-safety",
+    "preview:e-waste-nigeria": "npm run preview --workspace @diid/e-waste-nigeria"
   },
   "devDependencies": {
     "vite": "^8.0.0"

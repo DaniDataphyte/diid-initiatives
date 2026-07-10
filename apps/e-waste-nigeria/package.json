@@ -1,0 +1,10 @@
+{
+  "name": "@diid/e-waste-nigeria",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.js",
+    "build": "vite build --config vite.config.js",
+    "preview": "vite preview --config vite.config.js"
+  }
+}

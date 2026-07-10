@@ -1,0 +1,41 @@
+{
+  "releases": [
+    {
+      "label": "Brominated plastics burned or dumped",
+      "value": "52,000+ tonnes",
+      "note": "UNEP estimates these flame-retardant plastics are released each year through unsafe handling."
+    },
+    {
+      "label": "Lead released",
+      "value": "4,000 tonnes",
+      "note": "Lead exposure pushes neurological and developmental risks into workers and nearby communities."
+    },
+    {
+      "label": "Cadmium released",
+      "value": "80 tonnes",
+      "note": "Cadmium contamination adds to long-term soil and water toxicity around informal processing sites."
+    },
+    {
+      "label": "Mercury released",
+      "value": "0.3 tonnes",
+      "note": "Even small mercury volumes create severe risks where handling, burning, and disposal are uncontrolled."
+    }
+  ],
+  "healthFindings": [
+    {
+      "label": "Increase in neonatal mortality near major sites",
+      "value": "+4.5 pts",
+      "note": "A 2024 World Bank Economic Review found strong mortality effects for children living close to e-waste sites."
+    },
+    {
+      "label": "Increase in infant mortality near major sites",
+      "value": "+6.5 pts",
+      "note": "The same study linked e-waste site exposure to significantly higher infant mortality."
+    },
+    {
+      "label": "Lag before effects appear",
+      "value": "2–3 years",
+      "note": "The delay is consistent with contamination accumulating gradually in surrounding environments."
+    }
+  ]
+}

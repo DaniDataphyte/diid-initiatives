@@ -1,0 +1,42 @@
+[
+  {
+    "key": "alaba",
+    "label": "Alaba International Market",
+    "lon": 3.242,
+    "lat": 6.456,
+    "tone": "major",
+    "note": "Alaba is one of the country's most visible informal e-waste processing hubs and a central site in the wider health and contamination picture."
+  },
+  {
+    "key": "ikeja",
+    "label": "Ikeja Computer Village",
+    "lon": 3.35,
+    "lat": 6.6018,
+    "tone": "major",
+    "note": "Ikeja combines repair, resale, component stripping, and broader electronics circulation inside Lagos's digital economy."
+  },
+  {
+    "key": "kano",
+    "label": "Kano Markets",
+    "lon": 8.5167,
+    "lat": 12.0022,
+    "tone": "normal",
+    "note": "Kano represents the northward spread of informal electronics recovery and resale activity beyond Lagos."
+  },
+  {
+    "key": "fct",
+    "label": "FCT Markets",
+    "lon": 7.3986,
+    "lat": 9.0765,
+    "tone": "normal",
+    "note": "Markets in the Federal Capital Territory show that informal recovery is not isolated to one coastal corridor."
+  },
+  {
+    "key": "lagos-ports",
+    "label": "Lagos Ports",
+    "lon": 3.392,
+    "lat": 6.431,
+    "tone": "major",
+    "note": "Lagos ports remain the main gateway for used electrical and electronic equipment entering the country."
+  }
+]

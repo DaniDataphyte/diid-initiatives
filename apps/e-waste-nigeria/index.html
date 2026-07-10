@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DIID | E-Waste Generation in Nigeria Report</title>
+    <meta
+      name="description"
+      content="A DIID data brief on e-waste generation in Nigeria, digital dependency, health impacts, regulatory gaps, and digital rights."
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#f9f9ff',
+              surface: '#f9f9ff',
+              'surface-container-low': '#f0f3ff',
+              'surface-container': '#e7eeff',
+              'surface-container-high': '#dee8ff',
+              'surface-container-highest': '#d9e3f9',
+              'surface-variant': '#d9e3f9',
+              primary: '#002045',
+              'primary-container': '#1a365d',
+              secondary: '#9d4400',
+              'secondary-container': '#fe8439',
+              tertiary: '#1b2127',
+              'tertiary-container': '#30363c',
+              outline: '#74777f',
+              'outline-variant': '#c4c6cf',
+              'on-background': '#121c2c',
+              'on-surface': '#121c2c',
+              'on-surface-variant': '#43474e',
+              'on-primary': '#ffffff',
+              'on-primary-container': '#d6e3ff',
+              'on-secondary': '#ffffff',
+              'on-secondary-container': '#662900',
+              'secondary-fixed': '#ffdbca',
+              'secondary-fixed-dim': '#ffb68f'
+            },
+            spacing: {
+              'stack-sm': '8px',
+              'stack-md': '16px',
+              'stack-lg': '32px',
+              gutter: '24px',
+              'section-gap': '80px',
+              'margin-mobile': '16px',
+              'margin-desktop': '64px'
+            },
+            fontFamily: {
+              display: ['Hanken Grotesk', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+              label: ['JetBrains Mono', 'monospace']
+            },
+            boxShadow: {
+              soft: '0 12px 40px rgba(0, 32, 69, 0.08)'
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+
+      .font-display {
+        font-family: 'Hanken Grotesk', sans-serif;
+      }
+
+      .font-label {
+        font-family: 'JetBrains Mono', monospace;
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.95fr);
+      }
+
+      .dependency-grid {
+        display: block;
+      }
+
+      .geography-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+        align-items: start;
+      }
+
+      .section-grid-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-grid-3 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .section-grid-4 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .bento-card {
+        background: rgba(255, 255, 255, 0.74);
+        border: 1px solid rgba(196, 198, 207, 0.7);
+        box-shadow: 0 12px 40px rgba(0, 32, 69, 0.06);
+      }
+
+      .topbar-link {
+        position: relative;
+      }
+
+      .topbar-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -17px;
+        height: 2px;
+        background: rgba(255, 219, 202, 0.9);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 180ms ease;
+      }
+
+      .topbar-link:hover::after {
+        transform: scaleX(1);
+      }
+
+      .hero-metric {
+        border-left: 4px solid #fe8439;
+      }
+
+      .timeline-dot::before {
+        content: '';
+        position: absolute;
+        left: -9px;
+        top: 6px;
+        width: 16px;
+        height: 16px;
+        border-radius: 999px;
+        background: #fe8439;
+        border: 4px solid white;
+      }
+
+      .svg-frame {
+        border: 1px solid rgba(196, 198, 207, 0.28);
+        background: rgba(26, 54, 93, 0.92);
+      }
+
+      .brand-lockup {
+        display: block;
+        width: 170px;
+        height: auto;
+      }
+
+      .dependency-cards--bg {
+        position: relative;
+        padding: 24px;
+        border: 1px solid rgba(196, 198, 207, 0.7);
+        border-radius: 18px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(240, 243, 255, 0.9), rgba(231, 238, 255, 0.94)),
+          url('./e-waste.png') center/cover no-repeat;
+        box-shadow: 0 12px 40px rgba(0, 32, 69, 0.06);
+      }
+
+      .dependency-cards--bg::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.2)),
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.4), transparent 45%);
+        pointer-events: none;
+      }
+
+      .dependency-cards--bg > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .rights-tab {
+        border-bottom: 2px solid transparent;
+        color: rgba(0, 32, 69, 0.48);
+        transition: color 160ms ease, border-color 160ms ease;
+      }
+
+      .rights-tab.is-active {
+        border-color: #002045;
+        color: #002045;
+      }
+
+      @media (max-width: 1280px) {
+        .dependency-cards {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+      }
+
+      @media (max-width: 1180px) {
+        .section-grid-3 {
+          grid-template-columns: 1fr;
+        }
+
+        .section-grid-4 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .geography-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 900px) {
+        html {
+          font-size: 15px;
+        }
+
+        .section-grid-2,
+        .section-grid-4 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-background overflow-x-hidden">
+    <header
+      class="fixed top-0 z-50 mx-auto flex w-full max-w-[1440px] items-center justify-between border-b border-outline-variant bg-primary px-[clamp(16px,4vw,64px)] py-4 text-on-primary"
+    >
+      <a href="#overview" aria-label="DIID">
+        <img class="brand-lockup" src="./src/assets/diid-logo.svg" alt="DIID" />
+      </a>
+      <nav class="hidden items-center gap-8 md:flex">
+        <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#scale">SCALE</a>
+        <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#dependency">DEPENDENCY</a>
+        <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#regulation">REGULATION</a>
+        <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#rights">RIGHTS</a>
+        <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#recommendations">RECOMMENDATIONS</a>
+      </nav>
+      <button
+        class="rounded-[8px] bg-secondary-container px-5 py-3 font-label text-[12px] tracking-[0.12em] text-on-secondary-container transition hover:scale-[0.98]"
+      >
+        DOWNLOAD REPORT
+      </button>
+    </header>
+
+    <main>
+      <section id="overview" class="bg-primary px-[clamp(16px,4vw,64px)] pb-20 pt-[112px] text-on-primary">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="hero-grid items-center">
+            <div class="py-10">
+              <p class="font-label text-[12px] tracking-[0.18em] text-secondary-fixed">DATA BRIEF / MAY 2026 / DIID</p>
+              <h1 class="font-display mt-5 max-w-[10ch] text-[clamp(3rem,5.4vw,5.4rem)] font-extrabold leading-[0.93] tracking-[-0.04em]">
+                E-Waste Generation in Nigeria
+              </h1>
+              <p class="font-display mt-6 text-[clamp(1.5rem,2.2vw,2.2rem)] font-semibold leading-[1.15] text-[#d8e5ff]">
+                The sustainability cost of digital dependency
+              </p>
+              <p class="mt-8 max-w-[36rem] text-[clamp(1.1rem,1.45vw,1.55rem)] leading-[1.55] text-[#c9d7f1]">
+                Nigeria’s digital growth is producing a hardware waste burden that now exceeds the
+                country’s capacity to collect, regulate, recycle, and contain it safely.
+              </p>
+            </div>
+
+            <div class="svg-frame rounded-[18px] p-5 shadow-soft">
+              <svg
+                viewBox="0 0 1200 900"
+                class="h-auto w-full rounded-[18px]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Illustration of electronic devices and waste pressure"
+              >
+                <rect width="1200" height="900" rx="36" fill="#0F2850" />
+                <rect x="54" y="68" width="1092" height="764" rx="30" fill="url(#bg)" />
+                <ellipse cx="327" cy="699" rx="207" ry="88" fill="#11294A" />
+                <ellipse cx="825" cy="720" rx="254" ry="100" fill="#102440" />
+                <rect x="116" y="557" width="311" height="92" rx="18" fill="#FC6906" />
+                <rect x="150" y="504" width="244" height="66" rx="14" fill="#F2E3C8" />
+                <rect x="178" y="467" width="191" height="42" rx="10" fill="#1D63D5" />
+                <rect x="250" y="378" width="95" height="118" rx="18" transform="rotate(-8 250 378)" fill="#E7EEF8" />
+                <rect x="270" y="397" width="57" height="80" rx="8" fill="#8DA8CC" />
+                <rect x="367" y="420" width="79" height="142" rx="18" transform="rotate(12 367 420)" fill="#CAD6E8" />
+                <rect x="383" y="451" width="46" height="76" rx="8" fill="#506B8E" />
+                <rect x="128" y="351" width="119" height="83" rx="15" transform="rotate(7 128 351)" fill="#BED0E7" />
+                <rect x="148" y="371" width="76" height="42" rx="9" fill="#355A88" />
+                <path d="M588 247C588 228.222 603.222 213 622 213H998C1016.78 213 1032 228.222 1032 247V531H588V247Z" fill="#102947" />
+                <path d="M612 255C612 247.82 617.82 242 625 242H994C1001.18 242 1007 247.82 1007 255V502H612V255Z" fill="url(#screen)" />
+                <rect x="731" y="531" width="157" height="19" rx="9.5" fill="#183A67" />
+                <rect x="714" y="550" width="190" height="25" rx="12.5" fill="#0A203A" />
+                <path d="M636 478H977" stroke="#FC6906" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 24" />
+                <path d="M686 341C710.244 341 730 321.244 730 297C730 272.756 710.244 253 686 253C661.756 253 642 272.756 642 297C642 321.244 661.756 341 686 341Z" fill="#FC6906" fill-opacity="0.9" />
+                <path d="M686 321C699.255 321 710 310.255 710 297C710 283.745 699.255 273 686 273C672.745 273 662 283.745 662 297C662 310.255 672.745 321 686 321Z" fill="#0F2850" />
+                <path d="M811 344L935 266L959 314L836 393L811 344Z" fill="#EADBC2" />
+                <path d="M770 563C777.392 555.608 789.379 555.608 796.77 563L842.77 609C850.162 616.392 850.162 628.379 842.77 635.77L802.77 675.77C795.379 683.162 783.392 683.162 776 675.77L730 629.77C722.608 622.379 722.608 610.392 730 603L770 563Z" fill="#1D63D5" />
+                <path d="M810 563L843 596L756 683H716C704 683 698 668 706 660L810 563Z" fill="#FC6906" />
+                <path d="M779 603L804 628" stroke="#F5F8FD" stroke-width="12" stroke-linecap="round" />
+                <path d="M182 644C242.667 609.333 307 602.667 375 624" stroke="#F00614" stroke-width="12" stroke-linecap="round" />
+                <path d="M898 664C944 638 1004.67 636.333 1080 659" stroke="#EEDEC1" stroke-width="12" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="bg" x1="127" y1="124" x2="1042" y2="784" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#153764" />
+                    <stop offset="1" stop-color="#0A1F39" />
+                  </linearGradient>
+                  <linearGradient id="screen" x1="612" y1="242" x2="1007" y2="502" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D7E6FB" />
+                    <stop offset="0.45" stop-color="#B4CAE7" />
+                    <stop offset="1" stop-color="#6983A8" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mt-12 section-grid-3">
+            <div class="hero-metric pl-5">
+              <p class="font-label text-[12px] tracking-[0.18em] text-secondary-fixed">DOMESTIC GENERATION IN 2022</p>
+              <p class="font-display mt-3 text-[clamp(2rem,3.6vw,3.4rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-[#edf3ff]">
+                500,000 tonnes
+              </p>
+            </div>
+            <div class="hero-metric pl-5">
+              <p class="font-label text-[12px] tracking-[0.18em] text-secondary-fixed">INTERNET SUBSCRIBERS IN 2025</p>
+              <p class="font-display mt-3 text-[clamp(2rem,3.6vw,3.4rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-[#edf3ff]">
+                148.2 million
+              </p>
+            </div>
+            <div class="hero-metric pl-5">
+              <p class="font-label text-[12px] tracking-[0.18em] text-secondary-fixed">INFORMAL E-WASTE WORKERS</p>
+              <p class="font-display mt-3 text-[clamp(2rem,3.6vw,3.4rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-[#edf3ff]">
+                Up to 100,000
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface px-[clamp(16px,4vw,64px)] py-20" id="scale">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary-container p-3">
+              <span class="material-symbols-outlined text-on-secondary-container">bar_chart</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">01 / SCALE OF THE BURDEN</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-on-surface-variant">
+            Nigeria generated 500,000 tonnes of e-waste in 2022, ranking third in Africa behind
+            Egypt and South Africa. That domestic figure still understates the burden because
+            Nigeria also remains a major destination for used electronics imports.
+          </p>
+
+          <div class="section-grid-2">
+            <article class="bento-card rounded-[18px] p-8">
+              <h3 class="mb-8 border-b border-outline-variant pb-3 font-label text-[12px] tracking-[0.16em] text-primary">
+                TOP AFRICAN E-WASTE GENERATORS
+              </h3>
+              <div class="space-y-5">
+                <div class="space-y-2">
+                  <div class="flex justify-between font-label text-[12px] tracking-[0.12em] text-on-surface">
+                    <span>Egypt</span><span>690,000 tonnes</span>
+                  </div>
+                  <div class="h-4 overflow-hidden rounded-full bg-surface-container">
+                    <div class="h-full w-full rounded-full bg-secondary-container"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between font-label text-[12px] tracking-[0.12em] text-on-surface">
+                    <span>South Africa</span><span>530,000 tonnes</span>
+                  </div>
+                  <div class="h-4 overflow-hidden rounded-full bg-surface-container">
+                    <div class="h-full w-[76%] rounded-full bg-secondary-container"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between font-label text-[12px] tracking-[0.12em] text-primary">
+                    <span class="font-semibold">Nigeria</span><span class="font-semibold">500,000 tonnes</span>
+                  </div>
+                  <div class="h-4 overflow-hidden rounded-full bg-surface-container">
+                    <div class="h-full w-[72%] rounded-full bg-secondary-container"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between font-label text-[12px] tracking-[0.12em] text-on-surface">
+                    <span>Algeria</span><span>330,000 tonnes</span>
+                  </div>
+                  <div class="h-4 overflow-hidden rounded-full bg-surface-container">
+                    <div class="h-full w-[47%] rounded-full bg-secondary-container"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between font-label text-[12px] tracking-[0.12em] text-on-surface">
+                    <span>Morocco</span><span>180,000 tonnes</span>
+                  </div>
+                  <div class="h-4 overflow-hidden rounded-full bg-surface-container">
+                    <div class="h-full w-[26%] rounded-full bg-secondary-container"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="bento-card rounded-[18px] bg-surface-container-high p-8">
+              <h3 class="mb-8 border-b border-outline-variant pb-3 font-label text-[12px] tracking-[0.16em] text-primary">
+                PROCESSING BURDEN
+              </h3>
+              <div class="section-grid-2">
+                <div class="rounded-[14px] border border-outline-variant bg-white/70 p-6">
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary">DOMESTIC GENERATION BENCHMARK</p>
+                  <p class="font-display mt-4 text-[clamp(2rem,3vw,3rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">
+                    500,000 tonnes
+                  </p>
+                  <p class="mt-4 text-[0.9rem] leading-[1.65] text-on-surface-variant">
+                    UNITAR and ITU place Nigeria third in Africa for domestically generated e-waste.
+                  </p>
+                </div>
+                <div class="rounded-[14px] border border-outline-variant bg-white/70 p-6">
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary">RMRDC TOTAL BURDEN CLAIM</p>
+                  <p class="font-display mt-4 text-[clamp(2rem,3vw,3rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">
+                    1.1 million tonnes
+                  </p>
+                  <p class="mt-4 text-[0.9rem] leading-[1.65] text-on-surface-variant">
+                    The higher estimate points to a much larger annual burden once imports are counted.
+                  </p>
+                </div>
+                <div class="rounded-[14px] border border-outline-variant bg-white/70 p-6">
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary">USED ELECTRONICS ENTERING LAGOS</p>
+                  <p class="font-display mt-4 text-[clamp(2rem,3vw,3rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">
+                    500 containers / month
+                  </p>
+                  <p class="mt-4 text-[0.9rem] leading-[1.65] text-on-surface-variant">
+                    An estimated 500 containers of used electrical and electronic equipment enter Lagos ports each month.
+                  </p>
+                </div>
+                <div class="rounded-[14px] border border-outline-variant bg-white/70 p-6">
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary">USED EEE THROUGH LAGOS PORTS</p>
+                  <p class="font-display mt-4 text-[clamp(2rem,3vw,3rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">
+                    18,300 metric tonnes / year
+                  </p>
+                  <p class="mt-4 text-[0.9rem] leading-[1.65] text-on-surface-variant">
+                    Basel Convention assessment data places annual used EEE inflows through Lagos at 18,300 metric tonnes.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface-container-low px-[clamp(16px,4vw,64px)] py-20" id="dependency">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary-container p-3">
+              <span class="material-symbols-outlined text-on-secondary-container">sync</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">02 / DIGITAL DEPENDENCY LOOP</h2>
+          </div>
+
+          <div class="mb-14 section-grid-2">
+            <div class="rounded-[18px] bg-primary p-8 text-on-primary">
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <p class="font-display text-[clamp(3rem,6vw,5rem)] font-extrabold leading-none text-secondary-fixed">168%</p>
+                  <p class="mt-3 font-label text-[12px] tracking-[0.14em] text-secondary-fixed-dim">DATA USAGE GROWTH</p>
+                </div>
+                <p class="max-w-[22rem] text-[1rem] leading-[1.7] text-[#c9d7f1]">
+                  Monthly internet data usage rose by 168% between January 2023 and December 2025, pushing more devices into circulation and, eventually, into waste streams.
+                </p>
+              </div>
+            </div>
+            <div class="rounded-[18px] bg-secondary p-8 text-on-secondary">
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <p class="font-display text-[clamp(3rem,6vw,5rem)] font-extrabold leading-none text-[#ffdbca]">&gt;90%</p>
+                  <p class="mt-3 font-label text-[12px] tracking-[0.14em] text-[#ffdbca]">INFORMAL PROCESSING SHARE</p>
+                </div>
+                <p class="max-w-[22rem] text-[1rem] leading-[1.7] text-[#ffe7d9]">
+                  Formal recycling remains marginal while the informal sector continues to dominate collection, dismantling, and material recovery.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dependency-grid">
+            <div class="dependency-cards dependency-cards--bg grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="rounded-[14px] border-l-2 border-primary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">01</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Imported hardware drives the system</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Nigeria relies overwhelmingly on imported devices, with negligible domestic electronics manufacturing capacity.</p>
+              </div>
+              <div class="rounded-[14px] border-l-2 border-primary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">02</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Rapid adoption multiplies device turnover</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">148.2 million internet subscribers and rising data demand keep expanding the volume of devices moving through homes, schools, offices, and markets.</p>
+              </div>
+              <div class="rounded-[14px] border-l-2 border-primary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">03</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Second-hand access extends fragile lifespans</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Because fewer than 20% of Nigerians can afford new electronics, used devices circulate widely and often arrive with limited remaining life.</p>
+              </div>
+              <div class="rounded-[14px] border-l-2 border-secondary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">04</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Repair markets absorb what formal systems cannot</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Used electrical and electronic equipment enters through ports, traders, and markets before much of it becomes uneconomical to repair.</p>
+              </div>
+              <div class="rounded-[14px] border-l-2 border-secondary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">05</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Informal recovery becomes the default</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Without recycling infrastructure at scale, the informal sector absorbs more than 90% of Nigeria’s e-waste.</p>
+              </div>
+              <div class="rounded-[14px] border-l-2 border-secondary bg-white p-5">
+                <span class="font-label text-[12px] tracking-[0.14em] text-outline">06</span>
+                <h4 class="font-display mt-3 text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Toxic exposure settles into communities</h4>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">The disposal burden remains in Nigeria through contaminated air, soil, and groundwater, with long-term consequences for workers, residents, and children.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary px-[clamp(16px,4vw,64px)] py-20 text-on-primary" id="health">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary p-3">
+              <span class="material-symbols-outlined text-on-secondary">health_and_safety</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em]">03 / HEALTH AND ENVIRONMENTAL HARM</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-[#c9d7f1]">
+            According to UNEP and the ILO, up to 100,000 people work in Nigeria’s informal
+            e-waste recycling sector, often dismantling electronics by hand, burning cables, and
+            recovering metals without protective equipment.
+          </p>
+
+          <div class="section-grid-4 mb-16">
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1">warning</span>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">52,000+ TONNES</p>
+              </div>
+              <h4 class="font-display text-[1.9rem] font-bold leading-[1.05] tracking-[-0.03em] text-[#eef3ff]">Brominated plastics burned or dumped</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">UNEP estimates that over 52,000 tonnes of flame-retardant plastics are released each year through unsafe handling.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1">opacity</span>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">4,000 TONNES</p>
+              </div>
+              <h4 class="font-display text-[1.9rem] font-bold leading-[1.05] tracking-[-0.03em] text-[#eef3ff]">Lead released</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Lead exposure drives neurological and developmental risk into workers and nearby communities.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1">grain</span>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">80 TONNES</p>
+              </div>
+              <h4 class="font-display text-[1.9rem] font-bold leading-[1.05] tracking-[-0.03em] text-[#eef3ff]">Cadmium released</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Cadmium contamination adds to long-term soil and water toxicity around informal processing sites.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1">science</span>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">0.3 TONNES</p>
+              </div>
+              <h4 class="font-display text-[1.9rem] font-bold leading-[1.05] tracking-[-0.03em] text-[#eef3ff]">Mercury released</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Even small mercury volumes create severe risk where handling, burning, and disposal are uncontrolled.</p>
+            </div>
+          </div>
+
+          <div class="mb-16 rounded-[22px] border border-outline/30 bg-tertiary-container p-8">
+            <div class="mb-6 flex flex-col gap-4 border-b border-outline/30 pb-6 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <p class="font-label text-[12px] tracking-[0.16em] text-secondary-fixed">EXPOSURE PATHWAY</p>
+                <h3 class="font-display mt-3 text-[clamp(1.9rem,2.5vw,3rem)] font-bold leading-[1.05] tracking-[-0.03em]">How the hazard moves into daily life</h3>
+              </div>
+              <p class="max-w-[28rem] text-[0.98rem] leading-[1.7] text-[#dce7f8]">
+                Open burning, acid baths, and manual dismantling without protective equipment turn
+                discarded electronics into air, soil, and groundwater contamination.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+              <div>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">OPEN BURNING</p>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#dce7f8]">Cables are burned to recover copper, releasing toxic smoke and residue.</p>
+              </div>
+              <div>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">ACID RECOVERY</p>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#dce7f8]">Crude baths are used to recover metals, pushing contamination into water systems.</p>
+              </div>
+              <div>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">MANUAL DISMANTLING</p>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#dce7f8]">Workers sort, strip, and break devices by hand with little or no protective gear.</p>
+              </div>
+              <div>
+                <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">ALABA FINDING</p>
+                <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#dce7f8]">A separate study of Alaba International Market found cadmium, lead, and chromium in groundwater above tolerable thresholds.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-grid-2 items-start">
+            <div>
+              <p class="font-label text-[12px] tracking-[0.16em] text-secondary-fixed-dim">HEALTH IMPACTS</p>
+              <h3 class="font-display mt-4 text-[clamp(1.9rem,2.8vw,3.2rem)] font-bold leading-[1.05] tracking-[-0.03em]">Child Mortality Findings</h3>
+              <p class="mt-5 max-w-[28rem] text-[1rem] leading-[1.7] text-[#c9d7f1]">
+                A 2024 World Bank Economic Review found severe mortality effects for children
+                living near major e-waste dumping sites in Ghana and Nigeria.
+              </p>
+            </div>
+            <div class="space-y-6">
+              <div class="flex items-center gap-6 border-b border-outline/20 pb-6">
+                <div class="font-display min-w-[7rem] text-[clamp(2.2rem,4vw,4rem)] font-extrabold leading-none text-secondary-fixed">+4.5 pts</div>
+                <div>
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed-dim">INCREASE IN NEONATAL MORTALITY NEAR MAJOR SITES</p>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">The study found strong mortality effects for children living close to e-waste sites.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-6 border-b border-outline/20 pb-6">
+                <div class="font-display min-w-[7rem] text-[clamp(2.2rem,4vw,4rem)] font-extrabold leading-none text-secondary-fixed">+6.5 pts</div>
+                <div>
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed-dim">INCREASE IN INFANT MORTALITY NEAR MAJOR SITES</p>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">The same study linked e-waste site exposure to significantly higher infant mortality.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-6">
+                <div class="font-display min-w-[7rem] text-[clamp(2.2rem,4vw,4rem)] font-extrabold leading-none text-secondary-fixed">2–3 yrs</div>
+                <div>
+                  <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed-dim">LAG BEFORE EFFECTS APPEAR</p>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">The effects emerged 2–3 years after site openings, consistent with contaminants accumulating in the environment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-[clamp(16px,4vw,64px)] py-20" id="geography">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary-container p-3">
+              <span class="material-symbols-outlined text-on-secondary-container">map</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">04 / INFORMAL RECYCLING GEOGRAPHY</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-on-surface-variant">
+            Informal recovery is concentrated at major sites including Alaba International Market
+            and Ikeja Computer Village in Lagos, alongside markets in Kano and the Federal Capital
+            Territory.
+          </p>
+          <div class="geography-grid">
+            <div class="bento-card rounded-[18px] border border-outline-variant bg-surface-container-low p-8">
+              <p class="font-label mb-6 text-[12px] tracking-[0.16em] text-primary/55">SITE CONCENTRATION</p>
+              <img
+                class="h-auto w-full object-contain"
+                alt="Map of Nigeria highlighting major e-waste sites"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7sRc1MsQaC5VYlI0xq5aP0yUB7ABCCZn3tgBPVYs6_rzUIX03GPEnXPCkZ-cOvaESLz1oWI_qim62F-mA7p1SazW1SKsJI98jWOlOeA8_fbZE2XuCpVavC7MxrINe3z-HSKX8jKWGfvaBTshM51aiNzfkvfdEsKD-r5_YYsc2f97KsHf05F5a1plHO0sROjL_s3iXWCTxz1jXMnm58vQhcTIaGRzcSJwMkpVJ5JQTIsgtFg2Te8f_6AHWaCvUvIkk2glITqdbyG0"
+              />
+            </div>
+            <div class="space-y-4">
+              <p class="font-label mb-4 text-[12px] tracking-[0.16em] text-primary">SITE NOTES</p>
+              <div class="rounded-[16px] border border-outline-variant bg-surface p-5 transition hover:border-primary">
+                <h4 class="font-display text-[1.2rem] font-bold text-primary">Alaba International Market</h4>
+                <p class="mt-2 text-[0.92rem] leading-[1.7] text-on-surface-variant">Alaba is one of the country’s most visible informal e-waste processing hubs and a central site in the wider health and contamination picture.</p>
+              </div>
+              <div class="rounded-[16px] border border-outline-variant bg-surface p-5 transition hover:border-primary">
+                <h4 class="font-display text-[1.2rem] font-bold text-primary">Ikeja Computer Village</h4>
+                <p class="mt-2 text-[0.92rem] leading-[1.7] text-on-surface-variant">Ikeja combines repair, resale, component stripping, and broader electronics circulation inside Lagos’s digital economy.</p>
+              </div>
+              <div class="rounded-[16px] border border-outline-variant bg-surface p-5 transition hover:border-primary">
+                <h4 class="font-display text-[1.2rem] font-bold text-primary">Kano Markets</h4>
+                <p class="mt-2 text-[0.92rem] leading-[1.7] text-on-surface-variant">Kano shows the northward spread of informal electronics recovery and resale activity beyond Lagos.</p>
+              </div>
+              <div class="rounded-[16px] border border-outline-variant bg-surface p-5 transition hover:border-primary">
+                <h4 class="font-display text-[1.2rem] font-bold text-primary">FCT Markets</h4>
+                <p class="mt-2 text-[0.92rem] leading-[1.7] text-on-surface-variant">Markets in the Federal Capital Territory show that informal recovery is not isolated to one coastal corridor.</p>
+              </div>
+              <div class="rounded-[16px] border border-outline-variant bg-surface p-5 transition hover:border-primary">
+                <h4 class="font-display text-[1.2rem] font-bold text-primary">Lagos Ports</h4>
+                <p class="mt-2 text-[0.92rem] leading-[1.7] text-on-surface-variant">Lagos ports remain the main gateway for used electrical and electronic equipment entering the country.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface-container px-[clamp(16px,4vw,64px)] py-20" id="regulation">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-primary p-3">
+              <span class="material-symbols-outlined text-on-primary">policy</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">05 / REGULATORY LANDSCAPE</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-on-surface-variant">
+            Nigeria has a regulatory framework for e-waste management, but enforcement remains the
+            central failure point.
+          </p>
+          <div class="section-grid-2 gap-16">
+            <div>
+              <h3 class="mb-8 border-b border-primary/20 pb-3 font-label text-[12px] tracking-[0.16em] text-primary">EXISTING INSTRUMENTS</h3>
+              <div class="space-y-8 border-l border-primary/20 pl-5">
+                <div class="timeline-dot relative">
+                  <p class="mb-2 font-display text-[1.15rem] font-bold text-secondary-container">2011</p>
+                  <h4 class="font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">NESREA e-waste regulations</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">The primary domestic framework prohibits open burning and landfill disposal while requiring manufacturers and importers to comply with Extended Producer Responsibility.</p>
+                </div>
+                <div class="timeline-dot relative">
+                  <p class="mb-2 font-display text-[1.15rem] font-bold text-secondary-container">1991 / 2004</p>
+                  <h4 class="font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Basel and Bamako commitments</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Nigeria is part of the main international legal architecture governing hazardous waste flows, including bans and prior informed consent obligations.</p>
+                </div>
+                <div class="timeline-dot relative">
+                  <p class="mb-2 font-display text-[1.15rem] font-bold text-secondary-container">2025</p>
+                  <h4 class="font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">Basel e-waste amendments enter into force</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">From January 1, 2025, all transboundary e-waste and scrap shipments fall under prior informed consent requirements.</p>
+                </div>
+                <div class="timeline-dot relative">
+                  <p class="mb-2 font-display text-[1.15rem] font-bold text-secondary-container">2026</p>
+                  <h4 class="font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.03em] text-primary">NESREA cooperative-led model</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">The new model aims to integrate informal workers through structured cooperatives tied to governance, financing, compliance, and social protection support.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-8 border-b border-primary/20 pb-3 font-label text-[12px] tracking-[0.16em] text-primary">THE ENFORCEMENT GAP</h3>
+              <div class="space-y-5">
+                <div class="rounded-[16px] border border-outline-variant bg-white p-6 shadow-sm">
+                  <h4 class="font-display text-[1.5rem] font-bold leading-[1.06] tracking-[-0.03em] text-primary">Law exists, field conditions do not change at scale</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Unsafe dismantling and burning continue because collection channels, recycling infrastructure, and enforcement reach remain weak.</p>
+                </div>
+                <div class="rounded-[16px] border border-outline-variant bg-white p-6 shadow-sm">
+                  <h4 class="font-display text-[1.5rem] font-bold leading-[1.06] tracking-[-0.03em] text-primary">Formal operators lose feedstock to informal markets</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Informal recyclers and scavengers outcompete registered operators on price, leaving formal systems under-supplied.</p>
+                </div>
+                <div class="rounded-[16px] border border-outline-variant bg-white p-6 shadow-sm">
+                  <h4 class="font-display text-[1.5rem] font-bold leading-[1.06] tracking-[-0.03em] text-primary">Weak import controls</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">Customs data does not clearly distinguish new from used electronics, making it difficult to police dumping through second-hand trade.</p>
+                </div>
+                <div class="rounded-[16px] border border-outline-variant bg-white p-6 shadow-sm">
+                  <h4 class="font-display text-[1.5rem] font-bold leading-[1.06] tracking-[-0.03em] text-primary">Market power remains uneven</h4>
+                  <p class="mt-3 text-[0.92rem] leading-[1.7] text-on-surface-variant">At sites like Alaba, middlemen can profit substantially while informal collectors face unsafe work and weak bargaining power.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-[clamp(16px,4vw,64px)] py-20" id="rights">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary p-3">
+              <span class="material-symbols-outlined text-on-secondary">group</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">06 / RIGHTS IMPLICATIONS</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-on-surface-variant">
+            E-waste is not only an environmental issue. It is also a digital rights issue tied to
+            environmental justice, labour protection, children’s rights, and structural dependency
+            in the global electronics economy.
+          </p>
+          <div class="rounded-[18px] border border-outline-variant bg-surface-container-low p-8">
+            <div class="mb-8 flex gap-6 overflow-x-auto border-b border-outline-variant pb-4">
+              <button class="rights-tab is-active whitespace-nowrap pb-2 font-label text-[12px] tracking-[0.14em]" data-rights-tab="environmental-justice">ENVIRONMENTAL JUSTICE</button>
+              <button class="rights-tab whitespace-nowrap pb-2 font-label text-[12px] tracking-[0.14em]" data-rights-tab="labour-rights">LABOUR RIGHTS</button>
+              <button class="rights-tab whitespace-nowrap pb-2 font-label text-[12px] tracking-[0.14em]" data-rights-tab="childrens-rights">CHILDREN'S RIGHTS</button>
+              <button class="rights-tab whitespace-nowrap pb-2 font-label text-[12px] tracking-[0.14em]" data-rights-tab="digital-sovereignty">DIGITAL SOVEREIGNTY</button>
+            </div>
+            <div class="section-grid-2 gap-16" id="rights-panel">
+              <div>
+                <h3 id="rights-headline" class="font-display text-[clamp(1.8rem,2.5vw,2.8rem)] font-bold uppercase leading-[1.04] tracking-[-0.03em] text-primary"></h3>
+                <p id="rights-body" class="mt-5 text-[1rem] leading-[1.75] text-on-surface-variant"></p>
+              </div>
+              <ul id="rights-points" class="space-y-5 pt-2"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary px-[clamp(16px,4vw,64px)] py-20 text-on-primary" id="recommendations">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-secondary p-3">
+              <span class="material-symbols-outlined text-on-secondary">lightbulb</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em]">07 / POLICY RECOMMENDATIONS</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-[#c9d7f1]">
+            The policy response has to move beyond waste management alone into digital policy,
+            import control, labour protection, and public health.
+          </p>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">DIGITAL POLICY</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Integrate e-waste into digital growth planning</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Digital economy policy, broadband plans, and inclusion strategies should all carry e-waste impact assessments rather than treating hardware waste as an afterthought.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Require every major digital growth framework to account for material waste costs.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">EXTENDED PRODUCER RESPONSIBILITY</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Make EPR enforceable at scale</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Mandatory registration, auditable recycling targets, and penalties for non-compliance are needed if EPR is to move beyond paper architecture.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Back EPRON and NESREA with enforcement capacity, targets, and public compliance pressure.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">IMPORT CONTROL</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Use the 2025 Basel amendments aggressively</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Nigeria now has stronger legal tools for controlling e-waste shipments, but those tools mean little without inspection capacity and customs training.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Invest in port-level inspection systems and customs readiness for prior informed consent enforcement.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">INTERNATIONAL ADVOCACY</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Press for transboundary EPR fee transfer</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Producer responsibility fees collected in exporting countries should follow products when they move into Nigerian markets as used electronics.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Treat lifecycle cost transfer as a core fairness demand in international e-waste diplomacy.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">WORKER PROTECTION</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Formalise the informal sector around rights, not paperwork</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Registration alone will not solve toxic exposure, weak bargaining power, or income insecurity in informal recycling.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Tie formalisation to labour protections, health coverage, and livable income safeguards.</p>
+            </div>
+            <div class="rounded-[18px] border border-outline/20 bg-primary-container p-6">
+              <p class="font-label text-[12px] tracking-[0.14em] text-secondary-fixed">PUBLIC HEALTH</p>
+              <h4 class="font-display mt-4 text-[1.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-[#eef3ff]">Institutionalise health impact monitoring</h4>
+              <p class="mt-4 text-[0.92rem] leading-[1.7] text-[#c9d7f1]">Mortality and groundwater findings require a standing policy response rather than one-off research attention.</p>
+              <p class="mt-5 text-[0.88rem] font-semibold leading-[1.65] text-secondary-fixed">Monitor major sites, remediate contaminated water, and restrict residential expansion around active hotspots.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface px-[clamp(16px,4vw,64px)] py-20" id="gaps">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="mb-10 flex items-center gap-4">
+            <div class="rounded-[10px] bg-primary-container p-3">
+              <span class="material-symbols-outlined text-primary">info</span>
+            </div>
+            <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">08 / WHAT THE DATA DOES NOT TELL US</h2>
+          </div>
+          <p class="mb-14 max-w-[58rem] text-[clamp(1.05rem,1.35vw,1.35rem)] leading-[1.6] text-on-surface-variant">
+            Major gaps remain around imports, child labour prevalence, local growth projections,
+            and the full health burden beyond the best-known sites.
+          </p>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between rounded-[14px] border-b border-outline-variant bg-white p-5">
+              <div class="flex-1">
+                <h4 class="font-display text-[1.35rem] font-bold leading-[1.08] tracking-[-0.03em] text-primary">Used electronics imports remain poorly counted</h4>
+                <p class="mt-2 max-w-[44rem] text-[0.92rem] leading-[1.7] text-on-surface-variant">Customs data does not clearly separate new electronics from used equipment, so the true import burden remains uncertain.</p>
+              </div>
+              <span class="ml-6 font-label text-[12px] tracking-[0.14em] text-[#ba1a1a]">CRITICAL GAP</span>
+            </div>
+            <div class="flex items-center justify-between rounded-[14px] border-b border-outline-variant bg-white p-5">
+              <h4 class="font-display text-[1.35rem] font-bold leading-[1.08] tracking-[-0.03em] text-primary">Domestic generation and import burdens are still contested</h4>
+              <span class="ml-6 font-label text-[12px] tracking-[0.14em] text-on-surface-variant/60">OPEN DETAIL</span>
+            </div>
+            <div class="flex items-center justify-between rounded-[14px] border-b border-outline-variant bg-white p-5">
+              <h4 class="font-display text-[1.35rem] font-bold leading-[1.08] tracking-[-0.03em] text-primary">Child labour in Nigeria’s e-waste sector remains under-researched</h4>
+              <span class="ml-6 font-label text-[12px] tracking-[0.14em] text-on-surface-variant/60">OPEN DETAIL</span>
+            </div>
+            <div class="flex items-center justify-between rounded-[14px] border-b border-outline-variant bg-white p-5">
+              <h4 class="font-display text-[1.35rem] font-bold leading-[1.08] tracking-[-0.03em] text-primary">Health studies cluster around the best-known sites</h4>
+              <span class="ml-6 font-label text-[12px] tracking-[0.14em] text-on-surface-variant/60">OPEN DETAIL</span>
+            </div>
+            <div class="flex items-center justify-between rounded-[14px] border-b border-outline-variant bg-white p-5">
+              <h4 class="font-display text-[1.35rem] font-bold leading-[1.08] tracking-[-0.03em] text-primary">Nigeria-specific growth projections are still weak</h4>
+              <span class="ml-6 font-label text-[12px] tracking-[0.14em] text-on-surface-variant/60">OPEN DETAIL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-surface-container-highest px-[clamp(16px,4vw,64px)] py-20">
+        <div class="mx-auto max-w-[960px] text-center">
+          <div class="mb-5 inline-block rounded-[10px] bg-secondary p-3 text-on-secondary">
+            <span class="material-symbols-outlined">flag</span>
+          </div>
+          <h2 class="font-display text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-primary">09 / CLOSING VIEW</h2>
+          <p class="mx-auto mt-8 max-w-[56rem] text-[clamp(1.15rem,1.6vw,1.6rem)] leading-[1.7] text-on-surface-variant">
+            Nigeria’s e-waste crisis is a direct consequence of rapid digital growth combined with
+            heavy dependence on imported electronics. A sustainable digital future requires control
+            over import flows, formal recovery systems, worker and child protection, and a digital
+            policy framework that accounts for the material costs of connectivity.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex flex-col items-center justify-between gap-6 border-t border-outline-variant bg-primary px-[clamp(16px,4vw,64px)] py-8 text-on-primary md:flex-row">
+      <a href="#overview" aria-label="DIID">
+        <img class="brand-lockup" src="./src/assets/diid-logo.svg" alt="DIID" />
+      </a>
+      <div class="max-w-[42rem] text-center md:text-left">
+        <p class="text-[0.95rem] leading-[1.65] text-[#c9d7f1]">
+          © 2026 Digital Initiative for Innovation &amp; Development. Data sourced from UNITAR,
+          ITU, UNEP, NCC, the Basel Convention assessment, and local environmental studies cited
+          in the brief.
+        </p>
+      </div>
+      <div class="flex gap-6">
+        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">PRIVACY POLICY</a>
+        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">METHODOLOGY</a>
+        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">CONTACT</a>
+      </div>
+    </footer>
+
+    <script>
+      const rightsContent = {
+        'environmental-justice': {
+          headline:
+            'The communities carrying the toxic burden are not the communities capturing the digital gains.',
+          body:
+            'The health and environmental costs of e-waste fall on low-income urban communities, informal workers, and families living near dumpsites rather than on the markets where devices were designed, sold, and consumed.',
+          points: [
+            'Toxic externalities are displaced from Global North consumption markets to Nigerian disposal sites.',
+            'Within Nigeria, the burden lands hardest on low-income urban communities.',
+            'Groundwater contamination links the digital economy directly to environmental injustice.'
+          ]
+        },
+        'labour-rights': {
+          headline:
+            'Informal recovery keeps the system running, but workers remain largely unprotected.',
+          body:
+            'Up to 100,000 informal e-waste workers operate without meaningful labour protections, occupational health coverage, social security, or adequate safety equipment even as they do the most dangerous recovery work.',
+          points: [
+            'Manual dismantling, acid baths, and open burning continue without adequate protection.',
+            'Formalisation requires more than registration; it requires enforceable worker protections.',
+            'The cooperative-led EPR model will fail if labour rights remain an afterthought.'
+          ]
+        },
+        'childrens-rights': {
+          headline:
+            'The same digital transition meant to expand opportunity is also creating conditions that kill children.',
+          body:
+            'The mortality findings are not abstract. They describe neonatal and infant deaths linked to e-waste site exposure, groundwater contamination, and a broader waste stream that places children at direct risk.',
+          points: [
+            'Children near major sites face measurable mortality risk increases.',
+            'Effects appear after contaminants accumulate in the surrounding environment.',
+            'Child labour in Nigeria’s e-waste sector remains insufficiently documented, not safely absent.'
+          ]
+        },
+        'digital-sovereignty': {
+          headline:
+            'Nigeria pays the disposal cost of a hardware system it does not control.',
+          body:
+            'Nigeria imports the devices, bears the end-of-life burden, and captures only a fraction of the embedded material value while product design and lifespan decisions are made elsewhere.',
+          points: [
+            'Hardware dependence makes waste dependence a digital policy issue.',
+            'Global governance remains asymmetric when producer responsibility fees stay in exporting markets.',
+            'A sustainable digital economy requires control over the material lifecycle, not only the software layer.'
+          ]
+        }
+      };
+
+      const renderRightsPanel = (key) => {
+        const content = rightsContent[key];
+        if (!content) return;
+
+        const headline = document.getElementById('rights-headline');
+        const body = document.getElementById('rights-body');
+        const points = document.getElementById('rights-points');
+
+        if (headline) headline.textContent = content.headline;
+        if (body) body.textContent = content.body;
+        if (points) {
+          points.innerHTML = content.points
+            .map(
+              (point) => `
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined mt-1 text-[0.9rem] text-secondary">fiber_manual_record</span>
+                  <p class="text-[0.98rem] leading-[1.7] text-on-surface-variant">${point}</p>
+                </li>
+              `
+            )
+            .join('');
+        }
+      };
+
+      const initRightsTabs = () => {
+        const tabs = Array.from(document.querySelectorAll('[data-rights-tab]'));
+        if (!tabs.length) return;
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            tabs.forEach((item) => item.classList.remove('is-active'));
+            tab.classList.add('is-active');
+            renderRightsPanel(tab.getAttribute('data-rights-tab'));
+          });
+        });
+
+        renderRightsPanel('environmental-justice');
+      };
+
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (!header) return;
+        if (window.scrollY > 50) {
+          header.classList.add('bg-primary/95', 'backdrop-blur-md');
+        } else {
+          header.classList.remove('bg-primary/95', 'backdrop-blur-md');
+        }
+      });
+
+      initRightsTabs();
+    </script>
+  </body>
+</html>
