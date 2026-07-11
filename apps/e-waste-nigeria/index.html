@@ -276,11 +276,19 @@
         <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#rights">RIGHTS</a>
         <a class="topbar-link font-label text-[12px] tracking-[0.12em] opacity-85 transition hover:opacity-100" href="#recommendations">RECOMMENDATIONS</a>
       </nav>
-      <button
-        class="rounded-[8px] bg-secondary-container px-5 py-3 font-label text-[12px] tracking-[0.12em] text-on-secondary-container transition hover:scale-[0.98]"
-      >
-        DOWNLOAD REPORT
-      </button>
+      <div class="relative">
+        <a
+          href="./reports/e-waste-generation-in-nigeria.pdf"
+          download
+          data-download-report
+          class="inline-flex rounded-[8px] bg-secondary-container px-5 py-3 font-label text-[12px] tracking-[0.12em] text-on-secondary-container transition hover:scale-[0.98]"
+        >
+          DOWNLOAD REPORT
+        </a>
+        <div class="pointer-events-none absolute -right-1 -top-2 px-1.5 py-0.5">
+          <p data-download-count class="font-label text-[11px] font-bold leading-none tracking-[0.02em] text-secondary-fixed">0</p>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -688,8 +696,8 @@
               <p class="font-label mb-6 text-[12px] tracking-[0.16em] text-primary/55">SITE CONCENTRATION</p>
               <img
                 class="h-auto w-full object-contain"
-                alt="Map of Nigeria highlighting major e-waste sites"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7sRc1MsQaC5VYlI0xq5aP0yUB7ABCCZn3tgBPVYs6_rzUIX03GPEnXPCkZ-cOvaESLz1oWI_qim62F-mA7p1SazW1SKsJI98jWOlOeA8_fbZE2XuCpVavC7MxrINe3z-HSKX8jKWGfvaBTshM51aiNzfkvfdEsKD-r5_YYsc2f97KsHf05F5a1plHO0sROjL_s3iXWCTxz1jXMnm58vQhcTIaGRzcSJwMkpVJ5JQTIsgtFg2Te8f_6AHWaCvUvIkk2glITqdbyG0"
+                alt="SVG map of Nigeria highlighting major e-waste concentration sites"
+                src="./maps/nigeria-hotspots.svg"
               />
             </div>
             <div class="space-y-4">
@@ -930,13 +938,8 @@
         <p class="text-[0.95rem] leading-[1.65] text-[#c9d7f1]">
           © 2026 Digital Initiative for Innovation &amp; Development. Data sourced from UNITAR,
           ITU, UNEP, NCC, the Basel Convention assessment, and local environmental studies cited
-          in the brief.
+          in the brief. Contact: <a class="text-secondary-fixed transition hover:text-white" href="mailto:hello@diidinitiative.org">hello@diidinitiative.org</a>.
         </p>
-      </div>
-      <div class="flex gap-6">
-        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">PRIVACY POLICY</a>
-        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">METHODOLOGY</a>
-        <a class="font-label text-[12px] tracking-[0.14em] text-on-primary/75 transition hover:text-on-primary" href="#">CONTACT</a>
       </div>
     </footer>
 
@@ -1027,6 +1030,23 @@
         renderRightsPanel('environmental-justice');
       };
 
+      const initDownloadCounter = () => {
+        const link = document.querySelector('[data-download-report]');
+        const countNode = document.querySelector('[data-download-count]');
+        if (!link || !countNode) return;
+
+        const storageKey = 'diid-ewaste-report-downloads';
+        const initialCount = Number.parseInt(window.localStorage.getItem(storageKey) || '0', 10);
+        countNode.textContent = Number.isFinite(initialCount) ? String(initialCount) : '0';
+
+        link.addEventListener('click', () => {
+          const current = Number.parseInt(window.localStorage.getItem(storageKey) || '0', 10);
+          const next = (Number.isFinite(current) ? current : 0) + 1;
+          window.localStorage.setItem(storageKey, String(next));
+          countNode.textContent = String(next);
+        });
+      };
+
       window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         if (!header) return;
@@ -1038,6 +1058,7 @@
       });
 
       initRightsTabs();
+      initDownloadCounter();
     </script>
   </body>
 </html>
